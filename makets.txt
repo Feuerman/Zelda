@@ -1,1 +1,2 @@
 https://yadi.sk/d/JJlukmwcyufpj
+https://github.com/twolfson/gulp.spritesmith

@@ -1,0 +1,13 @@
+.social {
+	width: 100%;
+	text-align: center;
+	&__item {
+		padding: 10px;
+		.icon {
+			
+		}
+	}
+	&__item + &__item {
+		margin-left: 25px;
+	}
+}

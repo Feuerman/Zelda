@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     concat = require("gulp-concat"),
     reload = browserSync.reload,
-    cssbeautify = require('gulp-cssbeautify');
+    cssbeautify = require('gulp-cssbeautify'),
+    spritesmith = require("gulp.spritesmith");
 
 var path = {
     build: {
@@ -24,13 +25,15 @@ var path = {
         jade: 'src/*.jade',
         js: 'src/js/**/*.js',
         style: 'src/style/main.scss',
-        img: 'src/img/**/*'
+        img: 'src/img/*.*',
+        sprite: 'src/img/srpite/*.*'
     },
     watch: {
         jade: 'src/**/*.jade',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
-        img: 'src/img/**/*'
+        img: 'src/img/*.*',
+        sprite: 'src/img/srpite/*.*'
     },
     clean: './build'
 };
@@ -81,6 +84,25 @@ gulp.task('imagebuild', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('src/img/sprite/*.*')
+            .pipe(spritesmith({
+                imgName: '../img/sprite.png',
+                cssName: 'sprite.scss',
+                cssFormat: 'scss',
+                algorithm: 'binary-tree',
+                cssVarMap: function (sprite) {
+                  sprite.name = 'icon__' + sprite.name;
+                }
+            }));
+
+
+    spriteData.img.pipe(gulp.dest('build/img/')); 
+    spriteData.css.pipe(gulp.dest('src/style/')); 
+
+});
+
 gulp.task('fonts', function () {
     gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('build/fonts/'))
@@ -98,6 +120,7 @@ gulp.task('build', [
     'jsbuild',
     'stylebuild',
     'imagebuild',
+    'sprite',
     'fonts',
     'vendor'
 ]);
@@ -114,6 +137,9 @@ gulp.task('watch', function(){
     });
     watch([path.watch.img], function() {
         gulp.start('imagebuild');
+    });
+    watch([path.watch.sprite], function() {
+        gulp.start('sprite');
     });
 });
 

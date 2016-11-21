@@ -1,0 +1,29 @@
+body {
+	font-family: $font-primary;
+	font-size: 16px;
+	line-height: 1;
+	background:#ccc;
+}
+
+.wrapper {
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+.aside {
+	display: table-cell;
+	vertical-align: top;
+	width: 230px;
+	min-width: 230px;
+	background: rgb(47, 46, 51);
+}
+.main-content {
+	vertical-align: top;
+}
+.float-wrapper {
+	max-width: 970px;
+	float: right;
+	& > section {
+		overflow: hidden;
+	}
+}

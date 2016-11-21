@@ -1,3 +1,307 @@
 include templates/head.jade
 body
-	p 123
+	.wrapper
+		aside.aside
+			.aside-logo.text-center
+				img(src="img/logo.png", alt="")
+				.aside-logo__title
+					span 1-я интернет-фабрика
+					span.red кухонной мебели
+			.aside-auth
+				button.js-modal-auth
+					i.icon.icon__auth
+					| Вход
+				button.js-modal-reg Регистрация
+			.aside-nav
+				nav.left-menu-wrap
+					ul.left-menu
+						li.left-menu__item
+							a.left-menu__link(href="#") КУХНИ
+						li.left-menu__item
+							a.left-menu__link(href="#") ГОСТИННЫЕ
+						li.left-menu__item
+							a.left-menu__link(href="#") ШКАФЫ
+						li.left-menu__item
+							a.left-menu__link(href="#") БЫТОВАЯ
+						li.left-menu__item
+							a.left-menu__link(href="#") ТЕХНИКА
+			.aside-contacts.text-center
+				.aside-contacts__phone 8 800 345 56 56
+				button.js-modal-callback.button.button-default Обратный звонок
+			.aside-social
+				.social
+					a.social__item(href="#")
+						i.icon.icon__social__vk
+					a.social__item(href="#")
+						i.icon.icon__social__fb
+					a.social__item(href="#")
+						i.icon.icon__social__tw
+					a.social__item(href="#")
+						i.icon.icon__social__ok
+		.main-content
+			header.header
+				nav.top-menu-wrap.pull-left
+					ul.top-menu
+						li.top-menu__item
+							a.top-menu__link(href="#") О компании
+						li.top-menu__item
+							a.top-menu__link(href="#") Новости и акции
+						li.top-menu__item
+							a.top-menu__link(href="#") Услуги
+						li.top-menu__item
+							a.top-menu__link(href="#") Блог
+						li.top-menu__item
+							a.top-menu__link(href="#") Оплата
+						li.top-menu__item
+							a.top-menu__link(href="#") Доставка
+						li.top-menu__item
+							a.top-menu__link(href="#") Адреса
+				.header-city.pull-right
+					i.icon.icon__geo
+					span Москва
+			.float-wrapper
+				section.main-slider
+					.main-slider-wrap
+						.main-slider__item
+							.main-slider__image
+								img(src="img/main_top-slider__image.jpg", alt="")
+							.main-slider__desc
+								p.title Интернет-фабрика КухниСтрой
+								p Новый шаг к снижению цены кухонь премиального уровня
+						.main-slider__item
+							.main-slider__image
+								img(src="img/main_top-slider__image.jpg", alt="")
+							.main-slider__desc
+								p.title Интернет-фабрика КухниСтрой
+								p Новый шаг к снижению цены кухонь премиального уровня
+					.main-slider-nav
+						button.prev.icon.icon__arrow-left-circle--white
+						button.next.icon.icon__arrow-right-circle--white
+				section.main-advantages
+					.col-sm-3.main-advantages__item
+						.image
+							i.icon.icon__quality
+						span Отвечаем за качество!
+					.col-sm-3.main-advantages__item
+						.image
+							i.icon.icon__clock
+						span Бережем ваше время
+					.col-sm-3.main-advantages__item
+						.image
+							i.icon.icon__ruble
+						span Экономим ваши деньги
+					.col-sm-3.main-advantages__item
+						.image
+							i.icon.icon__thumb-up
+						span Лучше, дешевле, быстрее
+				section.main-fast-order
+					.col-sm-6.main-fast-order__left
+						.title Всего 16,5 минут для заказа новой кухни
+						p Мы — интернет-фабрика, работаем для розничных клиентов и небольших кухонных компаний
+						button.js-modal-buy.button.button-default
+							| купить кухню
+							i.icon.icon__basket
+					.col-sm-6.main-fast-order__right
+						.title Мы исключаем из цепочки поставок три звена: опт, фабрику и салон
+						p Мы экономим на этих промежуточных звеньях торговой цепи и даем вам оптовую цену на кухонные гарнитуры по цене комплектующих
+						i.icon.icon__label
+				section.main-competition
+					.col-xs-12
+						.main-competition__head
+							.title Почему у нас дешевле, чем у конкурентов?
+							a.button.button-transparent(href="#") Подробнее
+						.main-competition__content
+							img(src="img/competition.png", alt="")
+				section.main-order
+					.col-xs-12
+						.title Бесплатный вызов дизайнера-замерщика
+						p Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.
+						button.js-modal-designer-order.button.button-default
+							| Вызвать замерщика
+							i.icon.icon__size
+				section.main-steps
+					.title Заказать кухню очень просто!
+					.main-steps-items
+						.col-sm-3.item
+							.item__image
+								img(src="img/order_step__1.png", alt="")
+							.item__desc
+								.title Выбрать модель
+								p Из более чем 60 наименований
+						.col-sm-3.item
+							.item__image
+								img(src="img/order_step__2.png", alt="")
+							.item__desc
+								.title Посмотреть варианты исполнения
+								p Модели в выбранном размере
+						.col-sm-3.item
+							.item__image
+								img(src="img/order_step__3.png", alt="")
+							.item__desc
+								.title Создать свой проект
+								p На базе выбранного варианта
+						.col-sm-3.item
+							.item__image
+								img(src="img/order_step__4.png", alt="")
+							.item__desc
+								.title Оформить заказ на сайте
+								p Оплатите на сайте или в выставочном зале
+					.text-center
+						button.js-modal-buy.button.button-default
+							| купить кухню
+							i.icon.icon__basket
+				section.main-guarantee
+					.col-sm-6.main-guarantee__left
+						.title Гарантия на все наши кухни — 12 лет! 
+						p Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 , для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. 
+						a.button.button-default(href="#")
+							| ПОДРОБНЕЕ
+							i.icon.icon__badge
+					.col-sm-6.main-guarantee__right
+						.col-sm-6.col.col-1
+							.title Корпуса
+							p Поставляются с фабрики кухни ZETTA
+							img.image-left(src="img/main_guaranty-company__1.png", alt="")
+							img.image-right(src="img/main_guaranty-image__1.png", alt="")
+						.col-sm-6.col.col-2
+							.title Фасады
+							p С итальянской фабрике с автоматизированным производством
+							img.image-right(src="img/main_guaranty-image__2.png", alt="")
+						.col-sm-6.col.col-3
+							.title Фурнитура
+							p От лучших астрийских  и немецких произодителей
+							img.image-right(src="img/main_guaranty-image__3.png", alt="")
+						.col-sm-6.col.col-4
+							.title Столешницы
+							p От лучших австрийскихи немецких производителей
+							img.image-right(src="img/main_guaranty-image__4.png", alt="")
+				section.main-review
+					.main-review__head
+						.title Отзывы
+						a.button.button-transparent(href="#") Посмотреть все отзывы
+					.review-tizers
+						.main-review-tizers__item
+							.image
+								img(src="img/main_reviews__1.png", alt="")
+							.name НАТАЛЬЯ СМИРНОВА
+							p В выборе мебели и дизайне помещения всегда хочется достичь совершенства уже давно была одержима
+							a.link(href="#") Подробнее
+						.main-review-tizers__item
+							.image
+								img(src="img/main_reviews__2.png", alt="")
+							.name ИГОРЬ ШУМСКИЙ
+							p Весной решили заняться ремонтом квартиры, кухня на первом месте была, так как старый гарнитур невозможно совсем было использовать 
+							a.link(href="#") Подробнее
+						.main-review-tizers__item
+							.image
+								img(src="img/main_reviews__3.png", alt="")
+							.name ОЛЬГА РАЗЫГРАЕВА
+							p В выборе мебели и дизайне помещения всегда хочется достичь совершенства уже давно была одержима
+							a.link(href="#") Подробнее
+						.main-review-tizers__item
+							.image
+								img(src="img/main_reviews__1.png", alt="")
+							.name НАТАЛЬЯ СМИРНОВА
+							p Хочу поделиться своей историей сотрудничества с Фабрикой Зетта с очень хорошей стороны
+							a.link(href="#") Подробнее
+				section.main-advice
+					.main-advice__head
+						.title Советы дизайнера
+						a.button.button-transparent(href="#") Посмотреть все советы
+					.advice-content
+						.col-xs-4
+							.advice-content-item
+								.advice-content-item__top
+									.title Цветовые решения для вашей кухни
+									p Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.
+								.advice-content-item__bottom
+									img(src="img/main_design-bg__1.jpg", alt="")
+						.col-xs-4
+							.advice-slider
+								.advice-slider-item(style="background-image: url('img/main_design-bg__2.jpg');")
+									p.bold Сохранение максимальной функциональности
+									img(src="img/main_design-bg__2-1.png", alt="")
+									p.bold Оцените доступное пространство
+									.hr
+									p Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.
+						.col-xs-4
+							.advice-content-item
+								.advice-content-item__top
+									.title Разбиение кухни на зоны и модули
+									a.icon.icon__arrow-left-circle--red(href="#")
+									img.image-float(src="img/main_design-bg__3.png", alt="")
+							.advice-content-item
+								.advice-content-item__top
+									.title Правильный выбор столешницы
+									a.icon.icon__arrow-left-circle--red(href="#")
+									img.image-float(src="img/main_design-bg__4.jpg", alt="")
+				section.main-bottom
+					p Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 год, для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. У кого-то из-за затопления кухни соседями из строя вышли модули. Однако не было ни одного случая брака фасада или корпуса! 
+					p Сотрудники Фабрики ZETTA приехали в гости к клиентам, чтобы своими глазами увидеть, как выглядят кухни спустя такой долгий срок, и были очень обрадованы. Фасады из массива дерева никак не изменили своих свойств и сохранили отличный внешний вид.  А ведь эти кухни стоят уже пятнадцать лет!
+					p За время существования нашей компании мы шагнули далеко вперед. Наши кухни, которые выпускались пятнадцать лет назад, и те, которые мы выпускаем сейчас, имеют колоссальную разницу в качестве. Мы смогли улучшить нашу продукцию, и поэтому легко готовы предоставить Вам гарантию 12 лет. Гарантийные случаи возникают только у 0.02% наших клиентов. Это всего лишь 2 случая на 2000 кухонь!
+				section.main-menu-bottom
+					.col-sm-3.main-menu-bottom__col
+						.title Каталог
+						ul.bottom-menu
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Кухни
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Гостинная
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Шкафы
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Бытовая
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") техника
+					.col-sm-3.main-menu-bottom__col
+						.title О компании
+						ul.bottom-menu
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Информация
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Карьера
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Новости
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Гарантия
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Миссия
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Преимущества
+					.col-sm-3.main-menu-bottom__col
+						.title Клиентам
+						ul.bottom-menu
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Акции
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Отзывы
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Советы эксперта
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Как купить кухню
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Кухня в кредит
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Доставка и сборка
+					.col-sm-3.main-menu-bottom__col
+						.title Адреса салонов
+						ul.bottom-menu
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Москва
+							li.bottom-menu__item
+								a.bottom-menu__link(href="#") Белгород
+						.title.title-bottom Блог
+			footer.footer
+				.col-sm-6.footer__left
+					.copyright
+						| © 2016 КухниСтрой.
+						span 1-я интернет-фабрика кухонной мебели
+				.col-sm-6.footer__right
+					.col-xs-6
+						a.footer__mail(href="mailto:info@kuhnistroy.ru")
+							i.icon.icon__mail 
+							| info@kuhnistroy.ru
+					.col-xs-6
+						button.footer__search.button
+							i.icon.icon__loop
+							| Поиск по сайту

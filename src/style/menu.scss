@@ -5,11 +5,12 @@
 	&__item {
 		a {
 			width: 100%;
-			padding-bottom: 16px;
-			padding-top: 18px;
+			padding-bottom: 1em;
+			padding-top: 1.125em;
+			font-size: 1.6em;
 			color: $color-light;
 			&:hover {
-				padding-left: 20px;
+				padding-left: 1.25em;
 				background: rgb(78, 76, 83);
 				color: $color-light;
 				text-decoration: none;
@@ -26,7 +27,7 @@
 
 .top-menu {
 	&-wrap {
-		padding-left: 20px;
+		padding-left: 2em;
 	}
 	&__item {
 		display: block;
@@ -37,21 +38,43 @@
 			content: '';
 			position: relative;
 			display: inline-block;
-			height: 10px;
-			width: 2px;
+			height: 1em;
+			width: 0.2em;
 			background: rgb(108, 105, 117);
 		}
 	}
 	&__link {
-		padding: 15px 23px;
+		padding: 1.1em 1.8em;
 		color: $color-light;
-		font-size: 0.875em;
+		font-size: 1.4em;
 		line-height: 1;
 		&:hover {
 			background: rgb(108, 105, 117);
-			box-shadow: 0 0 3px 3px rgb(108, 105, 117);
+			box-shadow: 0 0 0.2em 0.2em rgb(108, 105, 117);
 			color: $color-light;
 			text-decoration: none;
 		}
+	}
+}
+
+.bottom-menu {
+	&__item {}
+	&__link {
+		display: block;
+		padding: 0.2em 0;
+		color: $color-primary-light;
+		font-size: 1.6em;
+		line-height: 1.2em;
+		&:visited, &:focus {
+			text-decoration: none;
+			color: $color-primary-light;
+		}
+		&:hover {
+			color: $color-primary-light;
+		}
+
+	}
+	&__item + &__item {
+		margin-top: 0.8em;
 	}
 }

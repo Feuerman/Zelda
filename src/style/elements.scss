@@ -2,7 +2,7 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
 }
 span {
 	display: inline-block;
@@ -19,5 +19,6 @@ ul {
 	list-style-type: none;
 }
 p {
+	margin: 0;
 	font-family: $color-primary;
 }

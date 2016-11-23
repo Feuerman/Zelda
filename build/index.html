@@ -19,34 +19,52 @@
 <body>
   <div class="wrapper">
     <aside class="aside">
-      <div class="aside-logo text-center"><img src="img/logo.png" alt="">
-        <div class="aside-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+      <div class="aside-header visible-xs">
+        <div class="title">Меню</div>
+        <button class="js-menu-mobile">Закрыть</button>
+      </div>
+      <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
+      <div class="aside-logo site-logo text-center hidden-xs"><img src="img/logo.png" alt="">
+        <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
       </div>
       <div class="aside-auth">
         <button class="js-modal-auth"><i class="icon icon__auth"></i>Вход</button>
         <button class="js-modal-reg">Регистрация</button>
       </div>
+      <div class="aside-city visible-xs"><i class="icon icon__geo"></i><span>Москва</span></div>
       <div class="aside-nav">
-        <nav class="left-menu-wrap">
-          <ul class="left-menu">
-            <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
-            <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
-            <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
-            <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ</a></li>
-            <li class="left-menu__item"><a href="#" class="left-menu__link">ТЕХНИКА</a></li>
-          </ul>
+        <nav>
+          <div class="left-menu-wrap">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+            </ul>
+          </div>
+          <div class="left-menu-wrap left-menu-wrap--bottom visible-xs">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">О компании</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Новости и акции</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Услуги</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса					</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
-      <div class="aside-contacts text-center">
+      <div class="aside-contacts text-center hidden-xs">
         <div class="aside-contacts__phone">8 800 345 56 56</div>
         <button class="js-modal-callback button button-default">Обратный звонок</button>
       </div>
       <div class="aside-social">
-        <div class="social"><a href="#" class="social__item"><i class="icon icon__social__vk"></i></a><a href="#" class="social__item"><i class="icon icon__social__fb"></i></a><a href="#" class="social__item"><i class="icon icon__social__tw"></i></a><a href="#" class="social__item"><i class="icon icon__social__ok"></i></a></div>
+        <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
       </div>
     </aside>
     <div class="main-content">
-      <header class="header">
+      <header class="header hidden-xs">
         <nav class="top-menu-wrap pull-left">
           <ul class="top-menu">
             <li class="top-menu__item"><a href="#" class="top-menu__link">О компании</a></li>
@@ -60,19 +78,42 @@
         </nav>
         <div class="header-city pull-right"><i class="icon icon__geo"></i><span>Москва</span></div>
       </header>
+      <div class="top-mobile hidden-lg">
+        <div class="top-mobile__header">
+          <div class="top-mobile-logo site-logo">
+            <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><img src="img/logo.png" alt="">
+            <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+            <button class="js-modal-auth visible-xs"><i class="icon icon__auth"></i></button>
+          </div>
+          <div class="top-mobile-contacts">
+            <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
+            <button class="js-modal-callback button button-default">Обратный звонок</button>
+            <button class="js-modal-auth hidden-xs"><i class="icon icon__auth"></i></button>
+          </div>
+        </div>
+        <div class="top-mobile__footer">
+          <ul class="top-menu pull-left">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">КУХНИ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ГОСТИННЫЕ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ШКАФЫ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+          </ul>
+          <div class="social pull-right hidden-xs"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
       <div class="float-wrapper">
         <section class="main-slider">
           <div class="main-slider-wrap">
             <div class="main-slider__item">
               <div class="main-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
-              <div class="main-slider__desc">
+              <div class="main-slider__desc hidden-xs">
                 <p class="title">Интернет-фабрика КухниСтрой</p>
                 <p>Новый шаг к снижению цены кухонь премиального уровня</p>
               </div>
             </div>
             <div class="main-slider__item">
               <div class="main-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
-              <div class="main-slider__desc">
+              <div class="main-slider__desc hidden-xs">
                 <p class="title">Интернет-фабрика КухниСтрой</p>
                 <p>Новый шаг к снижению цены кухонь премиального уровня</p>
               </div>
@@ -99,7 +140,7 @@
         </section>
         <section class="main-fast-order">
           <div class="col-sm-6 main-fast-order__left">
-            <div class="title">Всего 16,5 минут для заказа новой кухни</div>
+            <div class="section-title">Всего 16,5 минут для заказа новой кухни</div>
             <p>Мы — интернет-фабрика, работаем для розничных клиентов и небольших кухонных компаний</p>
             <button class="js-modal-buy button button-default">купить кухню<i class="icon icon__basket"></i></button>
           </div>
@@ -109,20 +150,18 @@
           </div>
         </section>
         <section class="main-competition">
-          <div class="main-competition__head">
-            <div class="title pull-left">Почему у нас дешевле, чем у конкурентов?</div><a href="#" class="button button-transparent pull-right">Подробнее</a>
+          <div class="section-head">
+            <div class="section-title">Почему у нас дешевле, чем у конкурентов?</div><a href="#" class="button button-transparent">Подробнее</a>
           </div>
-          <div class="main-competition__content"><img src="img/competition.png" alt=""></div>
+          <div class="main-competition__content"><img src="img/competition.png" alt="" class="img-responsive hidden-xs"></div>
         </section>
         <section class="main-order">
-          <div class="col-xs-12">
-            <div class="title">Бесплатный вызов дизайнера-замерщика</div>
-            <p>Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.</p>
-            <button class="js-modal-designer-order button button-default">Вызвать замерщика<i class="icon icon__size"></i></button>
-          </div>
+          <div class="section-title section-title--light">Бесплатный вызов дизайнера-замерщика</div>
+          <p>Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.</p>
+          <button class="js-modal-designer-order button button-default">Вызвать замерщика<i class="icon icon__size"></i></button>
         </section>
         <section class="main-steps">
-          <div class="title">Заказать кухню очень просто!</div>
+          <div class="section-title">Заказать кухню очень просто!</div>
           <div class="main-steps-items">
             <div class="col-sm-3 item">
               <div class="item__image"><img src="img/order_step__1.png" alt=""></div>
@@ -159,7 +198,7 @@
         </section>
         <section class="main-guarantee">
           <div class="col-sm-6 main-guarantee__left">
-            <div class="title">Гарантия на все наши кухни — 12 лет! </div>
+            <div class="section-title">Гарантия на все наши кухни — 12 лет! </div>
             <p>Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 , для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. </p><a href="#" class="button button-default">ПОДРОБНЕЕ<i class="icon icon__badge"></i></a>
           </div>
           <div class="col-sm-6 main-guarantee__right">
@@ -182,8 +221,8 @@
           </div>
         </section>
         <section class="main-review">
-          <div class="main-review__head">
-            <div class="title pull-left">Отзывы</div><a href="#" class="button button-transparent--white pull-right">Посмотреть все отзывы</a>
+          <div class="section-head">
+            <div class="section-title section-title--light">Отзывы</div><a href="#" class="button button-transparent--white">Посмотреть все отзывы</a>
           </div>
           <div class="review-tizers js-main-review-slider">
             <div class="review-tizers__item">
@@ -210,55 +249,52 @@
           <div class="slider-dots slider-dots--light js-review-slider-dots"></div>
         </section>
         <section class="main-advice">
-          <div class="main-advice__head">
-            <div class="title pull-left">Советы дизайнера</div><a href="#" class="button button-transparent pull-right">Посмотреть все советы</a>
+          <div class="section-head">
+            <div class="section-title">Советы дизайнера</div><a href="#" class="button button-transparent">Посмотреть все советы</a>
           </div>
-          <div class="main-advice-content row">
-            <div class="col-xs-4">
-              <div class="advice-item">
-                <div class="advice-item__top">
-                  <div class="title">Цветовые решения для вашей кухни</div>
-                  <p>Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.</p>
+          <div class="main-advice-content">
+            <div class="advice-slider-wrap">
+              <div class="advice-slider js-advice-slider">
+                <div class="advice-slider__item">
+                  <div class="advice-item advice-item--flex">
+                    <div class="advice-item__top">
+                      <div class="title">Цветовые решения для вашей кухни</div>
+                      <p>Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.</p>
+                    </div>
+                    <div class="advice-item__bottom"><img src="img/main_design-bg__1.jpg" alt=""></div>
+                  </div>
                 </div>
-                <div class="advice-item__bottom"><img src="img/main_design-bg__1.jpg" alt=""></div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="advice-slider-wrap">
-                <div class="advice-slider js-advice-slider">
+                <div class="advice-slider__item">
                   <div style="background-image: url('img/main_design-bg__2.jpg');" class="advice-slider-item">
                     <div class="title">Сохранение максимальной функциональности</div><img src="img/main_design-bg__2-1.png" alt="">
                     <p class="bold">Оцените доступное пространство</p>
                     <div class="hr"></div>
-                    <p>Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.</p>
-                  </div>
-                  <div style="background-image: url('img/main_design-bg__2.jpg');" class="advice-slider-item">
-                    <div class="title">Сохранение максимальной функциональности</div><img src="img/main_design-bg__2-1.png" alt="">
-                    <p class="bold">Оцените доступное пространство</p>
-                    <div class="hr"></div>
-                    <p>Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.</p>
-                  </div>
-                  <div style="background-image: url('img/main_design-bg__2.jpg');" class="advice-slider-item">
-                    <div class="title">Сохранение максимальной функциональности</div><img src="img/main_design-bg__2-1.png" alt="">
-                    <p class="bold">Оцените доступное пространство</p>
-                    <div class="hr"></div>
-                    <p>Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.</p>
+                    <p>Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.	</p>
                   </div>
                 </div>
-                <div class="slider-dots slider-dots--dark js-advice-slider-dots"></div>
-              </div>
-            </div>
-            <div class="col-xs-4 advice-item--flex">
-              <div class="advice-item advice-item--small">
-                <div class="advice-item__top">
-                  <div class="title">Разбиение кухни на зоны и модули</div><a href="#" class="icon icon__arrow-left-circle--red"></a><img src="img/main_design-bg__3.png" alt="" class="image-float">
+                <div class="advice-slider__item">
+                  <div class="advice-item advice-item--small">
+                    <div class="advice-item__top">
+                      <div class="title">Разбиение кухни на зоны и модули</div><a href="#" class="icon icon__arrow-left-circle--red"></a><img src="img/main_design-bg__3.png" alt="" class="image-float">
+                    </div>
+                  </div>
+                  <div class="advice-item advice-item--small">
+                    <div class="advice-item__top">
+                      <div class="title">Правильный выбор столешницы</div><a href="#" class="icon icon__arrow-left-circle--red"></a><img src="img/main_design-bg__4.jpg" alt="" class="image-float">
+                    </div>
+                  </div>
+                </div>
+                <div class="advice-slider__item">
+                  <div class="advice-item">
+                    <div class="advice-item__top">
+                      <div class="title">Цветовые решения для вашей кухни</div>
+                      <p>Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.</p>
+                    </div>
+                    <div class="advice-item__bottom"><img src="img/main_design-bg__1.jpg" alt=""></div>
+                  </div>
                 </div>
               </div>
-              <div class="advice-item advice-item--small">
-                <div class="advice-item__top">
-                  <div class="title">Правильный выбор столешницы</div><a href="#" class="icon icon__arrow-left-circle--red"></a><img src="img/main_design-bg__4.jpg" alt="" class="image-float">
-                </div>
-              </div>
+              <div class="slider-dots slider-dots--dark js-advice-slider-dots"></div>
             </div>
           </div>
         </section>
@@ -267,7 +303,7 @@
           <p>Сотрудники Фабрики ZETTA приехали в гости к клиентам, чтобы своими глазами увидеть, как выглядят кухни спустя такой долгий срок, и были очень обрадованы. Фасады из массива дерева никак не изменили своих свойств и сохранили отличный внешний вид.  А ведь эти кухни стоят уже пятнадцать лет!</p>
           <p>За время существования нашей компании мы шагнули далеко вперед. Наши кухни, которые выпускались пятнадцать лет назад, и те, которые мы выпускаем сейчас, имеют колоссальную разницу в качестве. Мы смогли улучшить нашу продукцию, и поэтому легко готовы предоставить Вам гарантию 12 лет. Гарантийные случаи возникают только у 0.02% наших клиентов. Это всего лишь 2 случая на 2000 кухонь!</p>
         </section>
-        <section class="main-menu-bottom container-fluid">
+        <section class="main-menu-bottom container-fluid hidden-xs">
           <div class="row">
             <div class="col-sm-3 main-menu-bottom__col">
               <div class="title">Каталог</div>
@@ -311,15 +347,12 @@
           </div>
         </section>
       </div>
-      <footer class="footer">
-        <div class="col-sm-6 footer__left">
+      <footer class="footer hidden-xs">
+        <div class="footer__left pull-left">
           <div class="copyright">© 2016 КухниСтрой.<span>1-я интернет-фабрика кухонной мебели</span></div>
         </div>
-        <div class="col-sm-6 footer__right">
-          <div class="col-xs-6"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a></div>
-          <div class="col-xs-6">
-            <button class="footer__search js-modal-search"><i class="icon icon__loop"></i>Поиск по сайту</button>
-          </div>
+        <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
+          <button class="footer__search js-modal-search"><i class="icon icon__loop"></i>Поиск по сайту</button>
         </div>
       </footer>
     </div>

@@ -2,9 +2,15 @@ include templates/head.jade
 body
 	.wrapper
 		aside.aside
-			.aside-logo.text-center
+			.aside-header.visible-xs
+				.title Меню
+				button.js-menu-mobile Закрыть
+			.aside-search.visible-xs
+				i.icon.icon__loop
+				| Поиск по сайту
+			.aside-logo.site-logo.text-center.hidden-xs
 				img(src="img/logo.png", alt="")
-				.aside-logo__title
+				.site-logo__title
 					span 1-я интернет-фабрика
 					span.red кухонной мебели
 			.aside-auth
@@ -12,34 +18,56 @@ body
 					i.icon.icon__auth
 					| Вход
 				button.js-modal-reg Регистрация
+			.aside-city.visible-xs
+				i.icon.icon__geo
+				span Москва
 			.aside-nav
-				nav.left-menu-wrap
-					ul.left-menu
-						li.left-menu__item
-							a.left-menu__link(href="#") КУХНИ
-						li.left-menu__item
-							a.left-menu__link(href="#") ГОСТИННЫЕ
-						li.left-menu__item
-							a.left-menu__link(href="#") ШКАФЫ
-						li.left-menu__item
-							a.left-menu__link(href="#") БЫТОВАЯ
-						li.left-menu__item
-							a.left-menu__link(href="#") ТЕХНИКА
-			.aside-contacts.text-center
+				nav
+					.left-menu-wrap
+						ul.left-menu
+							li.left-menu__item
+								a.left-menu__link(href="#") КУХНИ
+							li.left-menu__item
+								a.left-menu__link(href="#") ГОСТИННЫЕ
+							li.left-menu__item
+								a.left-menu__link(href="#") ШКАФЫ
+							li.left-menu__item
+								a.left-menu__link(href="#") БЫТОВАЯ ТЕХНИКА
+					.left-menu-wrap.left-menu-wrap--bottom.visible-xs
+						ul.left-menu
+							li.left-menu__item
+								a.left-menu__link(href="#") О компании
+							li.left-menu__item
+								a.left-menu__link(href="#") Новости и акции
+							li.left-menu__item
+								a.left-menu__link(href="#") Услуги
+							li.left-menu__item
+								a.left-menu__link(href="#") Блог
+							li.left-menu__item
+								a.left-menu__link(href="#") Оплата
+							li.left-menu__item
+								a.left-menu__link(href="#") Доставка
+							li.left-menu__item
+								a.left-menu__link(href="#") Адреса					
+			.aside-contacts.text-center.hidden-xs
 				.aside-contacts__phone 8 800 345 56 56
 				button.js-modal-callback.button.button-default Обратный звонок
 			.aside-social
 				.social
 					a.social__item(href="#")
-						i.icon.icon__social__vk
+						i.dark-theme.icon.icon__social__vk
+						i.light-theme.icon.icon__social__vk--red
 					a.social__item(href="#")
-						i.icon.icon__social__fb
+						i.dark-theme.icon.icon__social__fb
+						i.light-theme.icon.icon__social__fb--red
 					a.social__item(href="#")
-						i.icon.icon__social__tw
+						i.dark-theme.icon.icon__social__tw
+						i.light-theme.icon.icon__social__tw--red
 					a.social__item(href="#")
-						i.icon.icon__social__ok
+						i.dark-theme.icon.icon__social__ok
+						i.light-theme.icon.icon__social__ok--red
 		.main-content
-			header.header
+			header.header.hidden-xs
 				nav.top-menu-wrap.pull-left
 					ul.top-menu
 						li.top-menu__item
@@ -59,19 +87,58 @@ body
 				.header-city.pull-right
 					i.icon.icon__geo
 					span Москва
+			.top-mobile.hidden-lg
+				.top-mobile__header
+					.top-mobile-logo.site-logo
+						button.js-menu-mobile.btn-menu.visible-xs
+							span
+						img(src="img/logo.png", alt="")
+						.site-logo__title.hidden-xs
+							span 1-я интернет-фабрика
+							span.red кухонной мебели
+						button.js-modal-auth.visible-xs
+							i.icon.icon__auth
+					.top-mobile-contacts
+						.top-mobile-contacts__phone 8 800 345 56 56
+						button.js-modal-callback.button.button-default Обратный звонок
+						button.js-modal-auth.hidden-xs
+							i.icon.icon__auth
+				.top-mobile__footer
+					ul.top-menu.pull-left
+						li.top-menu__item
+							a.top-menu__link(href="#") КУХНИ
+						li.top-menu__item
+							a.top-menu__link(href="#") ГОСТИННЫЕ
+						li.top-menu__item
+							a.top-menu__link(href="#") ШКАФЫ
+						li.top-menu__item
+							a.top-menu__link(href="#") БЫТОВАЯ ТЕХНИКА
+					.social.pull-right.hidden-xs
+						a.social__item(href="#")
+							i.dark-theme.icon.icon__social__vk
+							i.light-theme.icon.icon__social__vk--red
+						a.social__item(href="#")
+							i.dark-theme.icon.icon__social__fb
+							i.light-theme.icon.icon__social__fb--red
+						a.social__item(href="#")
+							i.dark-theme.icon.icon__social__tw
+							i.light-theme.icon.icon__social__tw--red
+						a.social__item(href="#")
+							i.dark-theme.icon.icon__social__ok
+							i.light-theme.icon.icon__social__ok--red
 			.float-wrapper
 				section.main-slider
 					.main-slider-wrap
 						.main-slider__item
 							.main-slider__image
 								img(src="img/main_top-slider__image.jpg", alt="")
-							.main-slider__desc
+							.main-slider__desc.hidden-xs
 								p.title Интернет-фабрика КухниСтрой
 								p Новый шаг к снижению цены кухонь премиального уровня
 						.main-slider__item
 							.main-slider__image
 								img(src="img/main_top-slider__image.jpg", alt="")
-							.main-slider__desc
+							.main-slider__desc.hidden-xs
 								p.title Интернет-фабрика КухниСтрой
 								p Новый шаг к снижению цены кухонь премиального уровня
 					.main-slider-nav
@@ -96,7 +163,7 @@ body
 						span Лучше, дешевле, быстрее
 				section.main-fast-order
 					.col-sm-6.main-fast-order__left
-						.title Всего 16,5 минут для заказа новой кухни
+						.section-title Всего 16,5 минут для заказа новой кухни
 						p Мы — интернет-фабрика, работаем для розничных клиентов и небольших кухонных компаний
 						button.js-modal-buy.button.button-default
 							| купить кухню
@@ -106,20 +173,19 @@ body
 						p Мы экономим на этих промежуточных звеньях торговой цепи и даем вам оптовую цену на кухонные гарнитуры по цене комплектующих
 						i.icon.icon__label
 				section.main-competition
-					.main-competition__head
-						.title.pull-left Почему у нас дешевле, чем у конкурентов?
-						a.button.button-transparent.pull-right(href="#") Подробнее
+					.section-head
+						.section-title Почему у нас дешевле, чем у конкурентов?
+						a.button.button-transparent(href="#") Подробнее
 					.main-competition__content
-						img(src="img/competition.png", alt="")
+						img.img-responsive.hidden-xs(src="img/competition.png", alt="")
 				section.main-order
-					.col-xs-12
-						.title Бесплатный вызов дизайнера-замерщика
-						p Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.
-						button.js-modal-designer-order.button.button-default
-							| Вызвать замерщика
-							i.icon.icon__size
+					.section-title.section-title--light Бесплатный вызов дизайнера-замерщика
+					p Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.
+					button.js-modal-designer-order.button.button-default
+						| Вызвать замерщика
+						i.icon.icon__size
 				section.main-steps
-					.title Заказать кухню очень просто!
+					.section-title Заказать кухню очень просто!
 					.main-steps-items
 						.col-sm-3.item
 							.item__image
@@ -154,7 +220,7 @@ body
 							i.icon.icon__basket
 				section.main-guarantee
 					.col-sm-6.main-guarantee__left
-						.title Гарантия на все наши кухни — 12 лет! 
+						.section-title Гарантия на все наши кухни — 12 лет! 
 						p Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 , для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. 
 						a.button.button-default(href="#")
 							| ПОДРОБНЕЕ
@@ -178,9 +244,9 @@ body
 							p От лучших австрийскихи немецких производителей
 							img.image-right(src="img/main_guaranty-image__4.png", alt="")
 				section.main-review
-					.main-review__head
-						.title.pull-left Отзывы
-						a.button.button-transparent--white.pull-right(href="#") Посмотреть все отзывы
+					.section-head
+						.section-title.section-title--light Отзывы
+						a.button.button-transparent--white(href="#") Посмотреть все отзывы
 					.review-tizers.js-main-review-slider
 						.review-tizers__item
 							.image
@@ -208,55 +274,50 @@ body
 							a.link(href="#") Подробнее
 					.slider-dots.slider-dots--light.js-review-slider-dots
 				section.main-advice
-					.main-advice__head
-						.title.pull-left Советы дизайнера
-						a.button.button-transparent.pull-right(href="#") Посмотреть все советы
-					.main-advice-content.row
-						.col-xs-4
-							.advice-item
-								.advice-item__top
-									.title Цветовые решения для вашей кухни
-									p Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.
-								.advice-item__bottom
-									img(src="img/main_design-bg__1.jpg", alt="")
-						.col-xs-4
-							.advice-slider-wrap
-								.advice-slider.js-advice-slider
+					.section-head
+						.section-title Советы дизайнера
+						a.button.button-transparent(href="#") Посмотреть все советы
+					.main-advice-content
+						.advice-slider-wrap
+							.advice-slider.js-advice-slider
+								.advice-slider__item
+									.advice-item.advice-item--flex
+										.advice-item__top
+											.title Цветовые решения для вашей кухни
+											p Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.
+										.advice-item__bottom
+											img(src="img/main_design-bg__1.jpg", alt="")
+								.advice-slider__item
 									.advice-slider-item(style="background-image: url('img/main_design-bg__2.jpg');")
 										.title Сохранение максимальной функциональности
 										img(src="img/main_design-bg__2-1.png", alt="")
 										p.bold Оцените доступное пространство
 										.hr
-										p Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.
-									.advice-slider-item(style="background-image: url('img/main_design-bg__2.jpg');")
-										.title Сохранение максимальной функциональности
-										img(src="img/main_design-bg__2-1.png", alt="")
-										p.bold Оцените доступное пространство
-										.hr
-										p Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.
-									.advice-slider-item(style="background-image: url('img/main_design-bg__2.jpg');")
-										.title Сохранение максимальной функциональности
-										img(src="img/main_design-bg__2-1.png", alt="")
-										p.bold Оцените доступное пространство
-										.hr
-										p Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.
-								.slider-dots.slider-dots--dark.js-advice-slider-dots
-						.col-xs-4.advice-item--flex
-							.advice-item.advice-item--small
-								.advice-item__top
-									.title Разбиение кухни на зоны и модули
-									a.icon.icon__arrow-left-circle--red(href="#")
-									img.image-float(src="img/main_design-bg__3.png", alt="")
-							.advice-item.advice-item--small
-								.advice-item__top
-									.title Правильный выбор столешницы
-									a.icon.icon__arrow-left-circle--red(href="#")
-									img.image-float(src="img/main_design-bg__4.jpg", alt="")
+										p Правильное проектирование подразумевает сохранение высокого уровня эргономики благодаря разграничению.	
+								.advice-slider__item
+									.advice-item.advice-item--small
+										.advice-item__top
+											.title Разбиение кухни на зоны и модули
+											a.icon.icon__arrow-left-circle--red(href="#")
+											img.image-float(src="img/main_design-bg__3.png", alt="")
+									.advice-item.advice-item--small
+										.advice-item__top
+											.title Правильный выбор столешницы
+											a.icon.icon__arrow-left-circle--red(href="#")
+											img.image-float(src="img/main_design-bg__4.jpg", alt="")
+								.advice-slider__item
+									.advice-item
+										.advice-item__top
+											.title Цветовые решения для вашей кухни
+											p Важно подобрать правильные цветовые решения для кухни, которые будут способствовать выполнению прямого назначения помещения.
+										.advice-item__bottom
+											img(src="img/main_design-bg__1.jpg", alt="")
+							.slider-dots.slider-dots--dark.js-advice-slider-dots
 				section.main-bottom
 					p Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 год, для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. У кого-то из-за затопления кухни соседями из строя вышли модули. Однако не было ни одного случая брака фасада или корпуса! 
 					p Сотрудники Фабрики ZETTA приехали в гости к клиентам, чтобы своими глазами увидеть, как выглядят кухни спустя такой долгий срок, и были очень обрадованы. Фасады из массива дерева никак не изменили своих свойств и сохранили отличный внешний вид.  А ведь эти кухни стоят уже пятнадцать лет!
 					p За время существования нашей компании мы шагнули далеко вперед. Наши кухни, которые выпускались пятнадцать лет назад, и те, которые мы выпускаем сейчас, имеют колоссальную разницу в качестве. Мы смогли улучшить нашу продукцию, и поэтому легко готовы предоставить Вам гарантию 12 лет. Гарантийные случаи возникают только у 0.02% наших клиентов. Это всего лишь 2 случая на 2000 кухонь!
-				section.main-menu-bottom.container-fluid
+				section.main-menu-bottom.container-fluid.hidden-xs
 					.row
 						.col-sm-3.main-menu-bottom__col
 							.title Каталог
@@ -307,17 +368,15 @@ body
 								li.bottom-menu__item
 									a.bottom-menu__link(href="#") Белгород
 							.title.title-bottom Блог
-			footer.footer
-				.col-sm-6.footer__left
+			footer.footer.hidden-xs
+				.footer__left.pull-left
 					.copyright
 						| © 2016 КухниСтрой.
 						span 1-я интернет-фабрика кухонной мебели
-				.col-sm-6.footer__right
-					.col-xs-6
-						a.footer__mail(href="mailto:info@kuhnistroy.ru")
-							i.icon.icon__mail 
-							| info@kuhnistroy.ru
-					.col-xs-6
-						button.footer__search.js-modal-search
-							i.icon.icon__loop
-							| Поиск по сайту
+				.footer__right.pull-right
+					a.footer__mail(href="mailto:info@kuhnistroy.ru")
+						i.icon.icon__mail 
+						| info@kuhnistroy.ru
+					button.footer__search.js-modal-search
+						i.icon.icon__loop
+						| Поиск по сайту

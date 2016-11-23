@@ -3,7 +3,7 @@
 	display: inline-block;
 	height: 3.85em;
 	line-height: 3.85em;
-	min-width: 18.5em;
+	min-width: 16em;
 	padding: 0 1.66em;
 	border-radius: 7px;
 	border-width: 1px;
@@ -67,5 +67,80 @@
 		top: -2px;
 		vertical-align: middle;
 		margin-left: 1.66em;	
+	}
+}
+
+.btn-menu {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 25px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+	&:focus {
+	  outline: none;
+	}
+	span {
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: #706f77;
+		border-radius: 10px;
+		transition: background 0 0.3s;
+		&::before, &::after {
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background-color: #706f77;
+			border-radius: 2px;
+			content: "";
+			transition-duration: 0.3s, 0.3s;
+			transition-delay: 0.3s, 0;
+		}
+		&::before {
+			top: -8px;
+			transition-property: top, transform;
+		}
+		&::after {
+			bottom: -8px;
+			transition-property: bottom, transform;
+		}
+	}
+	&.active {
+		background-color: #cb0032;
+		span {
+			background: none;
+			&::before, &::after {
+			    transition-delay: 0, 0.3s;
+			}
+			&::before {
+				top: 0;
+				transform: rotate(45deg);
+			}
+			&::after {
+				bottom: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.button {
+		min-width: auto;
+		width: 250px;
+		max-width: 100%;
 	}
 }

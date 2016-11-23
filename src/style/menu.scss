@@ -1,6 +1,9 @@
 .left-menu {
 	&-wrap {
-		
+		padding: 2.2em 2.2em 4em 2.2em;
+		&--bottom {
+			background: rgb(74, 73, 81);
+		}
 	}
 	&__item {
 		a {
@@ -21,7 +24,15 @@
 		border-top: 1px rgb(78, 76, 83) solid;
 	}
 	&__link {
+		
+	}
+	&-tablet {
+		&__item {
 
+		}
+		&__link {
+
+		}
 	}
 }
 
@@ -48,6 +59,7 @@
 		color: $color-light;
 		font-size: 1.4em;
 		line-height: 1;
+		transition: all 0.3s ease-in-out;
 		&:hover {
 			background: rgb(108, 105, 117);
 			box-shadow: 0 0 0.2em 0.2em rgb(108, 105, 117);
@@ -58,7 +70,6 @@
 }
 
 .bottom-menu {
-	&__item {}
 	&__link {
 		display: block;
 		padding: 0.2em 0;
@@ -76,5 +87,43 @@
 	}
 	&__item + &__item {
 		margin-top: 0.8em;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.top-menu {
+		&-wrap {
+			padding-left: 0;
+		}		
+		&__link {
+			padding: 1.1em 1em;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.left-menu {
+		&-wrap {
+			padding: 10px;
+			&--bottom {
+				.left-menu__item + .left-menu__item {
+					border-top: 1px rgb(89, 88, 96) solid;
+				}
+			}
+		}
+		&__item {
+			a {
+				padding-bottom: 1em;
+				padding-top: 1em;
+				font-size: 1.4em;
+				&:hover {
+					padding-left: 0;
+					background: none;
+				}
+			}		
+		}
+		&__item + &__item {
+			border-top: 1px rgb(73, 72, 78) solid;
+		}					
 	}
 }

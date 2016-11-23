@@ -97,7 +97,6 @@ gulp.task('sprite', function() {
                 }
             }));
 
-
     spriteData.img.pipe(gulp.dest('build/img/')); 
     spriteData.css.pipe(gulp.dest('src/style/')); 
 
@@ -144,7 +143,9 @@ gulp.task('watch', function(){
 });
 
 gulp.task('webserver', function () {
-    browserSync(config);
+    setTimeout(function() {
+        browserSync(config);
+    }, 1000)    
 });
 
 gulp.task('clean', function (cb) {

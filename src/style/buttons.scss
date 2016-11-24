@@ -96,7 +96,7 @@
 		height: 4px;
 		background: #706f77;
 		border-radius: 10px;
-		transition: background 0 0.3s;
+		transition: background 0.3s;
 		&::before, &::after {
 			position: absolute;
 			display: block;
@@ -133,6 +133,27 @@
 				bottom: 0;
 				transform: rotate(-45deg);
 			}
+		}
+	}
+	&--red {
+		display: inline-block;
+		width: 18px;
+		height: 15px;
+		span {		
+			top: 7px;
+			height: 3px;	
+			background: $btn-bg-color;
+			border-radius: 2px;
+			&::before, &::after {
+				background-color: inherit;
+				height: 3px;
+			}	
+			&::before {
+				top: -6px;
+			}
+			&::after {
+				bottom: -6px;
+			}		
 		}
 	}
 }

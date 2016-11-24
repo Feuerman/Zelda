@@ -1,3 +1,224 @@
 include templates/head.jade
 body
-	.wrapper		
+	.wrapper
+		aside.aside.aside--hide
+			.aside-header
+				.title Меню
+				button.js-menu-mobile Закрыть
+			.aside-search.visible-xs
+				i.icon.icon__loop
+				| Поиск по сайту
+			.aside-logo.site-logo.text-center.hidden-xs
+				img(src="img/logo.png", alt="")
+				.site-logo__title
+					span 1-я интернет-фабрика
+					span.red кухонной мебели
+			.aside-auth
+				button.js-modal-auth
+					i.icon.icon__auth
+					| Вход
+				button.js-modal-reg Регистрация
+			.aside-city.visible-xs
+				i.icon.icon__geo
+				span Москва
+			.aside-nav
+				nav
+					.left-menu-wrap
+						ul.left-menu
+							li.left-menu__item
+								a.left-menu__link(href="#") КУХНИ
+							li.left-menu__item
+								a.left-menu__link(href="#") ГОСТИННЫЕ
+							li.left-menu__item
+								a.left-menu__link(href="#") ШКАФЫ
+							li.left-menu__item
+								a.left-menu__link(href="#") БЫТОВАЯ ТЕХНИКА
+					.left-menu-wrap.left-menu-wrap--bottom.visible-xs
+						ul.left-menu
+							li.left-menu__item
+								a.left-menu__link(href="#") О компании
+							li.left-menu__item
+								a.left-menu__link(href="#") Новости и акции
+							li.left-menu__item
+								a.left-menu__link(href="#") Услуги
+							li.left-menu__item
+								a.left-menu__link(href="#") Блог
+							li.left-menu__item
+								a.left-menu__link(href="#") Оплата
+							li.left-menu__item
+								a.left-menu__link(href="#") Доставка
+							li.left-menu__item
+								a.left-menu__link(href="#") Адреса					
+			.aside-contacts.text-center.hidden-xs
+				.aside-contacts__phone 8 800 345 56 56
+				button.js-modal-callback.button.button-default Обратный звонок
+			.aside-social
+				.social
+					a.social__item(href="#")
+						i.dark-theme.icon.icon__social__vk
+						i.light-theme.icon.icon__social__vk--red
+					a.social__item(href="#")
+						i.dark-theme.icon.icon__social__fb
+						i.light-theme.icon.icon__social__fb--red
+					a.social__item(href="#")
+						i.dark-theme.icon.icon__social__tw
+						i.light-theme.icon.icon__social__tw--red
+					a.social__item(href="#")
+						i.dark-theme.icon.icon__social__ok
+						i.light-theme.icon.icon__social__ok--red
+		.configurator
+			.configurator__main-image(style="background-image: url('img/configurator-bg-1.jpg')")				
+			.configurator__top-panel
+				button.item.js-menu-mobile
+					.btn-menu.btn-menu--red
+						span
+				button.item.item--transparent.js-spec-info-btn
+					i.icon.icon__info
+				button.item.item--transparent.js-print
+					i.icon.icon__print
+				.info-content.js-spec-info-content
+					.info-content__top
+						.info-content__title Спецификация
+						.info-content__row
+							.info-content__desc Цена кухонной мебели с карнизами и ручками
+							.info-content__price 112 560 руб.
+						.info-content__row
+							.info-content__desc Цена столешницы с плинтусов
+							.info-content__price 8 460 руб.
+						.info-content__row
+							.info-content__desc Цена стеновой панели
+							.info-content__price 35 600 руб.
+						.info-content__row
+							.info-content__desc Цена выбранной техники 
+							.info-content__price 23 780 руб.
+					.info-content__bottom
+						.info-content__bottom-row
+							span.info-content__summ.pull-left Итого: 122 560 р.  
+							button.pull-right Корзина
+						a.js-save-spec(href="#") Сохранить и вернуться в Спецификацию для доработки
+			.configurator__bottom-panel
+				.top-elements
+					.loop.pull-right
+						i.icon.icon__loop--black
+					.price.pull-left 122 560 р.
+				.configurator-category
+					a.configurator-category__item(href="#")
+						.title Верхние
+						.image
+							img(src="img/config-thumb-1.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Нижние
+						.image
+							img(src="img/config-thumb-2.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Столешница
+						.image
+							img(src="img/config-thumb-3.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Плитка
+						.image
+							img(src="img/config-thumb-4.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Стекла
+						.image
+							img(src="img/config-thumb-5.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Ручки
+						.image
+							img(src="img/config-thumb-6.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Цоколь
+						.image
+							img(src="img/config-thumb-7.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Духовка
+						.image
+							img(src="img/config-thumb-8.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Вытяжка
+						.image
+							img(src="img/config-thumb-9.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Карниз
+						.image
+							img(src="img/config-thumb-10.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Стены
+						.image
+							img(src="img/config-thumb-11.png", alt="")
+					a.configurator-category__item(href="#")
+						.title Пол
+						.image
+							img(src="img/config-thumb-12.png", alt="")
+				.configurator-product
+					.configurator-product__tizers
+						a.configurator-product__item(href="#")
+							img(src="img/config-mini-1.png", alt="")
+						a.configurator-product__item(href="#")
+							img(src="img/config-mini-2.png", alt="")
+						a.configurator-product__item(href="#")
+							img(src="img/config-mini-3.png", alt="")
+						a.configurator-product__item(href="#")
+							img(src="img/config-mini-4.png", alt="")
+						a.configurator-product__item(href="#")
+							img(src="img/config-mini-5.png", alt="")
+					button(href="#").configurator-product__extend.js-extend-choise Расширенный выбор
+				.configurator-slider-wrap
+					.configurator-slider.pull-left.js-configurator-slider
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-1.png", alt="")
+							.desc
+								.desc__title Название Духовки
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-2.png", alt="")
+							.desc
+								.desc__title Название Духовки в несколько строк
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-3.png", alt="")
+							.desc
+								.desc__title Название Духовки
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-1.png", alt="")
+							.desc
+								.desc__title Название Духовки
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-2.png", alt="")
+							.desc
+								.desc__title Название Духовки в несколько строк
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+						.configurator-slider__item
+							.image
+								img(src="img/config-catalog-3.png", alt="")
+							.desc
+								.desc__title Название Духовки
+								.desc__brand Ariston
+								.desc__row
+									.desc__price.pull-left 13 390 руб.
+									button.desc__button Выбрать
+					.configurator-slider-nav.pull-right
+						button.icon.icon__arrow-right-circle--grey.prev
+						button.icon.icon__arrow-left-circle--grey.next

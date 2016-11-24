@@ -56,6 +56,29 @@ $(document).ready(function() {
 		]
 	});
 
+	// Configurator slider
+	$('.js-configurator-slider').slick({
+		slidesToShow: 4,
+		arrows: true,
+		nextArrow: $('.configurator-slider-nav .next'),
+		prevArrow: $('.configurator-slider-nav .prev'),
+		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 3
+					}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2
+					}
+			}
+		]
+	});
+
 	// Mobile menu
 	$('.js-menu-mobile').on('click', function(event) {
 		event.preventDefault();
@@ -65,6 +88,25 @@ $(document).ready(function() {
 			$('body').css('overflow', 'hidden');
 		}
 		$('.aside').toggleClass('active');
+	});
+
+	$('.js-spec-info-btn').on('click', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$('.js-spec-info-content').toggleClass('active');
+	});
+
+	$('.configurator-category__item').on('click', function(event) {
+		event.preventDefault();
+		$('.configurator-category').addClass('only-title');
+		$('.configurator-category__item').removeClass('active');
+		$(this).addClass('active');
+		$('.configurator-product').addClass('active');
+	});
+
+	$('.js-extend-choise').on('click', function(event) {
+		event.preventDefault();
+		$('.configurator-slider-wrap').toggleClass('active');
 	});
 
 	// Switch theme

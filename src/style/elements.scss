@@ -1,8 +1,10 @@
 a {
 	display: inline-block;
 	text-decoration: none;
-	color: inherit;	
-	transition: all 0.3s ease-in-out;	
+	color: inherit;
+	&:visited, &:focus {
+		text-decoration: none;
+	}
 }
 span {
 	display: inline-block;
@@ -21,8 +23,4 @@ ul {
 p {
 	margin: 0;
 	font-family: $color-primary;
-}
-
-.svgetest {
-	fill: #f00;
 }

@@ -17,5 +17,196 @@
 <script src="vendor/fancybox/jquery.fancybox.js"></script>
 <script src="js/main.js"></script>
 <body>
-  <div class="wrapper">		</div>
+  <div class="wrapper">
+    <aside class="aside aside--hide">
+      <div class="aside-header">
+        <div class="title">Меню</div>
+        <button class="js-menu-mobile">Закрыть</button>
+      </div>
+      <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
+      <div class="aside-logo site-logo text-center hidden-xs"><img src="img/logo.png" alt="">
+        <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+      </div>
+      <div class="aside-auth">
+        <button class="js-modal-auth"><i class="icon icon__auth"></i>Вход</button>
+        <button class="js-modal-reg">Регистрация</button>
+      </div>
+      <div class="aside-city visible-xs"><i class="icon icon__geo"></i><span>Москва</span></div>
+      <div class="aside-nav">
+        <nav>
+          <div class="left-menu-wrap">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+            </ul>
+          </div>
+          <div class="left-menu-wrap left-menu-wrap--bottom visible-xs">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">О компании</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Новости и акции</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Услуги</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса					</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="aside-contacts text-center hidden-xs">
+        <div class="aside-contacts__phone">8 800 345 56 56</div>
+        <button class="js-modal-callback button button-default">Обратный звонок</button>
+      </div>
+      <div class="aside-social">
+        <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+      </div>
+    </aside>
+    <div class="configurator">
+      <div style="background-image: url('img/configurator-bg-1.jpg')" class="configurator__main-image">				</div>
+      <div class="configurator__top-panel">
+        <button class="item js-menu-mobile">
+          <div class="btn-menu btn-menu--red"><span></span></div>
+        </button>
+        <button class="item item--transparent js-spec-info-btn"><i class="icon icon__info"></i></button>
+        <button class="item item--transparent js-print"><i class="icon icon__print"></i></button>
+        <div class="info-content js-spec-info-content">
+          <div class="info-content__top">
+            <div class="info-content__title">Спецификация</div>
+            <div class="info-content__row">
+              <div class="info-content__desc">Цена кухонной мебели с карнизами и ручками</div>
+              <div class="info-content__price">112 560 руб.</div>
+            </div>
+            <div class="info-content__row">
+              <div class="info-content__desc">Цена столешницы с плинтусов</div>
+              <div class="info-content__price">8 460 руб.</div>
+            </div>
+            <div class="info-content__row">
+              <div class="info-content__desc">Цена стеновой панели</div>
+              <div class="info-content__price">35 600 руб.</div>
+            </div>
+            <div class="info-content__row">
+              <div class="info-content__desc">Цена выбранной техники </div>
+              <div class="info-content__price">23 780 руб.</div>
+            </div>
+          </div>
+          <div class="info-content__bottom">
+            <div class="info-content__bottom-row"><span class="info-content__summ pull-left">Итого: 122 560 р.  </span>
+              <button class="pull-right">Корзина</button>
+            </div><a href="#" class="js-save-spec">Сохранить и вернуться в Спецификацию для доработки</a>
+          </div>
+        </div>
+      </div>
+      <div class="configurator__bottom-panel">
+        <div class="top-elements">
+          <div class="loop pull-right"><i class="icon icon__loop--black"></i></div>
+          <div class="price pull-left">122 560 р.</div>
+        </div>
+        <div class="configurator-category"><a href="#" class="configurator-category__item">
+            <div class="title">Верхние</div>
+            <div class="image"><img src="img/config-thumb-1.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Нижние</div>
+            <div class="image"><img src="img/config-thumb-2.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Столешница</div>
+            <div class="image"><img src="img/config-thumb-3.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Плитка</div>
+            <div class="image"><img src="img/config-thumb-4.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Стекла</div>
+            <div class="image"><img src="img/config-thumb-5.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Ручки</div>
+            <div class="image"><img src="img/config-thumb-6.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Цоколь</div>
+            <div class="image"><img src="img/config-thumb-7.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Духовка</div>
+            <div class="image"><img src="img/config-thumb-8.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Вытяжка</div>
+            <div class="image"><img src="img/config-thumb-9.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Карниз</div>
+            <div class="image"><img src="img/config-thumb-10.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Стены</div>
+            <div class="image"><img src="img/config-thumb-11.png" alt=""></div></a><a href="#" class="configurator-category__item">
+            <div class="title">Пол</div>
+            <div class="image"><img src="img/config-thumb-12.png" alt=""></div></a></div>
+        <div class="configurator-product">
+          <div class="configurator-product__tizers"><a href="#" class="configurator-product__item"><img src="img/config-mini-1.png" alt=""></a><a href="#" class="configurator-product__item"><img src="img/config-mini-2.png" alt=""></a><a href="#" class="configurator-product__item"><img src="img/config-mini-3.png" alt=""></a><a href="#" class="configurator-product__item"><img src="img/config-mini-4.png" alt=""></a><a href="#" class="configurator-product__item"><img src="img/config-mini-5.png" alt=""></a></div>
+          <button href="#" class="configurator-product__extend js-extend-choise">Расширенный выбор</button>
+        </div>
+        <div class="configurator-slider-wrap">
+          <div class="configurator-slider pull-left js-configurator-slider">
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-1.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-2.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки в несколько строк</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-3.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-1.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-2.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки в несколько строк</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="configurator-slider__item">
+              <div class="image"><img src="img/config-catalog-3.png" alt=""></div>
+              <div class="desc">
+                <div class="desc__title">Название Духовки</div>
+                <div class="desc__brand">Ariston</div>
+                <div class="desc__row">
+                  <div class="desc__price pull-left">13 390 руб.</div>
+                  <button class="desc__button">Выбрать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="configurator-slider-nav pull-right">
+            <button class="icon icon__arrow-right-circle--grey prev"></button>
+            <button class="icon icon__arrow-left-circle--grey next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>

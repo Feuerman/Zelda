@@ -91,7 +91,7 @@ gulp.task('sprite', function() {
                 imgName: '../img/sprite.png',
                 cssName: 'sprite.scss',
                 cssFormat: 'scss',
-                algorithm: 'binary-tree',
+                algorithm: 'alt-diagonal',
                 cssVarMap: function (sprite) {
                   sprite.name = 'icon__' + sprite.name;
                 }

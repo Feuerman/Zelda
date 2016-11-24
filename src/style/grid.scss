@@ -16,6 +16,18 @@ body {
 	width: 230px;
 	min-width: 230px;
 	background: rgb(47, 46, 51);
+	&--hide {
+		z-index: 200;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transiton: all 0.5s ease-in-out;
+		transform: translateX(-100%);
+		&.active {
+			transform: translateX(0);
+		}
+	}
 }
 .main-content {
 	vertical-align: top;

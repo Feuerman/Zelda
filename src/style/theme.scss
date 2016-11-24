@@ -89,6 +89,9 @@
 	.top-menu {
 		&__link {
 			color: $color-primary;
+			&:hover {
+				color: $color-light;
+			}
 		}
 	}
 }

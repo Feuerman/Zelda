@@ -1,11 +1,16 @@
 @import 'variable.scss';
 @import 'fonts.scss';
-@import 'elements.scss';
-@import 'icons.scss';
-@import 'buttons.scss';
-@import 'blocks.scss';
 
 @import 'grid.scss';
+
+@import 'icons.scss';
+@import 'buttons.scss';
+
 @import 'menu.scss';
+@import 'elements.scss';
+@import 'blocks.scss';
+
 @import 'common.scss';
+@import 'configurator.scss';
+
 @import 'theme.scss';

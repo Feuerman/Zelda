@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 import lodash from 'lodash';
 
+=======
+>>>>>>> c619bfdfc9cf7d75f75d803a26e24d7c04338798
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class App extends React.Component {
 	constructor(props) {
 		super(props);
+<<<<<<< HEAD
 		this.state = {
 			value: ''
 		}	
@@ -36,3 +40,15 @@ export default class App extends React.Component {
 		)
 	}
 }
+=======
+		this.state = {props}
+	}
+	render() {
+		console.log(this.state);
+		return (
+			<h1>123</h1>
+		)
+	}
+}
+
+>>>>>>> c619bfdfc9cf7d75f75d803a26e24d7c04338798

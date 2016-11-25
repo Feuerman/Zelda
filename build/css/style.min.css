@@ -296,6 +296,12 @@ The `sprites` mixin generates identical output to the CSS template
   width: 20px;
   height: 19px; }
 
+.icon__arrow-right-circle--grey:hover {
+  background-position: -196px -422px; }
+
+.icon__arrow-left-circle--grey:hover {
+  background-position: -222px -396px; }
+
 .button {
   position: relative;
   display: inline-block;
@@ -449,24 +455,37 @@ The `sprites` mixin generates identical output to the CSS template
     max-width: 100%; } }
 
 .left-menu-wrap {
-  padding: 2.2em 2.2em 4em 2.2em; }
+  padding: 2.2em 0 4em 0; }
   .left-menu-wrap--bottom {
     background: #4a4951; }
 
-.left-menu__item a {
+.left-menu__item {
+  padding: 0 2.2em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .left-menu__item:hover, .left-menu__item.active {
+    background: #e2000f;
+    color: white;
+    text-decoration: none; }
+    .left-menu__item:hover a, .left-menu__item.active a {
+      border-color: transparent !important; }
+
+.left-menu__item + .left-menu__item a {
+  border-top: 1px #4e4c53 solid; }
+
+.left-menu__link {
   width: 100%;
   padding-bottom: 1em;
   padding-top: 1.125em;
   font-size: 1.6em;
-  color: white; }
-  .left-menu__item a:hover {
-    padding-left: 1.25em;
-    background: #4e4c53;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .left-menu__link:hover {
     color: white;
     text-decoration: none; }
-
-.left-menu__item + .left-menu__item {
-  border-top: 1px #4e4c53 solid; }
+  .left-menu__link:focus {
+    color: white; }
 
 .top-menu-wrap {
   padding-left: 2em; }
@@ -490,11 +509,13 @@ The `sprites` mixin generates identical output to the CSS template
   line-height: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  .top-menu__link:hover {
-    background: #6c6975;
-    box-shadow: 0 0 0.2em 0.2em #6c6975;
+  .top-menu__link:hover, .top-menu__link.active {
+    background: #e2000f;
+    box-shadow: 0 0 0.4em 0.2em #6c6975;
     color: white;
     text-decoration: none; }
+  .top-menu__link:focus {
+    color: white; }
 
 .bottom-menu__link {
   display: block;
@@ -519,8 +540,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 @media screen and (max-width: 767px) {
   .left-menu-wrap {
-    padding: 10px; }
-    .left-menu-wrap--bottom .left-menu__item + .left-menu__item {
+    padding: 10px 0; }
+    .left-menu-wrap--bottom .left-menu__item + .left-menu__item a {
       border-top: 1px #595860 solid; }
   .left-menu__item a {
     padding-bottom: 1em;
@@ -528,9 +549,7 @@ The `sprites` mixin generates identical output to the CSS template
     font-size: 1.4em; }
     .left-menu__item a:hover {
       padding-left: 0;
-      background: none; }
-  .left-menu__item + .left-menu__item {
-    border-top: 1px #49484e solid; } }
+      background: none; } }
 
 a {
   display: inline-block;
@@ -1805,14 +1824,6 @@ p {
       text-align: center; }
       .configurator-slider-nav button + button {
         margin-left: 30px; }
-      .configurator-slider-nav .next {
-        width: 27px; }
-        .configurator-slider-nav .next:hover {
-          background-position: -222px -396px; }
-      .configurator-slider-nav .prev {
-        width: 27px; }
-        .configurator-slider-nav .prev:hover {
-          background-position: -196px -422px; }
     .configurator-slider__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1890,13 +1901,16 @@ p {
   .light-theme .left-menu-wrap--bottom {
     background: none; }
 
-.light-theme .left-menu__item a {
-  color: #151515; }
-  .light-theme .left-menu__item a:hover {
-    background: #4e4c53;
+.light-theme .left-menu__item:hover, .light-theme .left-menu__item.active {
+  background: #e2000f; }
+  .light-theme .left-menu__item:hover a, .light-theme .left-menu__item.active a {
     color: white; }
 
+.light-theme .left-menu__item a {
+  color: #151515; }
+
 .light-theme .left-menu__item + .left-menu__item {
+  margin-top: -2px;
   border-top: 1px #e2e2e2 solid; }
 
 .light-theme .social__item .dark-theme {
@@ -1917,6 +1931,9 @@ p {
   color: #151515; }
 
 .light-theme .top-menu__link {
-  color: #151515; }
-  .light-theme .top-menu__link:hover {
-    color: white; }
+  color: #151515;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .light-theme .top-menu__link:hover, .light-theme .top-menu__link.active {
+    color: white;
+    box-shadow: 0 0 0.2em 0.2em #6c6975; }

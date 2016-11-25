@@ -46,15 +46,18 @@
 			}
 		}
 		&__item {
-			a {
-				color: $color-primary;
-				&:hover {
-					background: rgb(78, 76, 83);
+			&:hover, &.active {
+				background: $btn-bg-color;
+				a {
 					color: $color-light;
-				}
+				}				
+			}
+			a {
+				color: $color-primary;							
 			}		
 		}
 		&__item + .left-menu__item {
+			margin-top: -2px;
 			border-top: 1px rgb(226, 226, 226) solid;
 		}
 	}
@@ -89,8 +92,10 @@
 	.top-menu {
 		&__link {
 			color: $color-primary;
-			&:hover {
+			transition: all 0.1s ease-in-out;
+			&:hover, &.active {
 				color: $color-light;
+				box-shadow: 0 0 0.2em 0.2em rgb(108, 105, 117);
 			}
 		}
 	}

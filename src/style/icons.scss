@@ -5,3 +5,10 @@
 }
 
 @include sprites($spritesheet-sprites);
+
+.icon__arrow-right-circle--grey:hover {
+	background-position: -196px -422px;
+}
+.icon__arrow-left-circle--grey:hover {	
+	background-position: -222px -396px;
+}

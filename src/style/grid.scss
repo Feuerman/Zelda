@@ -33,9 +33,17 @@ body {
 	vertical-align: top;
 }
 .float-wrapper {
-	max-width: 970px;
+	width: 970px;
 	float: right;
 	& > section {
 		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.float-wrapper {
+		width: 100%;
+		max-width: 100%;
+		float: none;
 	}
 }

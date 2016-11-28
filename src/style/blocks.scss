@@ -67,6 +67,18 @@
 	}
 }
 
+.title-second {
+	margin-bottom: 1.5em;
+	font-size: 2.2em;
+	font-weight: bold;
+	line-height: 1.8em;
+	span {
+		display: inline-block;
+		margin-right: 1.22em;
+		color: $btn-bg-color;
+	}
+}
+
 .review-tizers {
 	&__item {
 		padding: 2em 2.5em 0 2.5em;
@@ -251,12 +263,217 @@
 	}
 }
 
+.content-section {
+	padding: 0 40px;
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	background: $color-light;
+	&--grey {
+		background: rgb(248, 248, 248);
+	}
+}
+
+.content-header {
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&__title {
+		float: left;
+		font-size: 2.8em;
+		color: $color-primary;
+		font-weight: bold;
+	}
+	&__right {
+		float: right;
+	}
+}
+
+.breadcrumbs {
+	margin-bottom: 1.2em;
+	padding-top: 1em;
+	font-size: 1.4em;
+	&__item {
+		display: inline-block;
+		margin-bottom: 1em;
+		color: rgb(113, 110, 127);
+		span {
+
+		}
+	}
+	&__item:not(:last-child) {
+		&::after {
+			content: '';
+			position: relative;
+			display: inline-block;
+			bottom: 0.21em;
+			width: 0.7em;
+			height: 1px;
+			background: rgb(113, 110, 127);
+			margin: 0 0.57em;		
+		}
+	}
+	&__link {
+		border-bottom: 1px rgb(113, 110, 127) solid;
+		&:hover {
+			color: rgb(113, 110, 127);
+			border: none;
+			text-decoration: none;
+		}
+	}
+}
+
+.filter {
+	padding-top: 25px;
+	&-select-wrap {
+		position: relative;
+		margin-bottom: 15px;
+		.icon {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 30px;
+			margin: auto;
+			pointer-events: none;
+			transform: rotate(0);
+			transition: transform 0.3s ease-in-out;
+		}
+		&.active {
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&-select {
+		width: 100%;
+		padding: 0.93em;
+		border: 1px rgb(225, 225, 225) solid;
+		border-radius: 3px;
+		font-size: 1.6em;
+		appearance: none!important;
+		outline: none;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+	&-selected {
+		overflow: hidden;
+		padding-top: 18px;
+		padding-bottom: 23px;
+		&-items {
+			min-height: 32px;
+			float: left;
+			.item {
+				display: inline-block;
+				position: relative;
+				margin-right: 1em;
+				padding: 0.57em 2.5em 0.57em 0.71em;
+				border: 1px rgb(200, 200, 200) solid;
+				border-radius: 0.8em;
+				font-size: 1.4em;
+				color: rgb(88, 88, 88);					
+				button {
+					position: absolute;					
+					right: 0.5em;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+		}
+	}
+	&-clear {
+		float: right;
+		margin-top: 0.5em;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		color: rgb(88, 88, 88);
+		border-bottom: 1px rgb(88, 88, 88) solid;
+		&:hover {
+			border-color: transparent;
+		}
+	}
+}
+
+.catalog-sort {
+	float: left;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	button {
+		margin-right: 20px;
+		color: rgb(113, 110, 127);
+		font-size: 1.6em;
+		line-height: 1.374em;
+		transition: all 0.3s ease-in-out;
+		i {
+			opacity: 0;
+			transform: scale(0);
+			margin-right: 10px;
+			transition: all 0.3s ease-in-out;
+		}
+		&.active {
+			color: $btn-bg-color;
+			i {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+}
+
+.catalog-view-select {
+	float: right;
+	margin-top: 22px;
+	button {
+		position: relative;
+		width: 35px;
+		height: 30px;
+		border: 1px rgb(214, 214, 214) solid;
+		border-radius: 5px;
+		& + button {
+			margin-left: 12px;
+		}
+		i {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+		&.active {
+			border-color: $btn-bg-color;			
+		}		
+	}
+	&--grid.active i {
+		background-position: $icon-grid-red-offset-x $icon-grid-red-offset-y;
+	}
+	&--list.active i {
+		background-position: $icon-list-red-offset-x $icon-list-red-offset-y;
+	}
+}
+
+.share-block {
+	&__title {
+		margin-bottom: 1.3em;
+		color: rgb(128, 128, 128);
+		font-size: 1.6em;
+	}
+	&__socials {
+		margin-bottom: 40px;
+		img {
+
+		}
+	}
+}
+
 .copyright {
 	font-size: 1.4em;
 	span {
 		padding-left: 2em;
 		color: rgb(141, 141, 141);
 	}
+}
+
+.modal-hide {
+	display: none;
 }
 
 @media screen and (max-width: 991px) {	
@@ -292,5 +509,11 @@
 			max-width: 100%;
 			margin: 0 0 3em 0;
 		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.breadcrumbs {
+		font-size: 1.2em;			
 	}
 }

@@ -2,6 +2,9 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
+	&:hover {
+		color: inherit;
+	}
 	&:visited, &:focus {
 		text-decoration: none;
 	}

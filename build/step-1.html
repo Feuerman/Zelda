@@ -102,76 +102,167 @@
       </div>
       <div class="float-wrapper">
         <section class="content-header content-section content-section--grey">
-          <div class="content-header__title">Бытовая техника</div><a href="#" class="content-header__right icon icon__arrow-right-circle--grey"></a>
+          <div class="content-header__title">Кухни</div><a href="#" class="content-header__right icon icon__arrow-right-circle--grey"></a>
         </section>
         <section class="content-section">
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
             <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
-            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Бытовая техника</a></li>
-            <li class="breadcrumbs__item"><span>Духовые шкафы					</span></li>
+            <li class="breadcrumbs__item"><span>Кухни</span></li>
           </ul>
-          <div class="product">
-            <h1 class="product-title">Духовой шкаф Zaussi ЯЩГ 261</h1>
-            <div class="product-gallery">
-              <div class="product-gallery__main js-slider-product">
-                <div class="item"><img src="img/product-main.jpg" alt=""></div>
-                <div class="item"><img src="img/product-main.jpg" alt=""></div>
-                <div class="item"><img src="img/product-main.jpg" alt=""></div>
-                <div class="item"><img src="img/product-main.jpg" alt=""></div>
-                <div class="item"><img src="img/product-main.jpg" alt=""></div>
+          <div class="title-second"><span>Шаг №1</span>Выбрать модель кухни</div>
+        </section>
+        <section class="content-section content-section--grey">
+          <div class="filter">
+            <div class="row">
+              <div class="col-sm-4 filter-select-wrap">
+                <select name="style" class="filter-select">
+                  <option value="" hidden>СТИЛЬ</option>
+                  <option value="style1">классический</option>
+                  <option value="style2">модерн</option>
+                  <option value="style3">минимализм</option>
+                  <option value="style4">рококо</option>
+                  <option value="style5">хай-тек</option>
+                </select><i class="icon icon__arrow-down-circle--grey"></i>
               </div>
-              <div class="product-gallery__thumbs js-slider-product-thumbs">
-                <div class="item"><img src="img/product-thumb-1.jpg" alt=""></div>
-                <div class="item"><img src="img/product-thumb-2.jpg" alt=""></div>
-                <div class="item"><img src="img/product-thumb-3.jpg" alt=""></div>
-                <div class="item"><img src="img/product-thumb-1.jpg" alt=""></div>
-                <div class="item"><img src="img/product-thumb-2.jpg" alt=""></div>
+              <div class="col-sm-4 filter-select-wrap">
+                <select name="material" class="filter-select">
+                  <option value="" hidden>МАТЕРИАЛ</option>
+                  <option value="material1">ДСП</option>
+                  <option value="material2">МДФ</option>
+                  <option value="material3">Дерево</option>
+                </select><i class="icon icon__arrow-down-circle--grey"></i>
               </div>
-            </div>
-            <div class="product-info">
-              <div class="product-info__text-desc">
-                <p class="title">Описание</p>
-                <p> <span>Модель:</span>Электрическая зависимая духовка, цвет серебро, и еще пару парамметров</p>
-                <p> <span>Габариты:</span>59 x 59,4 x 56 см</p>
-              </div>
-              <div class="product-info__price"><span class="product-info__price-value">13 390 руб.</span>
-                <button data-fancybox-href="#js-modal-basket" class="button button-default js-modal">В корзину<i class="icon icon__basket"></i></button>
-              </div>
-              <div class="product-info__panel">
-                <button class="button button-small js-one-click-buy">Купить в 1 клик</button>
-                <button class="button button-small js-add-set">Добавить к комплекту</button>
-              </div>
-              <div class="share-block">
-                <div class="share-block__title">Поделиться:</div>
-                <div class="share-block__socials"><img src="img/share-block.jpg" alt=""></div>
+              <div class="col-sm-4 filter-select-wrap">
+                <select name="tone" class="filter-select">
+                  <option value="" hidden>ТОН</option>
+                  <option value="tone1">Светлый</option>
+                  <option value="tone2">Темный</option>
+                </select><i class="icon icon__arrow-down-circle--grey"></i>
               </div>
             </div>
+          </div>
+          <div class="filter-selected">
+            <div class="filter-selected-items"></div>
+            <button class="filter-clear js-filter-clear">Сбросить фильтр</button>
           </div>
         </section>
-        <section class="content-section content-section--grey recommended">
-          <div class="recommended-head">
-            <div class="recommended-head__title">Рекомендуемые товары</div>
-            <div class="recommended-head__right js-slider-recommended-nav">
-              <button class="prev icon icon__arrow-right-circle--grey"></button>
-              <button class="next icon icon__arrow-left-circle--grey"></button>
-            </div>
+        <section class="content-section">
+          <div class="catalog-sort">
+            <button><i class="icon icon__check--red"></i>По популярности</button>
+            <button><i class="icon icon__check--red"></i>Новинки</button>
+            <button><i class="icon icon__check--red"></i>Уменьшение цены</button>
+            <button><i class="icon icon__check--red"></i>Увеличение цены</button>
           </div>
-          <div class="recommended-slider js-slider-recommended"><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-1.jpg" alt=""></div>
-              <div class="title">Название товара в несколько строк</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-2.jpg" alt=""></div>
-              <div class="title">Еще одно название товара на сайте</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-3.jpg" alt=""></div>
-              <div class="title">Название товара в несколько строк</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-4.jpg" alt=""></div>
-              <div class="title">Еще одно название товара на сайте</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-1.jpg" alt=""></div>
-              <div class="title">Название товара в несколько строк</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-2.jpg" alt=""></div>
-              <div class="title">Еще одно название товара на сайте</div></a><a href="#" class="recommended-slider__item">
-              <div class="image"><img src="img/recommend-3.jpg" alt=""></div>
-              <div class="title">Название товара в несколько строк</div></a></div>
+          <div class="catalog-view-select js-view-select hidden-xs">
+            <button data-view="grid" class="catalog-view-select--grid"><i class="icon icon__grid--grey"></i></button>
+            <button data-view="list" class="catalog-view-select--list"><i class="icon icon__list--grey"></i></button>
+          </div>
+          <div class="catalog-tizers js-variable-display">
+            <div class="row"><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-1.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Сатнина</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-2.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Аркобалена лайн</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-3.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Аркобалена</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-4.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Верона</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-5.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Эльба</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-6.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Имола</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-7.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Сатнина</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-8.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Аркобалена лайн</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-9.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Аркобалена</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-10.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Верона</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-11.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Эльба</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a><a href="#" class="col-sm-4 catalog-tizers__item">
+                <div class="image"><img src="img/step1-image-12.jpg" alt=""></div>
+                <div class="content">
+                  <div class="title">Имола</div>
+                  <p>Изготовление: 20 дней</p>
+                  <div class="content__bottom">
+                    <div class="price">68 310 р.</div><i class="icon icon__arrow-left-circle--grey"></i>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="text-center show-more-wrap">
+            <button class="show-more">Показать еще</button>
+          </div>
+        </section>
+        <section class="content-section content-section--grey">
+          <div class="share-block--bottom text-center"><img src="img/share-block-2.jpg" alt=""></div>
         </section>
         <section class="main-menu-bottom container-fluid hidden-xs">
           <div class="row">

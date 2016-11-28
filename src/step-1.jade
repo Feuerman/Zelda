@@ -1,0 +1,205 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Кухни
+					a.content-header__right.icon.icon__arrow-right-circle--grey(href="#")
+				section.content-section
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							span Кухни
+					.title-second
+						span Шаг №1
+						| Выбрать модель кухни
+				section.content-section.content-section--grey
+					.filter
+						.row
+							.col-sm-4.filter-select-wrap
+								select.filter-select(name="style")
+									option(value="" hidden) СТИЛЬ
+									option(value="style1") классический
+									option(value="style2") модерн
+									option(value="style3") минимализм
+									option(value="style4") рококо
+									option(value="style5") хай-тек
+								i.icon.icon__arrow-down-circle--grey
+							.col-sm-4.filter-select-wrap
+								select.filter-select(name="material")
+									option(value="" hidden) МАТЕРИАЛ
+									option(value="material1") ДСП
+									option(value="material2") МДФ
+									option(value="material3") Дерево
+								i.icon.icon__arrow-down-circle--grey
+							.col-sm-4.filter-select-wrap
+								select.filter-select(name="tone")
+									option(value="" hidden) ТОН
+									option(value="tone1") Светлый
+									option(value="tone2") Темный
+								i.icon.icon__arrow-down-circle--grey
+					.filter-selected
+						.filter-selected-items
+						button.filter-clear.js-filter-clear Сбросить фильтр
+				section.content-section
+					.catalog-sort
+						button
+							i.icon.icon__check--red
+							| По популярности
+						button
+							i.icon.icon__check--red
+							| Новинки
+						button
+							i.icon.icon__check--red
+							| Уменьшение цены
+						button
+							i.icon.icon__check--red
+							| Увеличение цены
+					.catalog-view-select.js-view-select.hidden-xs
+						button.catalog-view-select--grid(data-view="grid")
+							i.icon.icon__grid--grey
+						button.catalog-view-select--list(data-view="list")
+							i.icon.icon__list--grey
+					.catalog-tizers.js-variable-display
+						.row
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-1.jpg", alt="")
+								.content
+									.title Сатнина
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-2.jpg", alt="")
+								.content
+									.title Аркобалена лайн
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-3.jpg", alt="")
+								.content
+									.title Аркобалена
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-4.jpg", alt="")
+								.content
+									.title Верона
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-5.jpg", alt="")
+								.content
+									.title Эльба
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-6.jpg", alt="")
+								.content
+									.title Имола
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-7.jpg", alt="")
+								.content
+									.title Сатнина
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-8.jpg", alt="")
+								.content
+									.title Аркобалена лайн
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-9.jpg", alt="")
+								.content
+									.title Аркобалена
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-10.jpg", alt="")
+								.content
+									.title Верона
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-11.jpg", alt="")
+								.content
+									.title Эльба
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="#")
+								.image
+									img(src="img/step1-image-12.jpg", alt="")
+								.content
+									.title Имола
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+					.text-center.show-more-wrap
+						button.show-more Показать еще
+				section.content-section.content-section--grey
+					.share-block--bottom.text-center
+						img(src="img/share-block-2.jpg", alt="")
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	.modal-hide
+		.modal-container#js-modal-basket
+			.modal-container-head
+				.modal-container-head__title Товар добавлен в корзину
+				button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					.left
+						i.icon.icon__basket--large
+					.right
+						p
+							span Товар:
+							| Духовой шкаф Zanussi ZOU 261
+						p
+							span Стоимостью:
+							| 13 390 руб.
+						p Добавлен в корзину. 
+			.modal-container-footer
+				button.button.button-default оформить заказ
+				button.button.button-transparent Продолжить покупки

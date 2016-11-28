@@ -5,7 +5,7 @@ body
 		.main-content
 			include templates/header.jade
 			.float-wrapper
-				section.content-header.content-section--grey
+				section.content-header.content-section.content-section--grey
 					.content-header__title Бытовая техника
 					a.content-header__right.icon.icon__arrow-right-circle--grey(href="#")
 				section.content-section
@@ -21,14 +21,28 @@ body
 					.product
 						h1.product-title Духовой шкаф Zaussi ЯЩГ 261
 						.product-gallery
-							.product-gallery__main
-								img(src="img/product-main.jpg", alt="")
-								img(src="img/product-main.jpg", alt="")
-								img(src="img/product-main.jpg", alt="")
-							.product-gallery__thumbs
-								img(src="img/product-thumb-1.jpg", alt="")
-								img(src="img/product-thumb-2.jpg", alt="")
-								img(src="img/product-thumb-3.jpg", alt="")
+							.product-gallery__main.js-slider-product
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+							.product-gallery__thumbs.js-slider-product-thumbs
+								.item
+									img(src="img/product-thumb-1.jpg", alt="")
+								.item
+									img(src="img/product-thumb-2.jpg", alt="")
+								.item
+									img(src="img/product-thumb-3.jpg", alt="")
+								.item
+									img(src="img/product-thumb-1.jpg", alt="")
+								.item
+									img(src="img/product-thumb-2.jpg", alt="")
 						.product-info
 							.product-info__text-desc
 								p.title Описание
@@ -40,7 +54,7 @@ body
 									| 59 x 59,4 x 56 см
 							.product-info__price
 								span.product-info__price-value 13 390 руб.
-								button.button.button-default.js-add-basket
+								button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
 									| В корзину
 									i.icon.icon__basket
 							.product-info__panel
@@ -50,13 +64,13 @@ body
 								.share-block__title Поделиться:
 								.share-block__socials
 									img(src="img/share-block.jpg", alt="")
-				section.content-section.recommended
+				section.content-section.content-section--grey.recommended
 						.recommended-head
 							.recommended-head__title Рекомендуемые товары
-							.recommended-slider-nav
+							.recommended-head__right.js-slider-recommended-nav
 								button.prev.icon.icon__arrow-right-circle--grey
 								button.next.icon.icon__arrow-left-circle--grey
-						.recommended-slider
+						.recommended-slider.js-slider-recommended
 							a.recommended-slider__item(href="#")
 								.image
 									img(src="img/recommend-1.jpg", alt="")
@@ -73,5 +87,37 @@ body
 								.image
 									img(src="img/recommend-4.jpg", alt="")
 								.title Еще одно название товара на сайте
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-1.jpg", alt="")
+								.title Название товара в несколько строк
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-2.jpg", alt="")
+								.title Еще одно название товара на сайте
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-3.jpg", alt="")
+								.title Название товара в несколько строк
 				include templates/bottom-menu.jade
 			include templates/footer.jade
+	.modal-hide
+		.modal-container#js-modal-basket
+			.modal-container-head
+				.modal-container-head__title Товар добавлен в корзину
+				button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					.left
+						i.icon.icon__basket--large
+					.right
+						p
+							span Товар:
+							| Духовой шкаф Zanussi ZOU 261
+						p
+							span Стоимостью:
+							| 13 390 руб.
+						p Добавлен в корзину. 
+			.modal-container-footer
+				button.button.button-default оформить заказ
+				button.button.button-transparent Продолжить покупки

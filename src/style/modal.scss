@@ -1,0 +1,135 @@
+.fancybox-opened .fancybox-skin, .fancybox-skin {
+	padding: 0!important;
+	border-radius: 0;
+}
+.fancybox-inner {
+	overflow: hidden!important;
+	width: auto!important;
+	height: auto!important;
+}
+
+.modal-container {
+	min-width: 560px;
+	max-width: 100%;
+	&-head {
+		position: relative;
+		padding: 25px;
+		border-bottom: 1px rgb(235, 235, 235) solid;
+		&__title {
+			font-size: 2.6em;
+			font-weight: bold;
+			line-height: 1.2em;
+		}
+	}
+	&-content {
+		overflow: hidden;
+		padding: 25px 25px 50px 25px;
+		.left {
+			display: table-cell;
+			padding-right: 30px;
+		}
+		.right {
+			display: table-cell;
+			vertical-align: top;
+		}
+		p {
+			margin-top: 1em;
+			font-size: 1.8em;
+			line-height: 1.33em;			
+			span {
+				display: inline-block;
+				margin-right: 5px;
+			}
+		}
+	}
+	&-footer {
+		padding: 20px 25px;
+		background: rgb(235, 235, 235);
+		text-align: center;
+		button {
+			text-transform: uppercase;
+			& + button {
+				margin-left: 30px;
+			}			
+		}
+	}
+}
+
+.modal-close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 18px;
+	height: 18px;
+	&::before, &::after {
+		content: '';	
+		position: absolute;
+		display: block;	
+		width: 20px;
+		height: 2px;
+		background: rgb(155, 155, 155);
+	}
+	&::before {
+		top: 8px;
+		transform: rotate(45deg)
+	}
+	&::after {
+		bottom: 8px;
+		transform: rotate(-45deg)
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-container {
+		min-width: auto;
+		&-head {
+			padding: 15px;
+			&__title {
+				font-size: 2.4em;
+			}
+		}		
+		&-footer {
+			padding: 15px;
+			button {
+				& + button {
+					margin-left: 0;
+					margin-top: 20px;
+				}			
+			}
+		}
+	}
+	.modal-close {
+		right: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.modal-container {
+		&-head {
+			&__title {
+				font-size: 1.8em;
+			}
+		}
+		&-content {
+			overflow: hidden;
+			padding: 15px;
+			.left {
+				display: block;
+				padding-right: 0;
+				padding-bottom: 30px;
+				text-align: center;
+			}
+			.right {
+				display: block;
+			}
+			p {
+				font-size: 1.5em;
+			}
+		}		
+	}
+	.modal-close {
+		right: 10px;
+	}
+}

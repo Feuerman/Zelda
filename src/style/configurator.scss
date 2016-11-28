@@ -49,11 +49,30 @@
 		width: 100%;
 		.top-elements {
 			overflow: hidden;
+			margin-bottom: 20px;
+			padding: 0 10px;
 			.loop {
-
+				position: relative;
+				width: 43px;
+				height: 43px;
+				background: $color-light;
+				border-radius: 50%;
+				i {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+				}
 			}
 			.price {
-
+				padding: 0.4em 1.2em;
+				background: $btn-bg-color;
+				font-size: 2.2em;
+				font-weight: bold;
+				color: $color-light;
+				letter-spacing: 1px;
 			}
 		}		
 	}

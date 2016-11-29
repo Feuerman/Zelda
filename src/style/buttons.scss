@@ -20,6 +20,7 @@
 		color: $color-light;
 		text-transform: uppercase;
 		&:hover {
+			color: $color-light;
 			box-shadow: 0 0 5px 1px lighten($btn-bg-color, 25%);
 		}
 		&:visited {
@@ -183,7 +184,6 @@
 @media screen and (max-width: 767px) {
 	.button {
 		min-width: auto;
-		width: 250px;
 		max-width: 100%;
 	}
 }

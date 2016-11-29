@@ -1,22 +1,24 @@
 aside.aside(class=asideHide? "aside aside--hide" : "aside")
-	.aside-header(class=asideHeader? "" : "visible-xs")
-		.title Меню
-		button.js-menu-mobile Закрыть
+	.aside-logo.site-logo.text-center
+		button.js-menu-mobile.visible-xs
+			i.icon.icon__close--large
+		div
+			img(src="img/logo.png", alt="")
+			.site-logo__title
+				span 1-я интернет-фабрика
+				span.red кухонной мебели
+		button.js-modal-auth.visible-xs
+			i.icon.icon__auth--large
 	.aside-search.visible-xs
 		i.icon.icon__loop
 		| Поиск по сайту
-	.aside-logo.site-logo.text-center.hidden-xs
-		img(src="img/logo.png", alt="")
-		.site-logo__title
-			span 1-я интернет-фабрика
-			span.red кухонной мебели
-	.aside-auth
-		button.js-modal-auth
+	.aside-auth.hidden-xs
+		button.js-modal-auth.js-modal(data-fancybox-href="#js-modal-auth")
 			i.icon.icon__auth
 			| Вход
 		button.js-modal-reg Регистрация
 	.aside-city.visible-xs
-		i.icon.icon__geo
+		i.icon.icon__geo--red
 		span Москва
 	.aside-nav
 		nav

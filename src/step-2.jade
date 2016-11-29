@@ -1,0 +1,204 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Кухни
+					a.content-header__right.icon.icon__arrow-right-circle--grey(href="#")
+				section.content-section
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Кухни модерн
+						li.breadcrumbs__item
+							span Анкона Плюс Polylac 
+					.catalog-step-title
+						span Шаг №2 
+						| Посмотреть варианты исполнения в выбранном размере
+				section.top-slider
+					.top-slider-wrap.js-slider-top-catalog
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+					.top-slider-nav
+						button.prev.icon.icon__arrow-left-circle--white
+						button.next.icon.icon__arrow-right-circle--white
+				.top-slider-thumbs.js-slider-top-thumbs.hidden-xs
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-4.jpg", alt="")
+						img(src="img/step2-image-5.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title О модели Анкона Плюс Polylac
+					.content-section-head__right
+						a.content-section-head__right.button.button-transparent(href="#") Отзывы о модели
+				section.content-section
+					ul.dropdown-list
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title О модели Анкона Плюс Polylac
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Современная кухня Анкона Плюс Polylac — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием Polylac станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена Анкона Плюс Polylac, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Материалы фасадов
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p test
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Преимущества
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p test
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Особенности модели
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p test
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title Посмотреть  варианты исполнения с ценами
+				section.content-section.content-section--grey
+					.filter
+						.row
+							.col-sm-4.select-wrap
+								select.select(name="form")
+									option(value="" hidden) Выбрать форму
+									option(value="form1") Прямая
+									option(value="form2") Угловая
+							.col-sm-4.select-wrap
+								select.select(name="size")
+									option(value="" hidden) РАЗМЕР
+									option(value="size1") 3 метра
+									option(value="size2") 4 метра
+									option(value="size3") 5 метров
+							.col-sm-4
+								input.input-text(name="custom-size" placeholder="Укажите свой размер")
+					.filter-selected
+						.filter-selected-items
+						button.filter-clear.js-filter-clear Сбросить фильтр
+				section.content-section.text-center
+					a.button.button-default(href="#") Посмотреть варианты исполнения
+					p Вы может выбрать любой представленный вариант и доработать его в соответствии со своими требованиями.
+				section.content-section
+					.row.catalog-variants
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-1.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="#") Создать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-2.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="#") Создать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-3.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="#") Создать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-4.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="#") Создать свой проект
+				section.content-section.content-section--grey
+					.tabs.category-tabs
+						ul.tabs-link
+							li.tabs-link__item Фасады
+							li.tabs-link__item Ручки
+							li.tabs-link__item Столешницы
+						.tabs-content
+							.tabs-content__item
+								p 111
+							.tabs-content__item
+								p 222
+							.tabs-content__item
+								p 333
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	.modal-hide
+		.modal-container#js-modal-basket
+			.modal-container-head
+				.modal-container-head__title Товар добавлен в корзину
+				button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					.left
+						i.icon.icon__basket--large
+					.right
+						p
+							span Товар:
+							| Духовой шкаф Zanussi ZOU 261
+						p
+							span Стоимостью:
+							| 13 390 руб.
+						p Добавлен в корзину. 
+			.modal-container-footer
+				button.button.button-default оформить заказ
+				button.button.button-transparent Продолжить покупки

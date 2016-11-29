@@ -2,12 +2,27 @@ $(document).ready(function() {
 	'use strict';
 
 	// Main page top slider
-	$('.main-slider-wrap').slick({
+	$('.js-slider-top').slick({
 		slidesToShow: 1,
 		arrows: true,
-		nextArrow: $('.main-slider-nav .next'),
-		prevArrow: $('.main-slider-nav .prev'),
+		nextArrow: $('.top-slider-nav .next'),
+		prevArrow: $('.top-slider-nav .prev'),
 		speed: 1000
+	});
+	$('.js-slider-top-catalog').slick({
+		slidesToShow: 1,
+		arrows: true,
+		nextArrow: $('.top-slider-nav .next'),
+		prevArrow: $('.top-slider-nav .prev'),
+		speed: 1000,
+		asNavFor: '.js-slider-top-thumbs'
+	});
+	$('.js-slider-top-thumbs').slick({
+		slidesToShow: 7,
+		arrows: true,
+		speed: 1000,
+		focusOnSelect: true,
+		asNavFor: '.js-slider-top-catalog'
 	});
 
 	// Main page review slider
@@ -137,6 +152,35 @@ $(document).ready(function() {
 		]
 	});	
 
+	// Service slider
+	$('.js-slide-service').slick({
+		slidesToShow: 4,
+		arrows: true,
+		nextArrow: $('.js-slide-service-nav .next'),
+		prevArrow: $('.js-slide-service-nav .prev'),
+		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3
+					}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 2
+					}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1
+					}
+			}
+		]
+	});
+
 	// Mobile menu
 	$('.js-menu-mobile').on('click', function(event) {
 		event.preventDefault();
@@ -187,7 +231,7 @@ $(document).ready(function() {
 	filterSelected();
 
 	function filterSelected() {
-		$('.filter-select').on('change', function(e) {
+		$('.filter .select').on('change', function(e) {
 			var value = $(this).find('option:selected').val();
 			var text = $(this).find('option:selected').text();
 			filterSelectedAdd(value, text);
@@ -200,7 +244,7 @@ $(document).ready(function() {
 			event.preventDefault();
 			selectedArr.splice(0)
 			$('.filter-selected-items').html('');
-			$('.filter-select').each(function(index, el) {
+			$('.filter .select').each(function(index, el) {
 				$(el).find('option').eq(0).attr('selected', true);
 			});
 		});
@@ -227,6 +271,12 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.catalog-sort button').removeClass('active');
 		$(this).addClass('active');
+	});
+
+	// Dropdown list
+	$('.dropdown-list-item__head').on('click', function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('active');
 	});
 
 	// Switch theme

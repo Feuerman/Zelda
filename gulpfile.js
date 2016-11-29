@@ -145,7 +145,7 @@ gulp.task('watch', function(){
 gulp.task('webserver', function () {
     setTimeout(function() {
         browserSync(config);
-    }, 1000)    
+    }, 2000)    
 });
 
 gulp.task('clean', function (cb) {

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+<body>
+  <div class="wrapper">
+    <aside class="aside aside">
+      <div class="aside-logo site-logo text-center">
+        <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+        <div><img src="img/logo.png" alt="">
+          <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+        </div>
+        <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
+      </div>
+      <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
+      <div class="aside-auth hidden-xs">
+        <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
+        <button class="js-modal-reg">Регистрация</button>
+      </div>
+      <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
+      <div class="aside-nav">
+        <nav>
+          <div class="left-menu-wrap">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+            </ul>
+          </div>
+          <div class="left-menu-wrap left-menu-wrap--bottom visible-xs">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">О компании</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Новости и акции</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Услуги</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса					</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="aside-contacts text-center hidden-xs">
+        <div class="aside-contacts__phone">8 800 345 56 56</div>
+        <button class="js-modal-callback button button-default">Обратный звонок</button>
+      </div>
+      <div class="aside-social">
+        <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+      </div>
+    </aside>
+    <div class="main-content">
+      <header class="header hidden-xs">
+        <nav class="top-menu-wrap pull-left">
+          <ul class="top-menu">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">О компании</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Новости и акции</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Услуги</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Блог</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Оплата</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Доставка</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Адреса</a></li>
+          </ul>
+        </nav>
+        <div class="header-city pull-right"><i class="icon icon__geo"></i><span>Москва</span></div>
+      </header>
+      <div class="top-mobile hidden-lg">
+        <div class="top-mobile__header">
+          <div class="top-mobile-logo site-logo">
+            <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><img src="img/logo.png" alt="">
+            <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+            <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
+          </div>
+          <div class="top-mobile-contacts">
+            <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
+            <button class="js-modal-callback button button-default">Обратный звонок</button>
+            <button class="js-modal-auth hidden-xs"><i class="icon icon__auth--large"></i></button>
+          </div>
+        </div>
+        <div class="top-mobile__footer">
+          <ul class="top-menu pull-left">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">КУХНИ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ГОСТИННЫЕ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ШКАФЫ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+          </ul>
+          <div class="social pull-right hidden-xs"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
+      <div class="float-wrapper">
+        <section class="content-header content-section content-section--grey">
+          <div class="content-header__title">Кухни</div><a href="#" class="content-header__right icon icon__arrow-right-circle--grey"></a>
+        </section>
+        <section class="content-section">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Кухни модерн</a></li>
+            <li class="breadcrumbs__item"><span>Анкона Плюс Polylac </span></li>
+          </ul>
+          <div class="catalog-step-title"><span>Шаг №2 </span>Посмотреть варианты исполнения в выбранном размере</div>
+        </section>
+        <section class="top-slider">
+          <div class="top-slider-wrap js-slider-top-catalog">
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/step2-image-2.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
+                <div class="catalog-slider-desc">
+                  <div class="catalog-slider-desc__left">
+                    <div class="text">Анкона Плюс Polylac, Прямая длина, 3 м </div>
+                    <div class="price">от 136  970 р.</div>
+                  </div>
+                  <div class="catalog-slider-desc__right">
+                    <div class="text">45 600 руб. за погонный метр</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/step2-image-1.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
+                <div class="catalog-slider-desc">
+                  <div class="catalog-slider-desc__left">
+                    <div class="text">Анкона Плюс Polylac, Прямая длина, 3 м </div>
+                    <div class="price">от 136  970 р.</div>
+                  </div>
+                  <div class="catalog-slider-desc__right">
+                    <div class="text">45 600 руб. за погонный метр</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/step2-image-2.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
+                <div class="catalog-slider-desc">
+                  <div class="catalog-slider-desc__left">
+                    <div class="text">Анкона Плюс Polylac, Прямая длина, 3 м </div>
+                    <div class="price">от 136  970 р.</div>
+                  </div>
+                  <div class="catalog-slider-desc__right">
+                    <div class="text">45 600 руб. за погонный метр</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/step2-image-1.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
+                <div class="catalog-slider-desc">
+                  <div class="catalog-slider-desc__left">
+                    <div class="text">Анкона Плюс Polylac, Прямая длина, 3 м </div>
+                    <div class="price">от 136  970 р.</div>
+                  </div>
+                  <div class="catalog-slider-desc__right">
+                    <div class="text">45 600 руб. за погонный метр</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-slider-nav">
+            <button class="prev icon icon__arrow-left-circle--white"></button>
+            <button class="next icon icon__arrow-right-circle--white"></button>
+          </div>
+        </section>
+        <div class="top-slider-thumbs js-slider-top-thumbs hidden-xs"><img src="img/step2-image-3.jpg" alt=""><img src="img/step2-image-4.jpg" alt=""><img src="img/step2-image-5.jpg" alt=""><img src="img/step2-image-3.jpg" alt=""></div>
+        <section class="content-section content-section--grey content-section-head">
+          <div class="content-section-head__title">О модели Анкона Плюс Polylac</div>
+          <div class="content-section-head__right"><a href="#" class="content-section-head__right button button-transparent">Отзывы о модели</a></div>
+        </section>
+        <section class="content-section">
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+              <div class="dropdown-list-item__head">
+                <div class="title">О модели Анкона Плюс Polylac</div>
+                <div class="switch"><i class="icon icon__plus"></i></div>
+              </div>
+              <div class="dropdown-list-item__content">
+                <p>Современная кухня Анкона Плюс Polylac — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием Polylac станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена Анкона Плюс Polylac, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.</p>
+              </div>
+            </li>
+            <li class="dropdown-list-item">
+              <div class="dropdown-list-item__head">
+                <div class="title">Материалы фасадов</div>
+                <div class="switch"><i class="icon icon__plus"></i></div>
+              </div>
+              <div class="dropdown-list-item__content">
+                <p>test</p>
+              </div>
+            </li>
+            <li class="dropdown-list-item">
+              <div class="dropdown-list-item__head">
+                <div class="title">Преимущества</div>
+                <div class="switch"><i class="icon icon__plus"></i></div>
+              </div>
+              <div class="dropdown-list-item__content">
+                <p>test</p>
+              </div>
+            </li>
+            <li class="dropdown-list-item">
+              <div class="dropdown-list-item__head">
+                <div class="title">Особенности модели</div>
+                <div class="switch"><i class="icon icon__plus"></i></div>
+              </div>
+              <div class="dropdown-list-item__content">
+                <p>test</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="content-section content-section--grey content-section-head">
+          <div class="content-section-head__title">Посмотреть  варианты исполнения с ценами</div>
+        </section>
+        <section class="content-section content-section--grey">
+          <div class="filter">
+            <div class="row">
+              <div class="col-sm-4 select-wrap">
+                <select name="form" class="select">
+                  <option value="" hidden>Выбрать форму</option>
+                  <option value="form1">Прямая</option>
+                  <option value="form2">Угловая</option>
+                </select>
+              </div>
+              <div class="col-sm-4 select-wrap">
+                <select name="size" class="select">
+                  <option value="" hidden>РАЗМЕР</option>
+                  <option value="size1">3 метра</option>
+                  <option value="size2">4 метра</option>
+                  <option value="size3">5 метров</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input name="custom-size" placeholder="Укажите свой размер" class="input-text">
+              </div>
+            </div>
+          </div>
+          <div class="filter-selected">
+            <div class="filter-selected-items"></div>
+            <button class="filter-clear js-filter-clear">Сбросить фильтр</button>
+          </div>
+        </section>
+        <section class="content-section text-center"><a href="#" class="button button-default">Посмотреть варианты исполнения</a>
+          <p>Вы может выбрать любой представленный вариант и доработать его в соответствии со своими требованиями.</p>
+        </section>
+        <section class="content-section">
+          <div class="row catalog-variants">
+            <div class="col-sm-6">
+              <div class="catalog-variants-item">
+                <div class="catalog-variants-item__image"><img src="img/step2-product-1.jpg" alt=""></div>
+                <div class="catalog-variants-item__content">
+                  <div class="title">Анкона Плюс Polylac – прямая, 3м</div>
+                  <div class="bottom">
+                    <div class="price">136 790 р.</div><a href="#" class="button button-transparent">Создать свой проект</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="catalog-variants-item">
+                <div class="catalog-variants-item__image"><img src="img/step2-product-2.jpg" alt=""></div>
+                <div class="catalog-variants-item__content">
+                  <div class="title">Анкона Плюс Polylac – прямая, 3м</div>
+                  <div class="bottom">
+                    <div class="price">136 790 р.</div><a href="#" class="button button-transparent">Создать свой проект</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="catalog-variants-item">
+                <div class="catalog-variants-item__image"><img src="img/step2-product-3.jpg" alt=""></div>
+                <div class="catalog-variants-item__content">
+                  <div class="title">Анкона Плюс Polylac – прямая, 3м</div>
+                  <div class="bottom">
+                    <div class="price">136 790 р.</div><a href="#" class="button button-transparent">Создать свой проект</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="catalog-variants-item">
+                <div class="catalog-variants-item__image"><img src="img/step2-product-4.jpg" alt=""></div>
+                <div class="catalog-variants-item__content">
+                  <div class="title">Анкона Плюс Polylac – прямая, 3м</div>
+                  <div class="bottom">
+                    <div class="price">136 790 р.</div><a href="#" class="button button-transparent">Создать свой проект</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section content-section--grey">
+          <div class="tabs category-tabs">
+            <ul class="tabs-link">
+              <li class="tabs-link__item">Фасады</li>
+              <li class="tabs-link__item">Ручки</li>
+              <li class="tabs-link__item">Столешницы</li>
+            </ul>
+            <div class="tabs-content">
+              <div class="tabs-content__item">
+                <p>111</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>222</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>333</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-menu-bottom container-fluid hidden-xs">
+          <div class="row">
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Каталог</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухни</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гостинная</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Шкафы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Бытовая техника </a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">О компании</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Информация</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Карьера</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Новости</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гарантия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Миссия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Преимущества</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Клиентам</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Акции</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Отзывы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Советы эксперта</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Как купить кухню</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухня в кредит</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Доставка и сборка</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Адреса салонов</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Москва</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Белгород</a></li>
+              </ul>
+              <div class="title title-bottom">Блог</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="vendor/fancybox/jquery.fancybox.js"></script>
+      <footer class="footer">
+        <div class="footer__left pull-left">
+          <div class="copyright">© 2016 КухниСтрой.<span class="hidden-xs">1-я интернет-фабрика кухонной мебели</span></div>
+        </div>
+        <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
+          <button class="footer__search js-modal-search hidden-xs"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-basket" class="modal-container">
+      <div class="modal-container-head">
+        <div class="modal-container-head__title">Товар добавлен в корзину</div>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-container-content">
+        <div class="modal-basket__content">
+          <div class="left"><i class="icon icon__basket--large"></i></div>
+          <div class="right">
+            <p><span>Товар:</span>Духовой шкаф Zanussi ZOU 261</p>
+            <p><span>Стоимостью:</span>13 390 руб.</p>
+            <p>Добавлен в корзину. </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container-footer">
+        <button class="button button-default">оформить заказ</button>
+        <button class="button button-transparent">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+</body>

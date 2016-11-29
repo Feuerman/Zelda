@@ -18,19 +18,19 @@
 <body>
   <div class="wrapper">
     <aside class="aside aside">
-      <div class="aside-header visible-xs">
-        <div class="title">Меню</div>
-        <button class="js-menu-mobile">Закрыть</button>
+      <div class="aside-logo site-logo text-center">
+        <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+        <div><img src="img/logo.png" alt="">
+          <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+        </div>
+        <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
       </div>
       <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
-      <div class="aside-logo site-logo text-center hidden-xs"><img src="img/logo.png" alt="">
-        <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
-      </div>
-      <div class="aside-auth">
-        <button class="js-modal-auth"><i class="icon icon__auth"></i>Вход</button>
+      <div class="aside-auth hidden-xs">
+        <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
         <button class="js-modal-reg">Регистрация</button>
       </div>
-      <div class="aside-city visible-xs"><i class="icon icon__geo"></i><span>Москва</span></div>
+      <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
       <div class="aside-nav">
         <nav>
           <div class="left-menu-wrap">
@@ -82,12 +82,12 @@
           <div class="top-mobile-logo site-logo">
             <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><img src="img/logo.png" alt="">
             <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
-            <button class="js-modal-auth visible-xs"><i class="icon icon__auth"></i></button>
+            <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
           </div>
           <div class="top-mobile-contacts">
             <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
             <button class="js-modal-callback button button-default">Обратный звонок</button>
-            <button class="js-modal-auth hidden-xs"><i class="icon icon__auth"></i></button>
+            <button class="js-modal-auth hidden-xs"><i class="icon icon__auth--large"></i></button>
           </div>
         </div>
         <div class="top-mobile__footer">
@@ -101,24 +101,24 @@
         </div>
       </div>
       <div class="float-wrapper">
-        <section class="main-slider">
-          <div class="main-slider-wrap">
-            <div class="main-slider__item">
-              <div class="main-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
-              <div class="main-slider__desc hidden-xs">
+        <section class="top-slider">
+          <div class="top-slider-wrap js-slider-top">
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
                 <p class="title">Интернет-фабрика КухниСтрой</p>
                 <p>Новый шаг к снижению цены кухонь премиального уровня</p>
               </div>
             </div>
-            <div class="main-slider__item">
-              <div class="main-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
-              <div class="main-slider__desc hidden-xs">
+            <div class="top-slider__item">
+              <div class="top-slider__image"><img src="img/main_top-slider__image.jpg" alt=""></div>
+              <div class="top-slider__desc hidden-xs">
                 <p class="title">Интернет-фабрика КухниСтрой</p>
                 <p>Новый шаг к снижению цены кухонь премиального уровня</p>
               </div>
             </div>
           </div>
-          <div class="main-slider-nav">
+          <div class="top-slider-nav">
             <button class="prev icon icon__arrow-left-circle--white"></button>
             <button class="next icon icon__arrow-right-circle--white"></button>
           </div>
@@ -347,12 +347,12 @@
         </section>
       </div>
       <script src="vendor/fancybox/jquery.fancybox.js"></script>
-      <footer class="footer hidden-xs">
+      <footer class="footer">
         <div class="footer__left pull-left">
-          <div class="copyright">© 2016 КухниСтрой.<span>1-я интернет-фабрика кухонной мебели</span></div>
+          <div class="copyright">© 2016 КухниСтрой.<span class="hidden-xs">1-я интернет-фабрика кухонной мебели</span></div>
         </div>
         <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
-          <button class="footer__search js-modal-search"><i class="icon icon__loop"></i>Поиск по сайту</button>
+          <button class="footer__search js-modal-search hidden-xs"><i class="icon icon__loop"></i>Поиск по сайту</button>
         </div>
       </footer>
     </div>

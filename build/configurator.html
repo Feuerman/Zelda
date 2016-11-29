@@ -18,19 +18,19 @@
 <body>
   <div class="wrapper">
     <aside class="aside aside aside--hide">
-      <div class="aside-header">
-        <div class="title">Меню</div>
-        <button class="js-menu-mobile">Закрыть</button>
+      <div class="aside-logo site-logo text-center">
+        <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+        <div><img src="img/logo.png" alt="">
+          <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+        </div>
+        <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
       </div>
       <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
-      <div class="aside-logo site-logo text-center hidden-xs"><img src="img/logo.png" alt="">
-        <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
-      </div>
-      <div class="aside-auth">
-        <button class="js-modal-auth"><i class="icon icon__auth"></i>Вход</button>
+      <div class="aside-auth hidden-xs">
+        <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
         <button class="js-modal-reg">Регистрация</button>
       </div>
-      <div class="aside-city visible-xs"><i class="icon icon__geo"></i><span>Москва</span></div>
+      <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
       <div class="aside-nav">
         <nav>
           <div class="left-menu-wrap">

@@ -16,39 +16,43 @@ body
 							a.breadcrumbs__link(href="#") Каталог
 						li.breadcrumbs__item
 							span Кухни
-					.title-second
+					.catalog-step-title
 						span Шаг №1
 						| Выбрать модель кухни
 				section.content-section.content-section--grey
 					.filter
 						.row
-							.col-sm-4.filter-select-wrap
-								select.filter-select(name="style")
+							.col-sm-4.select-wrap
+								select.select(name="style")
 									option(value="" hidden) СТИЛЬ
 									option(value="style1") классический
 									option(value="style2") модерн
 									option(value="style3") минимализм
 									option(value="style4") рококо
 									option(value="style5") хай-тек
-								i.icon.icon__arrow-down-circle--grey
-							.col-sm-4.filter-select-wrap
-								select.filter-select(name="material")
+							.col-sm-4.select-wrap
+								select.select(name="material")
 									option(value="" hidden) МАТЕРИАЛ
 									option(value="material1") ДСП
 									option(value="material2") МДФ
 									option(value="material3") Дерево
-								i.icon.icon__arrow-down-circle--grey
-							.col-sm-4.filter-select-wrap
-								select.filter-select(name="tone")
+							.col-sm-4.select-wrap
+								select.select(name="tone")
 									option(value="" hidden) ТОН
 									option(value="tone1") Светлый
 									option(value="tone2") Темный
-								i.icon.icon__arrow-down-circle--grey
 					.filter-selected
 						.filter-selected-items
 						button.filter-clear.js-filter-clear Сбросить фильтр
 				section.content-section
-					.catalog-sort
+					.select-wrap.visible-xs
+						select.select(name="sort")
+							option(value="" hidden) Сортировка
+							option(value="style1") По популярности
+							option(value="style2") Новинки
+							option(value="style3") Уменьшение цены
+							option(value="style4") Увеличение цены
+					.catalog-sort.hidden-xs
 						button
 							i.icon.icon__check--red
 							| По популярности
@@ -62,7 +66,7 @@ body
 							i.icon.icon__check--red
 							| Увеличение цены
 					.catalog-view-select.js-view-select.hidden-xs
-						button.catalog-view-select--grid(data-view="grid")
+						button.catalog-view-select--grid.active(data-view="grid")
 							i.icon.icon__grid--grey
 						button.catalog-view-select--list(data-view="list")
 							i.icon.icon__list--grey
@@ -177,7 +181,10 @@ body
 										.price 68 310 р.
 										i.icon.icon__arrow-left-circle--grey
 					.text-center.show-more-wrap
-						button.show-more Показать еще
+						button.show-more
+							.image
+								i.icon.icon__show-more
+							span Показать еще
 				section.content-section.content-section--grey
 					.share-block--bottom.text-center
 						img(src="img/share-block-2.jpg", alt="")

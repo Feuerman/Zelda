@@ -104,6 +104,28 @@
 	}
 }
 
+.section-menu {
+	overflow: hidden;
+	&__item {
+		float: left;
+	}
+	&__item + &__item {
+		margin-left: 50px;
+	}
+	&__link {
+		display: block;
+		padding: 10px 0 22px 0;
+		font-size: 1.6em;
+		color: rgb(113, 110, 127);
+		border-bottom: 3px transparent solid;
+		&:hover, &.active {
+			border-color: $btn-bg-color;
+			color: $btn-bg-color;
+			text-decoration: none;
+		}
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.top-menu {
 		&-wrap {

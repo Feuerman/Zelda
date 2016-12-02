@@ -7,16 +7,16 @@ aside.aside(class=asideHide? "aside aside--hide" : "aside")
 			.site-logo__title
 				span 1-я интернет-фабрика
 				span.red кухонной мебели
-		button.js-modal-auth.visible-xs
+		button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
 			i.icon.icon__auth--large
-	.aside-search.visible-xs
+	button.aside-search.visible-xs.js-modal(data-fancybox-href="#js-modal-search")
 		i.icon.icon__loop
 		| Поиск по сайту
 	.aside-auth.hidden-xs
 		button.js-modal-auth.js-modal(data-fancybox-href="#js-modal-auth")
 			i.icon.icon__auth
 			| Вход
-		button.js-modal-reg Регистрация
+		button.js-modal(data-fancybox-href="#js-modal-reg") Регистрация
 	.aside-city.visible-xs
 		i.icon.icon__geo--red
 		span Москва

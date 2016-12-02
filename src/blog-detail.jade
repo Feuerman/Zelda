@@ -1,0 +1,92 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Блог
+					.content-header__right
+						a.button.button-transparent(href="#") Добавить сатью
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							span Блог
+				section.content-section
+					.blog-detail-header
+						.blog-detail-header__title Как правильно подобрать материал для вашей кухни?
+						.blog-detail-header__info
+							span.category Советы
+							span.author Автор: КухниСтрой
+							span.date Дата: 18.01.16
+						.blog-detail-header__panel
+							.count-block
+								i.icon.icon__eye
+								span 145
+							.count-block
+								i.icon.icon__message
+								span 4
+				section.content-section
+					.blog-detail-content
+						p 
+							| В процессе выбора мебели для кухни всегда возникает множество вопросов. И это неудивительно. Ведь требования к кухонному гарнитуру хозяйки предъявляют особенные. Как выбрать кухню, которая станет идеальной для вашей семьи? Время 
+							a(href="#") стандартных кухонь 
+							| давно прошло, теперь потребителям предлагаются разнообразные расцветки и стили мебели. Да и функции её улучшились: чего стоят полки-карусели, ящики корзинки, специальные стеллажи и разделители для удобства хранения кухонной утвари.
+						img(src="img/blog-detail-1.jpg", alt="")
+						p 
+							| Традиционно фурнитуру к кухонной мебели делают из пластика, алюминия, стали, дерева и некоторых других материалов. 
+							a(href="#") Фурнитура 
+							| для кухни должна быть надёжной и удобной в эксплуатации. Например, для ручек лучше всего заказывать металлическую хромированную, никелированную или сатиновую фурнитуру, которая прослужит намного дольше. Желательно отказаться от пластиковых ручек – они облупливаются и деформируются уже через 2-3 года.
+						p Просчитайте для себя, сколько денег вы можете выделить на кухню. Будет ли это покупка в кредит или одноразовый заказ. Помните, что при покупке кухни в цену не включается стоимость доставки и наполнения полочек различными приспособлениями. Отдельно стоят и разнообразные аксессуары. Понятное дело, что и бытовая кухонная техника также не входит в стоимость. Кроме того, на рынке часто предлагают «усреднённые» цены с расчёта на 1 погонный метр кухни, при этом стоимость окончательного заказа может серьёзно измениться в большую сторону. Эти моменты надо уточнять у продавцов или компании производителя.
+				section.content-section.content-section--grey
+					.blog-detail-footer
+						a.blog-detail-footer__back-link(href="#")
+							i.icon.icon__arrow-right-long--grey
+							span К списку статей
+						.share-block
+							img(src="img/share-block-2.jpg")
+				section.content-section
+					.comments
+						.comments-head
+							.comments-head__title Комментарии
+							button.button.button-transparent Написать комментарий
+						.comments-content
+							.comment
+								.comment__avatar
+									i.icon.icon__user--white
+								.comment__content
+									.comment__username Алексей Клопков
+									.comment__date 18.01.16
+									.comment__text Спасибо за такую позновательную статью! В очередной раз приятно удивлен
+									button.comment__add.js-modal-comment Ответить
+							.comment
+								.comment__avatar
+									i.icon.icon__user--white
+								.comment__content
+									.comment__username Наталья Смирнова
+									.comment__date 18.01.16
+									.comment__text Есть спорные моменты, мен кажется вы не все предусмотрели для новичков ...
+									button.comment__add.js-modal-comment Ответить
+							.comment.comment--sub
+								.comment__avatar
+									img(src="img/avatar-example.png", alt="")
+								.comment__content
+									.comment__username Стильные кухни
+									.comment__date 18.01.16
+									.comment__text Про какие моменты вы имеете ввиду?
+									button.comment__add.js-modal-comment Ответить
+							.comment
+								.comment__avatar
+									i.icon.icon__user--white
+								.comment__content
+									.comment__username Николай Разыграев
+									.comment__date 18.01.16
+									.comment__text Отличная статья, спасибо!
+									button.comment__add.js-modal-comment Ответить
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

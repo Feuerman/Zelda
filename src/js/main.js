@@ -181,6 +181,15 @@ $(document).ready(function() {
 		]
 	});
 
+	// Lk slider
+	$('.js-slider-lk').slick({
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		appendDots: '.js-slider-lk-dots',
+		speed: 1000		
+	});
+
 	// Mobile menu
 	$('.js-menu-mobile').on('click', function(event) {
 		event.preventDefault();
@@ -245,6 +254,7 @@ $(document).ready(function() {
 			selectedArr.splice(0)
 			$('.filter-selected-items').html('');
 			$('.filter .select').each(function(index, el) {
+				console.log(el);
 				$(el).find('option').eq(0).attr('selected', true);
 			});
 		});
@@ -261,7 +271,7 @@ $(document).ready(function() {
 	}
 	function filterSelectedRemove(elem) {
 		var value = $(elem).data('filter');
-		var index = find(selectedArr, value);
+		var index = $.inArray(value, selectedArr);
 		selectedArr.splice(index, 1);	
 		$(elem).remove();	
 	}	
@@ -277,6 +287,18 @@ $(document).ready(function() {
 	$('.dropdown-list-item__head').on('click', function(event) {
 		event.preventDefault();
 		$(this).parent().toggleClass('active');
+	});
+
+	// Order dropdown
+	$('.js-show-order').on('click', function(event) {
+		event.preventDefault();
+		$(this).parents('.orders-list-item').toggleClass('active');
+	});
+	// Copy promo key code
+	$('.js-copy-promo-key').on('click', function(event) {
+		event.preventDefault();
+		$(this).siblings('.promo__key').select();
+		document.execCommand("copy");
 	});
 
 	// Switch theme

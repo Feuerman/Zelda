@@ -45,7 +45,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 9000,
+    port: 9999,
     logPrefix: "gulp-project"
 };
 
@@ -143,9 +143,7 @@ gulp.task('watch', function(){
 });
 
 gulp.task('webserver', function () {
-    setTimeout(function() {
-        browserSync(config);
-    }, 2000)    
+    browserSync(config);
 });
 
 gulp.task('clean', function (cb) {

@@ -27,12 +27,12 @@ header.header.hidden-xs
 			.site-logo__title.hidden-xs
 				span 1-я интернет-фабрика
 				span.red кухонной мебели
-			button.js-modal-auth.visible-xs
+			button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
 				i.icon.icon__auth--large
 		.top-mobile-contacts
 			.top-mobile-contacts__phone 8 800 345 56 56
-			button.js-modal-callback.button.button-default Обратный звонок
-			button.js-modal-auth.hidden-xs
+			button.button.button-default.top-mobile-contacts__callback.js-modal(data-fancybox-href="#js-modal-callback") Обратный звонок
+			button.hidden-xs.top-mobile-contacts__auth.js-modal(data-fancybox-href="#js-modal-auth")
 				i.icon.icon__auth--large
 	.top-mobile__footer
 		ul.top-menu.pull-left

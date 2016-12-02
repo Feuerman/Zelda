@@ -8,12 +8,8 @@
 <link rel="stylesheet" href="vendor/slick/slick-theme.css">
 <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
 <link rel="stylesheet" href="css/style.min.css">
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="vendor/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 <body>
   <div class="wrapper">
@@ -23,12 +19,12 @@
         <div><img src="img/logo.png" alt="">
           <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
         </div>
-        <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
+        <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
       </div>
-      <div class="aside-search visible-xs"><i class="icon icon__loop"></i>Поиск по сайту</div>
+      <button data-fancybox-href="#js-modal-search" class="aside-search visible-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
       <div class="aside-auth hidden-xs">
         <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
-        <button class="js-modal-reg">Регистрация</button>
+        <button data-fancybox-href="#js-modal-reg" class="js-modal">Регистрация</button>
       </div>
       <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
       <div class="aside-nav">
@@ -82,12 +78,12 @@
           <div class="top-mobile-logo site-logo">
             <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><img src="img/logo.png" alt="">
             <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
-            <button class="js-modal-auth visible-xs"><i class="icon icon__auth--large"></i></button>
+            <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
           </div>
           <div class="top-mobile-contacts">
             <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
-            <button class="js-modal-callback button button-default">Обратный звонок</button>
-            <button class="js-modal-auth hidden-xs"><i class="icon icon__auth--large"></i></button>
+            <button data-fancybox-href="#js-modal-callback" class="button button-default top-mobile-contacts__callback js-modal">Обратный звонок</button>
+            <button data-fancybox-href="#js-modal-auth" class="hidden-xs top-mobile-contacts__auth js-modal"><i class="icon icon__auth--large"></i></button>
           </div>
         </div>
         <div class="top-mobile__footer">
@@ -148,7 +144,7 @@
           </div>
         </section>
         <section class="content-section">
-          <div class="select-wrap visible-xs">
+          <div class="select-wrap select-wrap--nopadding visible-xs">
             <select name="sort" class="select">
               <option value="" hidden>Сортировка</option>
               <option value="style1">По популярности</option>
@@ -325,30 +321,107 @@
           <div class="copyright">© 2016 КухниСтрой.<span class="hidden-xs">1-я интернет-фабрика кухонной мебели</span></div>
         </div>
         <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
-          <button class="footer__search js-modal-search hidden-xs"><i class="icon icon__loop"></i>Поиск по сайту</button>
+          <button data-fancybox-href="#js-modal-search" class="footer__search hidden-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
         </div>
       </footer>
     </div>
   </div>
   <div class="modal-hide">
-    <div id="js-modal-basket" class="modal-container">
-      <div class="modal-container-head">
-        <div class="modal-container-head__title">Товар добавлен в корзину</div>
-        <button class="modal-close"></button>
-      </div>
-      <div class="modal-container-content">
-        <div class="modal-basket__content">
-          <div class="left"><i class="icon icon__basket--large"></i></div>
-          <div class="right">
-            <p><span>Товар:</span>Духовой шкаф Zanussi ZOU 261</p>
-            <p><span>Стоимостью:</span>13 390 руб.</p>
-            <p>Добавлен в корзину. </p>
+    <div id="js-modal-auth">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--auth"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Авторизация</div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Логин" class="input-text">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="submit" value="Войти на сайт" class="button button-default">
+              <div class="form-modal__bottom">
+                <div class="checkbox-wrap">
+                  <input type="checkbox" id="remember" class="checkbox">
+                  <label for="remember">Запомнить меня</label>
+                </div>
+                <button data-fancybox-href="#js-modal-recovery" class="js-modal">Забыли пароль?</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Вход через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
           </div>
         </div>
       </div>
-      <div class="modal-container-footer">
-        <button class="button button-default">оформить заказ</button>
-        <button class="button button-transparent">Продолжить покупки</button>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-reg">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--reg"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Регистрация </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Имя" class="input-text">
+              <input type="text" placeholder="E-mail" class="input-text">
+              <input type="text" placeholder="Телефон" class="input-text">
+              <input type="submit" value="Зарегистрироваться" class="button button-default">
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Регистрация через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-recovery">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-change bg-change--recovery"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Введите новый пароль </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="text" placeholder="Повторить пароль" class="input-text">
+              <div class="input-error">Пароли не совпадают</div>
+              <input type="submit" value="Сохранить" class="button button-default">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container"></div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-search">
+      <div class="modal-search text-center">
+        <div class="modal-search__title">Введите слово для поиска</div>
+        <form class="modal-search-form">
+          <input type="text" class="modal-search-form__input-text">
+          <input type="submit" value="" class="icon icon__arrow--angle">
+        </form>
       </div>
     </div>
   </div>

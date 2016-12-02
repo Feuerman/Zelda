@@ -1,0 +1,153 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.lk-header
+					.lk-header__title Личный кабинет
+					button.lk-header__close
+						i.icon.icon__close
+						span Выход
+					ul.section-menu
+						li.section-menu__item
+							a.section-menu__link(href="#") Профиль
+						li.section-menu__item
+							a.section-menu__link.active(href="#") Список заказов
+						li.section-menu__item
+							a.section-menu__link(href="#") Подписки
+						li.section-menu__item
+							a.section-menu__link(href="#") Акции и промокоды
+				section.content-section
+					.orders-list
+						.orders-list-item
+							.orders-list-item__head
+								.orders-list-item__col
+									.title 05.10.2016
+									.value Заказ № 16-34B
+								.orders-list-item__col
+									.title Статус
+									.info.info--complete Выполнен
+								.orders-list-item__col
+									.title Цена
+									.value 270 800 руб.
+								button.button.button-transparent.js-show-order
+									span Показать
+									i.icon.icon__arrow-down-circle--red
+							.orders-list-item__detail
+								p 123
+						.orders-list-item
+							.orders-list-item__head
+								.orders-list-item__col
+									.title 05.10.2016
+									.value Заказ № 25-54C
+								.orders-list-item__col
+									.title Статус
+									.info.info--assembling Сборка
+								.orders-list-item__col
+									.title Цена
+									.value 270 800 руб.
+								button.button.button-transparent.js-show-order
+									span Показать
+									i.icon.icon__arrow-down-circle--red
+							.orders-list-item__detail
+								p 123
+						.orders-list-item
+							.orders-list-item__head
+								.orders-list-item__col
+									.title 05.10.2016
+									.value Заказ № 25-54C
+								.orders-list-item__col
+									.title Статус
+									.info.info--shipped Отгружен
+								.orders-list-item__col
+									.title Цена
+									.value 270 800 руб.
+								button.button.button-transparent.js-show-order
+									span Показать
+									i.icon.icon__arrow-down-circle--red
+							.orders-list-item__detail
+								.title Кухня АРКОБАЛЕНА ЛАЙН
+								.group
+									.group__title Описание
+									p Проект - Угловая кухня, длина 3х1,8 метра, Название фасада, высота верхних шкафов 720 мм.
+									a.group__link(href="#") Посмотреть
+								.group
+									.property
+										.property-item
+											.property-item__name Столешница:
+											.property-item__value Бежевая искра
+										.property-item
+											.property-item__name Ручки:
+											.property-item__value Ручка 8/1043
+										.property-item
+											.property-item__name Цвет: 
+											.property-item__value Шпон Европейского дуба, матовая лакировка
+								.group
+									.group__title Дополнительные товары
+									.row
+										.tizers
+											.col-sm-6
+												.tizers-item
+													.tizers-item__image
+														img(src="img/order-products-1.jpg", alt="")
+													.tizers-item__content
+														a.tizers-item__title(href="#") Духовой шкаф Zanussi ZOU 261
+														.tizers-item__desc Арктикул: 12545. 1 шт, 13 390 руб.
+											.col-sm-6
+												.tizers-item
+													.tizers-item__image
+														img(src="img/order-products-2.jpg", alt="")
+													.tizers-item__content
+														a.tizers-item__title(href="#") Посудомоечная машина Ariston
+														.tizers-item__desc Арктикул: 12545. 1 шт, 13 390 руб. copy
+								.group
+									.group__title Дополнительные услуги
+									p Бесплатная сборка, Подьем до квартиры с грузовым лифтом
+								.group
+									.group__title Менеджер заказа
+									p Емельяненко Евгений,  +7(909) 652-94-45
+								.group
+									.row
+										.col-sm-6
+											.group__title Оплата
+											.property
+												.property-item
+													.property-item__name Стоимость
+													.property-item__value 270 800 руб. 
+												.property-item
+													.property-item__name Тип оплаты
+													.property-item__value Банковская карта
+												.property-item
+													.property-item__name Оплачено 
+													.property-item__value 27 080 руб. - предоплата 10% 
+										.col-sm-6
+											.group__title Доставка
+											p Доставка — 28 ноября 2016 г.	
+								.group
+									.group__buy
+										button.button.button-default Оплатить
+										.group__title До 18 ноября 2016 г. , необходимо внести оплату
+								button.orders-list-item__close.js-show-order
+									.icon.icon__arrow-top-circle--large-grey
+						.orders-list-item
+							.orders-list-item__head
+								.orders-list-item__col
+									.title 05.10.2016
+									.value Заказ № 25-54C
+								.orders-list-item__col
+									.title Статус
+									.info.info--canceled Отменен
+								.orders-list-item__col
+									.title Цена
+									.value 270 800 руб.
+								button.button.button-transparent.js-show-order
+									span Показать
+									i.icon.icon__arrow-down-circle--red
+							.orders-list-item__detail
+								p 123
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

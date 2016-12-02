@@ -45,7 +45,7 @@ body
 						.filter-selected-items
 						button.filter-clear.js-filter-clear Сбросить фильтр
 				section.content-section
-					.select-wrap.visible-xs
+					.select-wrap.select-wrap--nopadding.visible-xs
 						select.select(name="sort")
 							option(value="" hidden) Сортировка
 							option(value="style1") По популярности
@@ -190,23 +190,4 @@ body
 						img(src="img/share-block-2.jpg", alt="")
 				include templates/bottom-menu.jade
 			include templates/footer.jade
-	.modal-hide
-		.modal-container#js-modal-basket
-			.modal-container-head
-				.modal-container-head__title Товар добавлен в корзину
-				button.modal-close
-			.modal-container-content
-				.modal-basket__content
-					.left
-						i.icon.icon__basket--large
-					.right
-						p
-							span Товар:
-							| Духовой шкаф Zanussi ZOU 261
-						p
-							span Стоимостью:
-							| 13 390 руб.
-						p Добавлен в корзину. 
-			.modal-container-footer
-				button.button.button-default оформить заказ
-				button.button.button-transparent Продолжить покупки
+	include templates/modal/general.jade

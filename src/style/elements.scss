@@ -1,9 +1,10 @@
 a {
 	display: inline-block;
-	text-decoration: none;
-	color: inherit;
+	text-decoration: underline;;
+	color: $color-link;
 	&:hover {
-		color: inherit;
+		color: $color-link;
+		text-decoration: none;
 	}
 	&:visited, &:focus {
 		text-decoration: none;
@@ -26,6 +27,10 @@ ul {
 p {
 	margin: 0;
 	font-family: $color-primary;
+}
+
+textarea {
+	resize: none;
 }
 
 .checkbox {
@@ -77,3 +82,9 @@ p {
 	opacity: 1;
 }
 .checkbox:focus + label:before {}
+
+.sitemap-nav {
+	margin: 30px;
+	max-width: 400px;
+	font-size: 1.6em;
+}

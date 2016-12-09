@@ -52,7 +52,7 @@ body
 					.comments
 						.comments-head
 							.comments-head__title Комментарии
-							button.button.button-transparent Написать комментарий
+							button.button.button-transparent.js-modal(data-fancybox-href="#js-modal-add-comment") Написать комментарий
 						.comments-content
 							.comment
 								.comment__avatar
@@ -88,5 +88,5 @@ body
 									button.comment__add.js-modal-comment Ответить
 				include templates/bottom-menu.jade
 			include templates/footer.jade
-	include templates/modal/add-to-basket.jade
+	include templates/modal/add-comment.jade
 	include templates/modal/general.jade

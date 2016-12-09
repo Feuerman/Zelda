@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<body>
+  <div class="wrapper">
+    <aside class="aside aside">
+      <div class="aside-top">
+        <div class="aside-logo site-logo text-center">
+          <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+          <div><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+            <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+          </div>
+          <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
+        </div>
+        <button data-fancybox-href="#js-modal-search" class="aside-search visible-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        <div class="aside-auth hidden-xs">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal">Регистрация</button>
+        </div>
+        <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
+      </div>
+      <div class="aside-nav">
+        <nav>
+          <div class="left-menu-wrap">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+            </ul>
+          </div>
+          <div class="left-menu-wrap left-menu-wrap--bottom visible-xs">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">О компании</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Новости и акции</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Услуги</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="aside-bottom">
+        <div class="aside-contacts text-center hidden-xs">
+          <div class="aside-contacts__phone">8 800 345 56 56</div>
+          <button class="js-modal-callback button button-default">Обратный звонок</button>
+        </div>
+        <div class="aside-social">
+          <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
+    </aside>
+    <div class="main-content">
+      <header class="header hidden-xs">
+        <nav class="top-menu-wrap pull-left">
+          <ul class="top-menu">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">О компании</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Новости и акции</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Услуги</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Блог</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Оплата</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Доставка</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Адреса</a></li>
+          </ul>
+        </nav>
+        <div class="header-city pull-right"><i class="icon icon__geo"></i><span>Москва</span></div>
+      </header>
+      <div class="top-mobile">
+        <div class="top-mobile__header">
+          <div class="top-mobile-logo site-logo">
+            <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+            <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+            <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
+          </div>
+          <div class="top-mobile-contacts">
+            <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
+            <button data-fancybox-href="#js-modal-callback" class="button button-default top-mobile-contacts__callback js-modal">Обратный звонок</button>
+            <button data-fancybox-href="#js-modal-auth" class="hidden-xs top-mobile-contacts__auth js-modal"><i class="icon icon__auth--large"></i></button>
+          </div>
+        </div>
+        <div class="top-mobile__footer">
+          <ul class="top-menu pull-left">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">КУХНИ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ГОСТИННЫЕ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ШКАФЫ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+          </ul>
+          <div class="social pull-right hidden-xs"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
+      <div class="float-wrapper">
+        <section class="content-header content-section content-section--grey">
+          <div class="content-header__title">Оформление заказа</div>
+        </section>
+        <section class="content-section content-section--breadcrumbs">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Корзина</a></li>
+            <li class="breadcrumbs__item"><span>Оформление заказа</span></li>
+          </ul>
+        </section>
+        <form class="form-order">
+          <div class="form-order-head">
+            <div class="title">Контактная информация</div>
+          </div>
+          <div class="form-order-group">
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Ваше имя</label>
+                <input type="text" value="Алексей" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Отчество</label>
+                <input type="text" value="Николаевич" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Фамилия</label>
+                <input type="text" value="Разыграев" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Телефон</label>
+                <input type="text" value="+7(909) 657-35-67" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>E-mail</label>
+                <input type="text" value="mumijo@yandex.ru" class="input-text">
+              </div>
+            </div>
+          </div>
+          <div class="form-order-head">
+            <div class="title">Адрес доставки и установки</div>
+          </div>
+          <div class="form-order-group">
+            <div class="row">
+              <div class="col-sm-4">
+                <label>Регион</label>
+                <input type="text" value="Московская область" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Город</label>
+                <input type="text" value="Королев" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Населенный пункт</label>
+                <input type="text" value="" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Улица</label>
+                <input type="text" value="Пионерская" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Дом</label>
+                <input type="text" value="30" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Корпус / строение</label>
+                <input type="text" value="6" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Подъезд</label>
+                <input type="text" value="5" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Этаж</label>
+                <input type="text" value="17" class="input-text">
+              </div>
+              <div class="col-sm-4">
+                <label>Квартира</label>
+                <input type="text" value="124" class="input-text">
+              </div>
+            </div>
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="lift" class="checkbox">
+              <label for="lift">Есть грузовой лифт</label>
+            </div>
+          </div>
+          <div class="form-order-head">
+            <div class="title">Оплата</div>
+          </div>
+          <div class="form-order-group">
+            <div class="row form-order-payment">
+              <div class="col-sm-3">
+                <div class="item">
+                  <div class="item__image"><span>10</span><span class="small">%</span></div>
+                  <div class="item__desc">Предоплата 10%</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="item">
+                  <div class="item__image"><span>20</span><span class="small">%</span></div>
+                  <div class="item__desc">Предоплата 20%</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="item">
+                  <div class="item__image"><span>50</span><span class="small">%</span></div>
+                  <div class="item__desc">Предоплата 50%</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="item">
+                  <div class="item__image"><span>100</span><span class="small">%</span></div>
+                  <div class="item__desc">Предоплата 100%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-order-head">
+            <div class="title">Выбор способа оплаты</div>
+          </div>
+          <div class="form-order-group">
+            <div class="row form-order-payment-method">
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="item__image"><i class="icon icon__purse"></i></div>
+                  <div class="item__desc">Наличные в офисе</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="item__image"><i class="icon icon__receipt"></i></div>
+                  <div class="item__desc">Банковская квитанция </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <div class="item__image"><i class="icon icon__cart"></i></div>
+                  <div class="item__desc">Банковская карта</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-order-head">
+            <div class="title">Итого</div>
+          </div>
+          <div class="form-order-group">
+            <div class="form-order__results">
+              <div class="item"><span class="item__prop">Сумма без скидки:</span><span class="item__value">1 290 899 руб.</span></div>
+              <div class="item"><span class="item__prop">Оплата:</span><span class="item__value">100%</span></div>
+              <div class="item"><span class="item__prop">Способ оплаты:</span><span class="item__value">Банковская карта</span></div>
+            </div>
+          </div>
+          <div class="form-order-footer">
+            <div class="form-order-footer__summary">
+               
+              Сумма к оплате: <span class="value">1 290 899 руб.</span>
+            </div>
+            <button class="button button-default">Оформить заказ</button>
+          </div>
+        </form>
+        <section class="main-menu-bottom container-fluid hidden-xs">
+          <div class="row">
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Каталог</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухни</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гостинная</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Шкафы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Бытовая техника </a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">О компании</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Информация</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Карьера</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Новости</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гарантия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Миссия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Преимущества</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Клиентам</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Акции</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Отзывы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Советы эксперта</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Как купить кухню</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухня в кредит</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Доставка и сборка</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Адреса салонов</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Москва</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Белгород</a></li>
+              </ul>
+              <div class="title title-bottom">Блог</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="vendor/fancybox/jquery.fancybox.js"></script>
+      <footer class="footer">
+        <div class="footer__left pull-left">
+          <div class="copyright">© 2016 КухниСтрой.<span class="hidden-xs">1-я интернет-фабрика кухонной мебели</span></div>
+        </div>
+        <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
+          <button data-fancybox-href="#js-modal-search" class="footer__search hidden-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-add-arctile" class="modal-container">
+      <div class="modal-container-head">
+        <div class="modal-container-head__title">Ваша статья отравлена</div>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-container-content">
+        <div class="modal-basket__content">
+          <div class="left"><i class="icon icon__message--large--red"></i></div>
+          <div class="right">
+            <p><strong>Алексей, спасибо вам за вашу статью.</strong></p>
+            <p>Она отправлена на модерацию и вскоре появится на нашем сайте.						</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container-footer">
+        <button class="button button-transparent">Продолжить</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-auth">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--auth"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Авторизация</div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Логин" class="input-text">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="submit" value="Войти на сайт" class="button button-default">
+              <div class="form-modal__bottom">
+                <div class="checkbox-wrap">
+                  <input type="checkbox" id="remember" class="checkbox">
+                  <label for="remember">Запомнить меня</label>
+                </div>
+                <button data-fancybox-href="#js-modal-recovery" class="js-modal">Забыли пароль?</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Вход через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-reg">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--reg"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Регистрация </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Имя" class="input-text">
+              <input type="text" placeholder="E-mail" class="input-text">
+              <input type="text" placeholder="Телефон" class="input-text">
+              <input type="submit" value="Зарегистрироваться" class="button button-default">
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Регистрация через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-recovery">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-change bg-change--recovery"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Введите новый пароль </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="text" placeholder="Повторить пароль" class="input-text">
+              <div class="input-error">Пароли не совпадают</div>
+              <input type="submit" value="Сохранить" class="button button-default">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container"></div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-search">
+      <div class="modal-search text-center">
+        <div class="modal-search__title">Введите слово для поиска</div>
+        <form class="modal-search-form">
+          <input type="text" class="modal-search-form__input-text">
+          <input type="submit" value="" class="icon icon__arrow--angle">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,61 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Новости и акции
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey(href="#")
+					ul.section-menu
+						li.section-menu__item
+							a.section-menu__link(href="#") Все события
+						li.section-menu__item
+							a.section-menu__link.active(href="#") Новости
+						li.section-menu__item
+							a.section-menu__link(href="#") Акции
+				.section-menu--mobile
+					button.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-menu
+					ul
+						li.section-menu--mobile__current.js-toggle-section-menu Все события
+						li
+							a.active(href="/lk.html") Все события
+						li
+							a(href="/lk-orders.html") Новости
+						li
+							a(href="#") Акции
+				section.content-section
+					.blog-detail-header
+						.blog-detail-header__title Обновленные цветовые сочетания модели Анкона Плюс на новом сайте
+						.blog-detail-header__info
+							span.category Новость
+							span.date 18.01.16
+				section.content-section
+					.news-detail-content
+						p 
+							| Современная кухня Анкона Плюс — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием 
+							a(href="#") Polylac 
+							| станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена 
+							a(href="#") Анкона Плюс 
+							| , в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
+						img.float(src="img/news-detail.jpg", alt="")
+						p Характеристики: высокоглянцевые фасады из МДФ с полимерным PET покрытием Polylac. Обратная сторона фасада матовая в цвет лицевой стороны. По периметру фасада кромка АВС в цвет  лицевой стороны фасада на древесных декорах и 2-х цветная 3D кромка с эффектом стекла на однотонных декорах. Преимущества модели: возможно изготовление открытых модулей из фасадного материала, возможно 
+						p 
+							| Современная кухня Анкона Плюс — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием 
+							a(href="#") Polylac 
+							| станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена 
+							a(href="#") Анкона Плюс 
+							| , в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
+				section.content-section.content-section--grey
+					.blog-detail-footer
+						a.blog-detail-footer__back-link(href="#")
+							i.icon.icon__arrow-right-long--grey
+							span К списку статей
+						.share-block
+							img(src="img/share-block-2.jpg")
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

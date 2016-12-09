@@ -1,0 +1,94 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Новости и акции
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey(href="#")
+					ul.section-menu
+						li.section-menu__item
+							a.section-menu__link.active(href="#") Все события
+						li.section-menu__item
+							a.section-menu__link(href="#") Новости
+						li.section-menu__item
+							a.section-menu__link(href="#") Акции
+				.section-menu--mobile
+					button.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-menu
+					ul
+						li.section-menu--mobile__current.js-toggle-section-menu Все события
+						li
+							a.active(href="/lk.html") Все события
+						li
+							a(href="/lk-orders.html") Новости
+						li
+							a(href="#") Акции
+				section.content-section
+					.blog
+						.blog-item
+							.blog-item__image
+								img(src="img/news-1.jpg", alt="")
+							.blog-item__content
+								.title Продление акции «Посудомоечная машина в подарок!»
+								.info
+									span.info__category Новость
+									span.info__date 18.01.16
+								.desc По многочисленным просьбам наших дорогих клиентов мы, совместно с партнерами, продлеваем акцию «Посудомоечная машина от BELTRATTO в подарок»!
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/news-2.jpg", alt="")
+							.blog-item__content
+								.title Новая представительница стиля фьюжен - модель кухни Лугано!
+								.info
+									span.info__category Акция
+									span.info__date 18.01.16
+								.desc Изысканная и притягательная модель Лугано создана для любителей стиля фьюжен. Простые и лаконичные формы с легкой ноткой классики зададут определенное настроение Вашему кухонному пространству
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/news-3.jpg", alt="")
+							.blog-item__content
+								.title Две новые модели - Сиена и Кремона!
+								.info
+									span.info__category Новость
+									span.info__date 18.01.16
+								.desc Представляем Вашему вниманию две новые модели кухни - Сиена и Кремона! Фасады обеих моделей выполнены из МДФ покрытого пленкой ПВХ. 
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/news-4.jpg", alt="")
+							.blog-item__content
+								.title Новая представительница стиля фьюжен - модель кухни Лугано!
+								.info
+									span.info__category Новость
+									span.info__date 18.01.16
+								.desc Изысканная и притягательная модель Лугано создана для любителей стиля фьюжен. Простые и лаконичные формы с легкой ноткой классики зададут определенное настроение Вашему кухонному пространству
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/news-5.jpg", alt="")
+							.blog-item__content
+								.title Две новые модели - Сиена и Кремона! copy
+								.info
+									span.info__category Акция
+									span.info__date 18.01.16
+								.desc Представляем Вашему вниманию две новые модели кухни - Сиена и Кремона! Фасады обеих моделей выполнены из МДФ покрытого пленкой ПВХ. 
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+					.text-center.show-more-wrap
+						button.show-more
+							.image
+								i.icon.icon__show-more
+							span Показать еще
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

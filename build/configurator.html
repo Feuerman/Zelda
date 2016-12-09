@@ -14,19 +14,21 @@
 <body>
   <div class="wrapper">
     <aside class="aside aside aside--hide">
-      <div class="aside-logo site-logo text-center">
-        <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
-        <div><img src="img/logo.png" alt="">
-          <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+      <div class="aside-top">
+        <div class="aside-logo site-logo text-center">
+          <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+          <div><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+            <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+          </div>
+          <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
         </div>
-        <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
+        <button data-fancybox-href="#js-modal-search" class="aside-search visible-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        <div class="aside-auth hidden-xs">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal">Регистрация</button>
+        </div>
+        <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
       </div>
-      <button data-fancybox-href="#js-modal-search" class="aside-search visible-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
-      <div class="aside-auth hidden-xs">
-        <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
-        <button data-fancybox-href="#js-modal-reg" class="js-modal">Регистрация</button>
-      </div>
-      <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
       <div class="aside-nav">
         <nav>
           <div class="left-menu-wrap">
@@ -45,17 +47,19 @@
               <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
               <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
               <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
-              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса					</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса</a></li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="aside-contacts text-center hidden-xs">
-        <div class="aside-contacts__phone">8 800 345 56 56</div>
-        <button class="js-modal-callback button button-default">Обратный звонок</button>
-      </div>
-      <div class="aside-social">
-        <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+      <div class="aside-bottom">
+        <div class="aside-contacts text-center hidden-xs">
+          <div class="aside-contacts__phone">8 800 345 56 56</div>
+          <button class="js-modal-callback button button-default">Обратный звонок</button>
+        </div>
+        <div class="aside-social">
+          <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
       </div>
     </aside>
     <div class="configurator">

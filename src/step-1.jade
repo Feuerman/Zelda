@@ -19,7 +19,10 @@ body
 					.catalog-step-title
 						span Шаг №1
 						| Выбрать модель кухни
-				section.content-section.content-section--grey
+				section.content-section.content-section--grey.filter-wrap
+					button.filter-show-mobile.js-toggle-filter
+						span Открыть фильтр
+						i.icon.icon__arrow-down-circle--middle--grey
 					.filter
 						.row
 							.col-sm-4.select-wrap
@@ -43,15 +46,9 @@ body
 									option(value="tone2") Темный
 					.filter-selected
 						.filter-selected-items
+						button.button.button-default.filter-selected-apply Применить
 						button.filter-clear.js-filter-clear Сбросить фильтр
 				section.content-section
-					.select-wrap.select-wrap--nopadding.visible-xs
-						select.select(name="sort")
-							option(value="" hidden) Сортировка
-							option(value="style1") По популярности
-							option(value="style2") Новинки
-							option(value="style3") Уменьшение цены
-							option(value="style4") Увеличение цены
 					.catalog-sort.hidden-xs
 						button
 							i.icon.icon__check--red

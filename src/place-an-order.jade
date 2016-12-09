@@ -1,0 +1,140 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Оформление заказа
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Корзина
+						li.breadcrumbs__item
+							span Оформление заказа
+				form.form-order
+					.form-order-head
+						.title Контактная информация
+					.form-order-group
+						.row
+							.col-sm-4
+								label Ваше имя
+								input.input-text(type="text" value="Алексей")                                
+							.col-sm-4
+								label Отчество
+								input.input-text(type="text" value="Николаевич")
+							.col-sm-4
+								label Фамилия
+								input.input-text(type="text" value="Разыграев")
+							.col-sm-4
+								label Телефон
+								input.input-text(type="text" value="+7(909) 657-35-67")
+							.col-sm-4
+								label E-mail
+								input.input-text(type="text" value="mumijo@yandex.ru")
+					.form-order-head
+						.title Адрес доставки и установки
+					.form-order-group
+						.row
+							.col-sm-4
+								label Регион
+								input.input-text(type="text" value="Московская область")                                
+							.col-sm-4
+								label Город
+								input.input-text(type="text" value="Королев")
+							.col-sm-4
+								label Населенный пункт
+								input.input-text(type="text" value="")
+							.col-sm-4
+								label Улица
+								input.input-text(type="text" value="Пионерская")
+							.col-sm-4
+								label Дом
+								input.input-text(type="text" value="30")
+							.col-sm-4
+								label Корпус / строение
+								input.input-text(type="text" value="6")                                
+							.col-sm-4
+								label Подъезд
+								input.input-text(type="text" value="5")
+							.col-sm-4
+								label Этаж
+								input.input-text(type="text" value="17")
+							.col-sm-4
+								label Квартира
+								input.input-text(type="text" value="124")
+						.checkbox-wrap
+							input.checkbox(type="checkbox" id="lift")
+							label(for="lift") Есть грузовой лифт
+					.form-order-head
+						.title Оплата
+					.form-order-group
+						.row.form-order-payment
+							.col-sm-3
+								.item
+									.item__image
+										span 10
+										span.small %
+									.item__desc Предоплата 10%
+							.col-sm-3
+								.item
+									.item__image
+										span 20
+										span.small %
+									.item__desc Предоплата 20%
+							.col-sm-3
+								.item
+									.item__image
+										span 50
+										span.small %
+									.item__desc Предоплата 50%
+							.col-sm-3
+								.item
+									.item__image
+										span 100
+										span.small %
+									.item__desc Предоплата 100%
+					.form-order-head
+						.title Выбор способа оплаты
+					.form-order-group
+						.row.form-order-payment-method
+							.col-sm-4
+								.item
+									.item__image
+										i.icon.icon__purse
+									.item__desc Наличные в офисе
+							.col-sm-4
+								.item
+									.item__image
+										i.icon.icon__receipt
+									.item__desc Банковская квитанция 
+							.col-sm-4
+								.item
+									.item__image
+										i.icon.icon__cart
+									.item__desc Банковская карта
+					.form-order-head
+						.title Итого
+					.form-order-group
+						.form-order__results
+							.item
+								span.item__prop Сумма без скидки:
+								span.item__value 1 290 899 руб.
+							.item
+								span.item__prop Оплата:
+								span.item__value 100%
+							.item
+								span.item__prop Способ оплаты:
+								span.item__value Банковская карта
+					.form-order-footer
+						.form-order-footer__summary 
+							| Сумма к оплате: 
+							span.value 1 290 899 руб.
+						button.button.button-default Оформить заказ
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-article.jade
+	include templates/modal/general.jade

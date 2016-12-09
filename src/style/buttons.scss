@@ -11,7 +11,7 @@
 	font-size: 1.2rem;
 	font-family: $font-secondary;
 	font-weight: bold;
-	text-align: center;	
+	text-align: center;
 	text-decoration: none!important;
 	&-default {
 		background: $btn-bg-color;
@@ -50,7 +50,7 @@
 		background: none;
 		&:hover {
 			color: $color-light!important;
-			background: $btn-bg-color;			
+			background: $btn-bg-color;
 			box-shadow: 0 0 5px 1px lighten($btn-bg-color, 25%);
 			text-decoration: none;
 		}
@@ -66,7 +66,7 @@
 		color: $color-light;
 		background: none;
 		&:hover {
-			background: rgba(0, 0, 0, 0.2);	
+			background: rgba(0, 0, 0, 0.2);
 			box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 		}
@@ -86,14 +86,14 @@
 		border-color: $btn-bg-color;
 		font-weight: bold;
 		text-transform: uppercase;
+		&:visited {
+			color: $btn-bg-color;
+		}
 		&:hover {
 			background: $btn-bg-color;
 			color: $color-light;
 			box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
 			text-decoration: none;
-		}
-		&:visited {
-			color: $color-light;
 		}
 		&:active {
 			box-shadow: none;
@@ -103,7 +103,7 @@
 		position: relative;
 		top: -2px;
 		vertical-align: middle;
-		margin-left: 1.66em;	
+		margin-left: 1.66em;
 	}
 }
 
@@ -160,7 +160,7 @@
 		span {
 			background: none;
 			&::before, &::after {
-			    transition-delay: 0, 0.3s;
+				transition-delay: 0, 0.3s;
 			}
 			&::before {
 				top: 0;
@@ -176,21 +176,21 @@
 		display: inline-block;
 		width: 18px;
 		height: 15px;
-		span {		
+		span {
 			top: 7px;
-			height: 3px;	
+			height: 3px;
 			background: $btn-bg-color;
 			border-radius: 2px;
 			&::before, &::after {
 				background-color: inherit;
 				height: 3px;
-			}	
+			}
 			&::before {
 				top: -6px;
 			}
 			&::after {
 				bottom: -6px;
-			}		
+			}
 		}
 	}
 }
@@ -199,5 +199,11 @@
 	.button {
 		min-width: auto;
 		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.button {
+		width: 100%;
 	}
 }

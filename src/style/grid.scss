@@ -1,49 +1,71 @@
 body {
+	background: #e5e5e5;
 	font-family: $font-primary;
 	font-size: 10px;
 	line-height: 1;
-	background:#fff;
 }
 
 .wrapper {
 	width: 100%;
-	display: table;
 	overflow: hidden;
 }
 .aside {
-	display: table-cell;
-	vertical-align: top;
-	width: 230px;
-	min-width: 230px;
+	z-index: 200;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 270px;
+	height: 100%;
 	background: rgb(47, 46, 51);
 	&--hide {
-		z-index: 200;
 		height: 100vh;
 		position: absolute;
 		top: 0;
 		left: 0;
 		transiton: all 0.5s ease-in-out;
 		transform: translateX(-100%);
+		@media screen and (min-width: 768px) {
+			.js-menu-mobile {
+				position: relative;
+				top: -20px;
+				display: block!important;
+				margin: 0 auto;
+			}
+		}
 		&.active {
 			transform: translateX(0);
 		}
 	}
 }
 .main-content {
-	vertical-align: top;
+	position: relative;
+	background: $color-light;
+	min-height: 100vh;
+	float: left;
+	width: 1330px;
+	margin-left: 270px;
+	padding-bottom: 5em;
+	box-shadow: 0 0 15px #b1b1b1;
 }
 .float-wrapper {
-	width: 970px;
-	float: right;
 	& > section {
 		overflow: hidden;
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	.float-wrapper {
+@media screen and (max-width: 1600px) {
+	.aside {
+		width: 20%;
+	}
+	.main-content {
+		float: right;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	.main-content {
 		width: 100%;
-		max-width: 100%;
-		float: none;
+		margin-left: 0;
 	}
 }

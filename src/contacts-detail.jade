@@ -1,0 +1,53 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__left
+						.content-header__title Адреса салонов
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey(href="#")
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Адеса салонов
+						li.breadcrumbs__item
+							span Красная пресня
+					.title Салон «Красная пресня»			
+				section.content-section
+					.contacts-detail
+						.col-sm-6.contacts-detail-left
+							.title г. Москва, Расторгуевский пер., д.1
+							.desc Салон мебели находится на территории выставочного зала Фабрики Кухни Zetta
+							.row.info
+								.col-sm-6.info-item
+									i.icon.icon__clock--red
+									.info-item-content
+										.info-item-content__title График работы
+										.info-item-content__value Пн-Вс с 10:00 — 23:00
+								.col-sm-6.info-item
+									i.icon.icon__phone
+									.info-item-content
+										.info-item-content__title Телефон
+										.info-item-content__value 8 (495) 921 -13-13
+								.col-sm-6.info-item
+									i.icon.icon__mail--red
+									.info-item-content
+										.info-item-content__title E-mail
+										.info-item-content__value
+											a(href="mailto:vopros@kuhnistroi.ru") vopros@kuhnistroi.ru
+						.col-sm-6.contacts-detail-right
+							img(src="img/contacts-detail.jpg", alt="")
+				section.content-section.content-section--grey
+					.title-second Как добраться
+					p Метро Краснопресненская, первый вагон из центра. Перейти дорогу и идти минут 5 до поворота на Малую Грузинскую улицу. Далее идти прямо до 2-ого поворота налево. Повернуть и пройти 200 метров
+				section.contacts-detail-map
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1122.3101785293768!2d37.57000199390418!3d55.76509688784709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2dded19f3d%3A0xe0e8ebc2e2fc4310!2z0KDQsNGB0YLQvtGA0LPRg9C10LLRgdC60LjQuSDQv9C10YAuLCAxLCDQnNC-0YHQutCy0LAsIDEyMzU1Nw!5e0!3m2!1sru!2sru!4v1481035740791" width="100%" height="365" frameborder="0" style="border:0" allowfullscreen)
+				include templates/bottom-menu.jade
+				include templates/footer.jade
+	include templates/modal/general.jade

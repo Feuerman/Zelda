@@ -1,0 +1,31 @@
+.modal-hide
+	.modal-container#js-modal-add-review
+		.modal-container-head
+			.modal-container-head__title Добавить отзыв
+			button.modal-close
+		.modal-container-content
+			form.form-review
+				.row.form-review-cols
+					.col-sm-6.form-review-cols__item
+						input.input-text(type="text" placeholder="Имя")
+						input.input-text(type="text" placeholder="Фамилия")
+						input.input-text(type="text" placeholder="Электронная почта")
+						input.input-text(type="text" placeholder="Телефон")
+					.col-sm-6.form-review-cols__item
+						.select-wrap
+							select.select(name="model")
+								option(value="" hidden) Модель
+								option(value="model1") Прямая
+								option(value="model2") Угловая
+						textarea.input-text(placeholder="Текст отзыва")
+					input(type="text" name="rating" id="reviewRating" hidden value="1")
+		.form-review-rating
+			.title Ваша оценка:
+			.rating.js-rating-change
+				span.active
+				span
+				span
+				span
+				span
+		.modal-container-footer
+			button.button.button-default Отправить отзыв

@@ -1,0 +1,93 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Отзывы
+					.content-header__right
+						button.button.button-transparent.js-modal(data-fancybox-href="#js-modal-add-review") Добавить отзыв
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							span Блог
+				section.content-section
+					.reviews-list
+						.reviews-list-item
+							.reviews-list-item__head
+								div
+									.name Лариса Николаева
+									.rating
+										span.active
+										span.active
+										span.active
+										span.active
+										span.active
+								.model Модель: АДРИЯ
+							.reviews-list-item__date 18.01.16
+							.reviews-list-item__text Хочу поделиться своей историей сотрудничества с Фабрикой Зетта.  Весной решили заняться ремонтом квартиры, кухня на первом месте была, так как старый гарнитур уже невозможно было использовать.                            
+						.reviews-list-item
+							.reviews-list-item__head
+								div
+									.name Игорь Смирнов
+									.rating
+										span.active
+										span.active
+										span.active
+										span.active
+										span
+								.model Модель: МАЛЬПЕНСА
+							.reviews-list-item__date 18.01.16
+							.reviews-list-item__text Мы очень довольны. Спасибо команде за терпение и советы. Купили не только мебель, но и Мойку со смесителем и вытяжку. сталось отрегулировать высоту плиты, но это наше упущение. Монтаж осуществляли за 3,5 часа. Доставили и правда в 8 утра, быстро и вежливо. Даже помогли распаковать и вынесли коробки сами. За такое качество кухни-стоимость очень небольшая. В будущем буду работать только с вами. Михаилу-дизайнеру и Владимиру Мельникову, а также директору салона на Расторгуевском переулке-огромное спасибо.                         
+						.reviews-list-item
+							.reviews-list-item__head
+								div
+									.name Олег Разыграев
+									.rating
+										span.active
+										span.active
+										span.active
+										span
+										span
+								.model Модель: АДРИЯ
+							.reviews-list-item__date 18.01.16
+							.reviews-list-item__text Хочу поделиться своей историей сотрудничества с Фабрикой Зетта.  Весной решили заняться ремонтом квартиры, кухня на первом месте была, так как старый гарнитур уже невозможно было использовать.
+						.reviews-list-item
+							.reviews-list-item__head
+								div
+									.name Ирина Фолова
+									.rating
+										span.active
+										span.active
+										span.active
+										span
+										span
+								.model Модель: АНКОНА
+							.reviews-list-item__date 18.01.16
+							.reviews-list-item__text Муж решил сделать мне подарок к 8 марта - новую кухню. Радости не было предела)) Остановилась на кухнях  Zetta, так как у двоих подруг стоят кухни этой же фирмы, мне они всегда нравились. Ну, собственно мы выбрали вместе с мужем, что хотели.                           
+						.reviews-list-item
+							.reviews-list-item__head
+								div
+									.name Лариса Николаева
+									.rating
+										span.active
+										span.active
+										span.active
+										span.active
+										span.active
+								.model Модель: АДРИЯ
+							.reviews-list-item__date 18.01.16
+							.reviews-list-item__text Дозвониться с первого раза в салон Zetta у меня не получилось, не теряла настырности, ведь один раз мне уже приходилось иметь с ними дело и меня все устраивало. После нескольких попыток меня соединили с менеджером, она ответила на интересующие вопросы по заказу кухни, а также приняла заявку на вызов дизайнера Зульфии, которая приехала в тот же день. Готовый проект по модели Анкона Плюс не произвел на меня большого впечатления, но собранный гарнитур был намного эффектней чем на бумаге . На первый вид она простая и неброская, но когда видишь ее вживую общее впечатление совсем меняется
+					.text-center.show-more-wrap
+						button.show-more
+							.image
+								i.icon.icon__show-more
+							span Показать еще
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-review.jade
+	include templates/modal/general.jade

@@ -19,7 +19,19 @@ body
 							a.section-menu__link(href="#") Подписки
 						li.section-menu__item
 							a.section-menu__link(href="#") Акции и промокоды
-				section.content-section
+				.section-menu--mobile
+					button.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-menu
+					ul
+						li.section-menu--mobile__current.js-toggle-section-menu Профиль
+						li
+							a.active(href="/lk.html") Профиль
+						li
+							a(href="/lk-orders.html") Список заказов
+						li
+							a(href="#") Подписки
+						li
+							a(href="/lk-action.html") Акции и промокоды		
+				section.content-section.content-section--overflow-visible
 					.lk-user-info
 						.lk-user-info__left
 							.greeting
@@ -39,6 +51,9 @@ body
 									.col-sm-6.form-lk__group
 										label E-mail
 										input.input-text(type="text" value="mumijo@yandex.ru" placeholder="E-mail")
+						.form-lk__bottom.form-lk__bottom--mobile
+							button.button.button-grey Сохранить
+							button.button.button-transparent Изменить пароль
 						.lk-user-info__right
 							.lk-slider-wrap
 								.lk-slider.js-slider-lk

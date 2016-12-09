@@ -1,0 +1,224 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__left
+						.content-header__title Адреса салонов
+						.contacts-city 
+							span Ваш город:
+							span.value Москва?
+							button.change.js-modal-city Изменить город
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey(href="#")
+				section.contacts-map
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60435.37431484617!2d37.56994185202368!3d55.742118734344146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1481032295860" width="100%" height="365" frameborder="0" style="border:0" allowfullscreen)
+				section.contacts-addreses.hidden-xs
+					table.contacts-addreses-list
+						thead
+							tr
+								th Адрес
+								th Телефон
+								th E-mail
+								th Режим работы
+								th Подробнее
+						tbody
+							tr
+								td
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+								td
+									.phone 8 909 654 98 56
+								td
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+								td
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+								td 
+									button.button.button-small На карте
+									a.button.button-small(href="#") О салоне
+							tr
+								td
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+								td
+									.phone 8 909 654 98 56
+								td
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+								td
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+								td 
+									button.button.button-small На карте
+									a.button.button-small(href="#") О салоне
+							tr
+								td
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+								td
+									.phone 8 909 654 98 56
+								td
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+								td
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+								td 
+									button.button.button-small На карте
+									a.button.button-small(href="#") О салоне
+							tr
+								td
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+								td
+									.phone 8 909 654 98 56
+								td
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+								td
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+								td 
+									button.button.button-small На карте
+									a.button.button-small(href="#") О салоне
+							tr
+								td
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+								td
+									.phone 8 909 654 98 56
+								td
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+								td
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+								td 
+									button.button.button-small На карте
+									a.button.button-small(href="#") О салоне
+				section.content-section.contacts-addreses.visible-xs
+					.contacts-addreses-list
+						.contacts-addreses-list-item
+							.contacts-addreses-list-item__row
+								.title Адрес:
+								.content
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+							.contacts-addreses-list-item__row
+								.title Телефон:
+								.content 
+									.phone 8 909 654 98 56
+							.contacts-addreses-list-item__row
+								.title E-mail:
+								.content
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+							.contacts-addreses-list-item__row
+								.title Режим работы:
+								.content
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+							.contacts-addreses-list-item__row
+								button.button.button-small На карте
+								a.button.button-small(href="#") О салоне
+						.contacts-addreses-list-item
+							.contacts-addreses-list-item__row
+								.title Адрес:
+								.content
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+							.contacts-addreses-list-item__row
+								.title Телефон:
+								.content 
+									.phone 8 909 654 98 56
+							.contacts-addreses-list-item__row
+								.title E-mail:
+								.content
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+							.contacts-addreses-list-item__row
+								.title Режим работы:
+								.content
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+							.contacts-addreses-list-item__row
+								button.button.button-small На карте
+								a.button.button-small(href="#") О салоне
+						.contacts-addreses-list-item
+							.contacts-addreses-list-item__row
+								.title Адрес:
+								.content
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+							.contacts-addreses-list-item__row
+								.title Телефон:
+								.content 
+									.phone 8 909 654 98 56
+							.contacts-addreses-list-item__row
+								.title E-mail:
+								.content
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+							.contacts-addreses-list-item__row
+								.title Режим работы:
+								.content
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+							.contacts-addreses-list-item__row
+								button.button.button-small На карте
+								a.button.button-small(href="#") О салоне
+						.contacts-addreses-list-item
+							.contacts-addreses-list-item__row
+								.title Адрес:
+								.content
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+							.contacts-addreses-list-item__row
+								.title Телефон:
+								.content 
+									.phone 8 909 654 98 56
+							.contacts-addreses-list-item__row
+								.title E-mail:
+								.content
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+							.contacts-addreses-list-item__row
+								.title Режим работы:
+								.content
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+							.contacts-addreses-list-item__row
+								button.button.button-small На карте
+								a.button.button-small(href="#") О салоне
+						.contacts-addreses-list-item
+							.contacts-addreses-list-item__row
+								.title Адрес:
+								.content
+									.name Красная пресня
+									.address Расторгуевский пер. д.1
+							.contacts-addreses-list-item__row
+								.title Телефон:
+								.content 
+									.phone 8 909 654 98 56
+							.contacts-addreses-list-item__row
+								.title E-mail:
+								.content
+									a.mail(href="mailto:callcentre@zetta.ru") callcentre@zetta.ru
+							.contacts-addreses-list-item__row
+								.title Режим работы:
+								.content
+									.mode
+										span Ежедневно
+										span с 10:00—23:00
+							.contacts-addreses-list-item__row
+								button.button.button-small На карте
+								a.button.button-small(href="#") О салоне
+				include templates/bottom-menu.jade
+				include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

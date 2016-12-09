@@ -1,25 +1,27 @@
 aside.aside(class=asideHide? "aside aside--hide" : "aside")
-	.aside-logo.site-logo.text-center
-		button.js-menu-mobile.visible-xs
-			i.icon.icon__close--large
-		div
-			img(src="img/logo.png", alt="")
-			.site-logo__title
-				span 1-я интернет-фабрика
-				span.red кухонной мебели
-		button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
-			i.icon.icon__auth--large
-	button.aside-search.visible-xs.js-modal(data-fancybox-href="#js-modal-search")
-		i.icon.icon__loop
-		| Поиск по сайту
-	.aside-auth.hidden-xs
-		button.js-modal-auth.js-modal(data-fancybox-href="#js-modal-auth")
-			i.icon.icon__auth
-			| Вход
-		button.js-modal(data-fancybox-href="#js-modal-reg") Регистрация
-	.aside-city.visible-xs
-		i.icon.icon__geo--red
-		span Москва
+	.aside-top
+		.aside-logo.site-logo.text-center
+			button.js-menu-mobile.visible-xs
+				i.icon.icon__close--large
+			div
+				a(href="/sitemap.html")
+					img(src="img/logo.png", alt="")
+				.site-logo__title
+					span 1-я интернет-фабрика
+					span.red кухонной мебели
+			button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth--large
+		button.aside-search.visible-xs.js-modal(data-fancybox-href="#js-modal-search")
+			i.icon.icon__loop
+			| Поиск по сайту
+		.aside-auth.hidden-xs
+			button.js-modal-auth.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth
+				| Вход
+			button.js-modal(data-fancybox-href="#js-modal-reg") Регистрация
+		.aside-city.visible-xs
+			i.icon.icon__geo--red
+			span Москва
 	.aside-nav
 		nav
 			.left-menu-wrap
@@ -47,21 +49,22 @@ aside.aside(class=asideHide? "aside aside--hide" : "aside")
 					li.left-menu__item
 						a.left-menu__link(href="#") Доставка
 					li.left-menu__item
-						a.left-menu__link(href="#") Адреса					
-	.aside-contacts.text-center.hidden-xs
-		.aside-contacts__phone 8 800 345 56 56
-		button.js-modal-callback.button.button-default Обратный звонок
-	.aside-social
-		.social
-			a.social__item(href="#")
-				i.dark-theme.icon.icon__social__vk
-				i.light-theme.icon.icon__social__vk--red
-			a.social__item(href="#")
-				i.dark-theme.icon.icon__social__fb
-				i.light-theme.icon.icon__social__fb--red
-			a.social__item(href="#")
-				i.dark-theme.icon.icon__social__tw
-				i.light-theme.icon.icon__social__tw--red
-			a.social__item(href="#")
-				i.dark-theme.icon.icon__social__ok
-				i.light-theme.icon.icon__social__ok--red
+						a.left-menu__link(href="#") Адреса
+	.aside-bottom
+		.aside-contacts.text-center.hidden-xs
+			.aside-contacts__phone 8 800 345 56 56
+			button.js-modal-callback.button.button-default Обратный звонок
+		.aside-social
+			.social
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__vk
+					i.light-theme.icon.icon__social__vk--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__fb
+					i.light-theme.icon.icon__social__fb--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__tw
+					i.light-theme.icon.icon__social__tw--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__ok
+					i.light-theme.icon.icon__social__ok--red

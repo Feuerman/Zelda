@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<body>
+  <div class="wrapper">
+    <aside class="aside aside">
+      <div class="aside-top">
+        <div class="aside-logo site-logo text-center">
+          <button class="js-menu-mobile visible-xs"><i class="icon icon__close--large"></i></button>
+          <div><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+            <div class="site-logo__title"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+          </div>
+          <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
+        </div>
+        <button data-fancybox-href="#js-modal-search" class="aside-search visible-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        <div class="aside-auth hidden-xs">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal-auth js-modal"><i class="icon icon__auth"></i>Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal">Регистрация</button>
+        </div>
+        <div class="aside-city visible-xs"><i class="icon icon__geo--red"></i><span>Москва</span></div>
+      </div>
+      <div class="aside-nav">
+        <nav>
+          <div class="left-menu-wrap">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">КУХНИ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ГОСТИННЫЕ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">ШКАФЫ</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+            </ul>
+          </div>
+          <div class="left-menu-wrap left-menu-wrap--bottom visible-xs">
+            <ul class="left-menu">
+              <li class="left-menu__item"><a href="#" class="left-menu__link">О компании</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Новости и акции</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Услуги</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Блог</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Оплата</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Доставка</a></li>
+              <li class="left-menu__item"><a href="#" class="left-menu__link">Адреса</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="aside-bottom">
+        <div class="aside-contacts text-center hidden-xs">
+          <div class="aside-contacts__phone">8 800 345 56 56</div>
+          <button class="js-modal-callback button button-default">Обратный звонок</button>
+        </div>
+        <div class="aside-social">
+          <div class="social"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
+    </aside>
+    <div class="main-content">
+      <header class="header hidden-xs">
+        <nav class="top-menu-wrap pull-left">
+          <ul class="top-menu">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">О компании</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Новости и акции</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Услуги</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Блог</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Оплата</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Доставка</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Адреса</a></li>
+          </ul>
+        </nav>
+        <div class="header-city pull-right"><i class="icon icon__geo"></i><span>Москва</span></div>
+      </header>
+      <div class="top-mobile">
+        <div class="top-mobile__header">
+          <div class="top-mobile-logo site-logo">
+            <button class="js-menu-mobile btn-menu visible-xs"><span></span></button><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+            <div class="site-logo__title hidden-xs"><span>1-я интернет-фабрика</span><span class="red">кухонной мебели</span></div>
+            <button data-fancybox-href="#js-modal-auth" class="visible-xs js-modal"><i class="icon icon__auth--large"></i></button>
+          </div>
+          <div class="top-mobile-contacts">
+            <div class="top-mobile-contacts__phone">8 800 345 56 56</div>
+            <button data-fancybox-href="#js-modal-callback" class="button button-default top-mobile-contacts__callback js-modal">Обратный звонок</button>
+            <button data-fancybox-href="#js-modal-auth" class="hidden-xs top-mobile-contacts__auth js-modal"><i class="icon icon__auth--large"></i></button>
+          </div>
+        </div>
+        <div class="top-mobile__footer">
+          <ul class="top-menu pull-left">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">КУХНИ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ГОСТИННЫЕ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">ШКАФЫ</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">БЫТОВАЯ ТЕХНИКА</a></li>
+          </ul>
+          <div class="social pull-right hidden-xs"><a href="#" class="social__item"><i class="dark-theme icon icon__social__vk"></i><i class="light-theme icon icon__social__vk--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__fb"></i><i class="light-theme icon icon__social__fb--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__tw"></i><i class="light-theme icon icon__social__tw--red"></i></a><a href="#" class="social__item"><i class="dark-theme icon icon__social__ok"></i><i class="light-theme icon icon__social__ok--red"></i></a></div>
+        </div>
+      </div>
+      <div class="float-wrapper">
+        <section class="content-header content-section content-section--grey">
+          <div class="content-header__title">Новости и акции</div>
+          <div class="content-header__right"><a href="#" class="icon icon__arrow-right-circle--grey"></a></div>
+          <ul class="section-menu">
+            <li class="section-menu__item"><a href="#" class="section-menu__link">Все события</a></li>
+            <li class="section-menu__item"><a href="#" class="section-menu__link active">Новости</a></li>
+            <li class="section-menu__item"><a href="#" class="section-menu__link">Акции</a></li>
+          </ul>
+        </section>
+        <div class="section-menu--mobile">
+          <button class="icon icon__arrow-down-circle--middle--grey js-toggle-section-menu"></button>
+          <ul>
+            <li class="section-menu--mobile__current js-toggle-section-menu">Все события</li>
+            <li><a href="/lk.html" class="active">Все события</a></li>
+            <li><a href="/lk-orders.html">Новости</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <section class="content-section">
+          <div class="blog-detail-header">
+            <div class="blog-detail-header__title">Обновленные цветовые сочетания модели Анкона Плюс на новом сайте</div>
+            <div class="blog-detail-header__info"><span class="category">Новость</span><span class="date">18.01.16</span></div>
+          </div>
+        </section>
+        <section class="content-section">
+          <div class="news-detail-content">
+            <p>
+               
+              Современная кухня Анкона Плюс — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием <a href="#">Polylac </a>станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена <a href="#">Анкона Плюс </a>, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
+            </p><img src="img/news-detail.jpg" alt="" class="float">
+            <p>Характеристики: высокоглянцевые фасады из МДФ с полимерным PET покрытием Polylac. Обратная сторона фасада матовая в цвет лицевой стороны. По периметру фасада кромка АВС в цвет  лицевой стороны фасада на древесных декорах и 2-х цветная 3D кромка с эффектом стекла на однотонных декорах. Преимущества модели: возможно изготовление открытых модулей из фасадного материала, возможно </p>
+            <p>
+               
+              Современная кухня Анкона Плюс — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием <a href="#">Polylac </a>станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена <a href="#">Анкона Плюс </a>, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
+            </p>
+          </div>
+        </section>
+        <section class="content-section content-section--grey">
+          <div class="blog-detail-footer"><a href="#" class="blog-detail-footer__back-link"><i class="icon icon__arrow-right-long--grey"></i><span>К списку статей</span></a>
+            <div class="share-block"><img src="img/share-block-2.jpg"></div>
+          </div>
+        </section>
+        <section class="main-menu-bottom container-fluid hidden-xs">
+          <div class="row">
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Каталог</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухни</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гостинная</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Шкафы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Бытовая техника </a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">О компании</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Информация</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Карьера</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Новости</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Гарантия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Миссия</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Преимущества</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Клиентам</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Акции</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Отзывы</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Советы эксперта</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Как купить кухню</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Кухня в кредит</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Доставка и сборка</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 main-menu-bottom__col">
+              <div class="title">Адреса салонов</div>
+              <ul class="bottom-menu">
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Москва</a></li>
+                <li class="bottom-menu__item"><a href="#" class="bottom-menu__link">Белгород</a></li>
+              </ul>
+              <div class="title title-bottom">Блог</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="vendor/fancybox/jquery.fancybox.js"></script>
+      <footer class="footer">
+        <div class="footer__left pull-left">
+          <div class="copyright">© 2016 КухниСтрой.<span class="hidden-xs">1-я интернет-фабрика кухонной мебели</span></div>
+        </div>
+        <div class="footer__right pull-right"><a href="mailto:info@kuhnistroy.ru" class="footer__mail"><i class="icon icon__mail"> </i>info@kuhnistroy.ru</a>
+          <button data-fancybox-href="#js-modal-search" class="footer__search hidden-xs js-modal"><i class="icon icon__loop"></i>Поиск по сайту</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-basket" class="modal-container">
+      <div class="modal-container-head">
+        <div class="modal-container-head__title">Товар добавлен в корзину</div>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-container-content">
+        <div class="modal-basket__content">
+          <div class="left"><i class="icon icon__basket--large"></i></div>
+          <div class="right">
+            <p><span>Товар:</span>Духовой шкаф Zanussi ZOU 261</p>
+            <p><span>Стоимостью:</span>13 390 руб.</p>
+            <p>Добавлен в корзину. </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container-footer">
+        <button class="button button-default">оформить заказ</button>
+        <button class="button button-transparent">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-auth">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--auth"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Авторизация</div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Логин" class="input-text">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="submit" value="Войти на сайт" class="button button-default">
+              <div class="form-modal__bottom">
+                <div class="checkbox-wrap">
+                  <input type="checkbox" id="remember" class="checkbox">
+                  <label for="remember">Запомнить меня</label>
+                </div>
+                <button data-fancybox-href="#js-modal-recovery" class="js-modal">Забыли пароль?</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Вход через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-reg">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-logo"></div>
+          <div class="bg-macbook"></div>
+          <div class="bg-change bg-change--reg"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Регистрация </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Имя" class="input-text">
+              <input type="text" placeholder="E-mail" class="input-text">
+              <input type="text" placeholder="Телефон" class="input-text">
+              <input type="submit" value="Зарегистрироваться" class="button button-default">
+            </form>
+          </div>
+          <div class="modal-container-footer">
+            <p class="p-title">Регистрация через социальные сети</p>
+            <div class="social--color"><a href="#" class="social--color__item"><i class="icon icon__vk--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__inst"></i></a><a href="#" class="social--color__item"><i class="icon icon__fb--color"></i></a><a href="#" class="social--color__item"><i class="icon icon__mailru"></i></a><a href="#" class="social--color__item"><i class="icon icon__yandex"></i></a><a href="#" class="social--color__item"><i class="icon icon__gplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-recovery">
+      <div class="modal-two-cols">
+        <div class="modal-two-cols__left">
+          <div class="bg-change bg-change--recovery"></div>
+        </div>
+        <div class="modal-two-cols__right">
+          <div class="modal-container-head">
+            <div class="modal-container-head__title">Введите новый пароль </div>
+            <button class="modal-close"></button>
+          </div>
+          <div class="modal-container-content">
+            <form class="form-modal">
+              <input type="text" placeholder="Пароль" class="input-text">
+              <input type="text" placeholder="Повторить пароль" class="input-text">
+              <div class="input-error">Пароли не совпадают</div>
+              <input type="submit" value="Сохранить" class="button button-default">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container"></div>
+    </div>
+  </div>
+  <div class="modal-hide">
+    <div id="js-modal-search">
+      <div class="modal-search text-center">
+        <div class="modal-search__title">Введите слово для поиска</div>
+        <form class="modal-search-form">
+          <input type="text" class="modal-search-form__input-text">
+          <input type="submit" value="" class="icon icon__arrow--angle">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

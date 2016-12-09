@@ -1,0 +1,54 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Поиск
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey(href="#")
+				section.content-section.search-header
+					.title 
+						| Вы искали: 
+						span Бытовая техника
+				section.content-section
+					form.search-form
+						input.input-text(type="text" placeholder="Поиск")
+						input.icon.icon__loop(type="submit")
+				section.content-section
+					.search-result
+						.search-result-item
+							.search-result-item__image
+								img(src="img/search-1.jpg", alt="")
+							.search-result-item__content
+								a.title(href="#") Принадлежности для духовых шкафов
+								.category Бытовая техника
+								.price 13 390 руб.
+								button.button.button-transparent.js-modal(data-fancybox-href="#js-modal-basket") Добавить в корзину
+						.search-result-item
+							.search-result-item__image
+								img(src="img/search-2.jpg", alt="")
+							.search-result-item__content
+								a.title(href="#") Независимые газовые духовые шкафы Ardesia HX 020G X
+								.category Бытовая техника
+								.price 7 290 руб.
+								button.button.button-transparent.js-modal(data-fancybox-href="#js-modal-basket") Добавить в корзину
+						.search-result-item
+							.search-result-item__content
+								a.title(href="#") Материалы о встраиваемой бытовой технике
+								.category Блог
+								.desc В рамках нашего «встраиваемого» проекта мы уже рассказывали об индукционных варочных поверхностях, теперь пришла очередь не менее нужных и важных кухонных устройств – духовых шкафов. 
+						.search-result-item
+							.search-result-item__image
+								img(src="img/search-3.jpg", alt="")
+							.search-result-item__content
+								a.title(href="#") Независимые газовые духовые шкафы Ardesia HX 020G X copy
+								.category Бытовая техника
+								.price 7 290 руб.
+								button.button.button-transparent.js-modal(data-fancybox-href="#js-modal-basket") Добавить в корзину
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

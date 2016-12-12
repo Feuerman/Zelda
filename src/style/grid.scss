@@ -18,6 +18,12 @@ body {
 	height: 100%;
 	background: rgb(47, 46, 51);
 	&--hide {
+		z-index: 1200!important;
+		width: 350px!important;
+		max-width: 100%!important;
+		@media screen and (max-width: 600px) {
+			width: 100%!important;
+		}
 		height: 100vh;
 		position: absolute;
 		top: 0;
@@ -46,6 +52,11 @@ body {
 	margin-left: 270px;
 	padding-bottom: 5em;
 	box-shadow: 0 0 15px #b1b1b1;
+	&.configurator-page {
+		width: 100%;
+		padding-bottom: 0;
+		margin-left: 0;
+	}
 }
 .float-wrapper {
 	& > section {

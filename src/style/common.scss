@@ -237,6 +237,7 @@
 		}
 		margin: 25px auto;
 		img {
+			cursor: pointer;
 			border: 1px transparent solid;
 		}
 		.slick-current {
@@ -715,6 +716,7 @@
 		&__thumbs {
 			margin-bottom: 40px;
 			.item {
+				cursor: pointer;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -862,6 +864,10 @@
 		margin-bottom: 30px;
 		&:hover {
 			text-decoration: none;
+			color: $color-primary;
+			.icon {
+				background-position: $icon-arrow-left-circle-red-offset-x $icon-arrow-left-circle-red-offset-y;
+			}
 		}
 		.image {
 			img {
@@ -2814,6 +2820,9 @@
 		.left-menu__item a {
 			padding-left: 10px;
 		}
+	}
+	.back-link {
+		display: none;
 	}
 	.top-mobile {
 		&__header {

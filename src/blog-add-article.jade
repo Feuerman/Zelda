@@ -36,11 +36,11 @@ body
 							textarea.input-text(name="message", cols="30", rows="10" placeholder="Введите текст")
 							.form-article-file
 								.form-article-file__button
-									input(type="file")
+									input.js-change-file(type="file")
 									.button.button-transparent
 										span Загрузить фотографию
 										i.icon.icon__clip
-								.form-article-file__desc Фотографии принимаются в форматах jpg. png. Вес фотографии не больше 3 Мб
+								.form-article-file__desc.js-change-file-name Фотографии принимаются в форматах jpg. png. Вес фотографии не больше 3 Мб
 						.content-section.content-section--grey
 							button.button.button-default(type="submit") Добавить статью
 				include templates/bottom-menu.jade

@@ -1,4 +1,4 @@
-header.header.hidden-xs
+header.header(class=configurator? "hidden" : "hidden-xs")
 	nav.top-menu-wrap.pull-left
 		ul.top-menu
 			li.top-menu__item
@@ -35,7 +35,7 @@ header.header.hidden-xs
 			button.button.button-default.top-mobile-contacts__callback.js-modal(data-fancybox-href="#js-modal-callback") Обратный звонок
 			button.hidden-xs.top-mobile-contacts__auth.js-modal(data-fancybox-href="#js-modal-auth")
 				i.icon.icon__auth--large
-	.top-mobile__footer
+	.top-mobile__footer(class=(configurator|!mainPage)? "hidden-xs" : "")
 		ul.top-menu.pull-left
 			li.top-menu__item
 				a.top-menu__link(href="#") КУХНИ

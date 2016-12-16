@@ -8,10 +8,10 @@
 			button {
 				color: $color-primary;
 			}
-		}	
+		}
 		&-search {
 			background: rgb(100, 100, 100);
-			color: $color-light;			
+			color: $color-light;
 		}
 		&-city {
 			background: $color-light;
@@ -30,13 +30,13 @@
 					background: $color-primary;
 				}
 			}
-		}	
+		}
 		&-contacts {
 			background-image: url('../img/aside_callback__bg.png');
 			&__phone {
 				color: $color-primary;
 			}
-		}	
+		}
 	}
 	.left-menu {
 		&-wrap {
@@ -50,15 +50,16 @@
 				background: $btn-bg-color;
 				a {
 					color: $color-light;
-				}				
+				}
 			}
 			a {
-				color: $color-primary;							
-			}		
+				color: $color-primary;
+			}
 		}
 		&__item + .left-menu__item {
-			margin-top: -2px;
-			border-top: 1px rgb(226, 226, 226) solid;
+			a {
+				border-top: 1px rgb(226, 226, 226) solid;
+			}
 		}
 	}
 	.social {
@@ -78,11 +79,11 @@
 				color: $color-primary;
 			}
 		}
-	}	
+	}
 	.top-mobile {
 		&__footer {
 			background: $section-bg-color;
-		}		
+		}
 		.top-menu {
 			&__link {
 				color: $color-primary;
@@ -90,12 +91,17 @@
 		}
 	}
 	.top-menu {
+		&__item + .top-menu__item {
+			&::before {
+				background: rgb(182, 182, 182);
+			}
+		}
 		&__link {
 			color: $color-primary;
 			transition: all 0.1s ease-in-out;
 			&:hover, &.active {
 				color: $color-light;
-				box-shadow: 0 0 0.2em 0.2em rgb(108, 105, 117);
+				box-shadow: 0 0 0.2em 0.2em rgb(182, 182, 182);
 			}
 		}
 	}

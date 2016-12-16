@@ -49,7 +49,7 @@
 
 .top-menu {
 	&-wrap {
-		padding-left: 4em;
+		padding-left: 0;
 	}
 	&__item {
 		display: block;
@@ -108,6 +108,10 @@
 	overflow: hidden;
 	&__item {
 		float: left;
+		&.active .section-menu__link, &:hover .section-menu__link {
+			border-color: $btn-bg-color;
+			color: $btn-bg-color;
+		}
 	}
 	&__item + &__item {
 		margin-left: 50px;
@@ -119,10 +123,6 @@
 		color: rgb(113, 110, 127);
 		border-bottom: 3px transparent solid;
 		text-decoration: none;
-		&:hover, &.active {
-			border-color: $btn-bg-color;
-			color: $btn-bg-color;
-		}
 	}
 }
 
@@ -152,17 +152,20 @@
 				padding: 18px 10px;
 				font-size: 2.2em;
 			}
-			a {
+			a, button {
 				display: block;
+				width: 100%;
 				padding: 18px 10px;
 				font-size: 2.2em;
 				text-decoration: none;
+				color: $color-primary;
+				text-align: left;
 				&:hover {
 					background: rgb(245, 245, 245);
-				}
-				&.active {
-					display: none;
-				}
+				}				
+			}
+			&.active {
+				display: none;
 			}
 		}
 	}

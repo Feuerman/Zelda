@@ -11,9 +11,12 @@
 					button.modal-close
 				.modal-container-content
 					form.form-modal
-						input.input-text(type="text" placeholder="Имя")
-						input.input-text(type="text" placeholder="E-mail")
-						input.input-text(type="text" placeholder="Телефон")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Имя")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="E-mail")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Телефон")
 						input.button.button-default(type="submit" value="Зарегистрироваться")
 				.modal-container-footer
 					p.p-title Регистрация через социальные сети

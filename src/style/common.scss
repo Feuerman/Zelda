@@ -1,7 +1,4 @@
 .aside {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	transition: all 0.3s ease-in-out;
 	&-header {
 		justify-content: space-between;
@@ -197,7 +194,7 @@
 	&__desc {
 		position: absolute;
 		width: calc(100% - 8em);
-		left: 6em;
+		left: 3em;
 		bottom: 5.5em;
 		color: $color-light;
 		.title {
@@ -223,10 +220,10 @@
 				box-shadow: 0 0 10px 5px lighten($color-primary, 25%);
 			}
 			&.prev {
-				left: 60px;
+				left: 30px;
 			}
 			&.next {
-				right: 60px;
+				right: 30px;
 			}
 		}
 	}
@@ -323,7 +320,7 @@
 		position: relative;
 		display: table-cell;
 		float: none;
-		padding: 8em 6em;
+		padding: 8em 3em;
 		background: rgb(255, 255, 255);
 		.title {
 			color: $color-primary;
@@ -380,7 +377,7 @@
 
 .main-competition {
 	background: url('../img/main_page-bg__2.jpg') center bottom / cover no-repeat;
-	padding: 8em 6em 10em 6em;
+	padding: 8em 3em 10em 3em;
 	img {
 		width: 100%;
 	}
@@ -407,7 +404,7 @@
 }
 
 .main-order {
-	padding: 15em 45% 15em 6em;
+	padding: 15em 45% 15em 3em;
 	background: url('../img/main_page-bg__3.jpg') right bottom / cover no-repeat;
 	.title {
 		margin-bottom: 1em;
@@ -425,7 +422,7 @@
 }
 
 .main-steps {
-	padding: 6.5em 6em;
+	padding: 6.5em 3em;
 	background: $section-bg-color;
 	& > .title {
 		margin-bottom: 2em;
@@ -473,7 +470,7 @@
 		padding: 0;
 	}
 	&__left {
-		padding: 12.5em 6em 12.5em 6em;
+		padding: 12.5em 3em 12.5em 3em;
 		border-right: 1px rgb(229, 229, 229) solid;
 		background: rgb(255, 255, 255);
 		.title {
@@ -553,7 +550,7 @@
 }
 
 .main-review {
-	padding: 6.5em 6em 4.5em 6em;
+	padding: 6.5em 3em 4.5em 3em;
 	background: url('../img/main_reviews__bg.jpg') center top / cover no-repeat;
 	&__head {
 		overflow: hidden;
@@ -574,7 +571,7 @@
 }
 
 .main-advice {
-	padding: 6em 6em 9em 6em;
+	padding: 6em 3em 9em 3em;
 	background: $color-light;
 	&__head {
 		overflow: hidden;
@@ -601,7 +598,7 @@
 }
 
 .main-bottom {
-	padding: 7.5em 6em;
+	padding: 7.5em 3em;
 	background: $section-bg-color url('../img/main_page-bg__4.png') center top / cover no-repeat;
 	p {
 		margin-bottom: 2em;
@@ -613,7 +610,7 @@
 
 .main-menu-bottom {
 	background: rgb(255, 255, 255);
-	padding: 4.5em 6em 5em 6em;
+	padding: 4.5em 3em 5em 3em;
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -645,7 +642,7 @@
 	right: 0;
 	width: 100%;
 	height: 5em;
-	padding-left: 6em;
+	padding-left: 3em;
 	line-height: 5em;
 	border-top: 1px rgb(235, 235, 235) solid;
 	background: $section-bg-color;
@@ -1034,7 +1031,7 @@
 			display: flex;
 			justify-content: flex-start;
 			margin-bottom: 30px;
-			padding: 30px;
+			padding: 30px 30px 0 30px;
 			border: 1px rgb(215, 215, 215) solid;
 			&__image {
 				flex-shrink: 0;
@@ -1044,6 +1041,7 @@
 				width: 200px;
 				height: 155px;
 				margin-right: 25px;
+				margin-bottom: 30px;
 				border: 1px rgb(215, 215, 215) solid;
 				text-align: center;
 				img {
@@ -1054,7 +1052,7 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				max-width: calc(100% - 200px);
+				flex-grow: 2;
 				.title {
 					margin-bottom: 0.5em;
 					font-size: 1.8em;
@@ -1073,24 +1071,18 @@
 					}
 				}
 				.desc {
-					margin-bottom: 1em;
+					margin-bottom: 2em;
 					font-size: 1.8em;
 					line-height: 1.33em;
 				}
-				.status {
-					position: absolute;
-					bottom: 20px;
-					right: 20px;
-					span {
-						position: relative;
-						top: -13px;
-						font-size: 1.6em;
-						&.status__danger {
-							color: $btn-bg-color;
-						}
-					}
+				.bottom {
+					display: flex;
+					justify-content:space-between;
+					align-items: center;
+					flex-wrap: wrap;
 				}
 				.promo {
+					margin-bottom: 30px;
 					font-size: 1.6em;
 					&__key {
 						max-width: 150px;
@@ -1112,11 +1104,30 @@
 						}
 					}
 					button {
+						position: relative;
+						top: -3px;
+						margin-right: 10px;
 						border-bottom: 1px $color-primary dotted;
 						&:hover {
 							border: none;
 						}
 					}
+				}
+				.status {
+					margin-bottom: 30px;
+					text-align: right;
+					span {
+						position: relative;
+						font-size: 1.6em;
+						&.status__danger {
+							color: $btn-bg-color;
+						}
+					}
+				}
+				.link {
+					position: absolute;
+					bottom: 15px;
+					right: 15px;
 				}
 			}
 		}
@@ -1446,7 +1457,7 @@
 
 .form-article {
 	&-head {
-		padding: 18px 60px;
+		padding: 18px 30px;
 		background: rgb(248, 248, 248);
 		border-bottom: 1px rgb(215, 215, 215) solid;
 		.title {
@@ -1455,7 +1466,7 @@
 		}
 	}
 	&-group {
-		padding: 30px 60px;
+		padding: 30px;
 		border-bottom: 1px rgb(215, 215, 215) solid;
 		background: $color-light;
 		label {
@@ -1690,7 +1701,7 @@
 
 .form-order {
 	&-head {
-		padding: 22px 60px;
+		padding: 22px 30px;
 		background: rgb(248, 248, 248);
 		border-bottom: 1px rgb(235, 235, 235) solid;
 		.title {
@@ -1699,7 +1710,7 @@
 		}
 	}
 	&-group {
-		padding: 30px 60px;
+		padding: 30px;
 		background: $color-light;
 		border-bottom: 1px rgb(235, 235, 235) solid;
 		label {
@@ -1728,6 +1739,7 @@
 			border: 1px rgb(225, 225, 225) solid;
 			border-radius: 5px;
 			text-align: center;
+			transition: all 0.3s ease-in-out;
 			&__image {
 				display: inline-block;
 				width: 78px;
@@ -1737,6 +1749,7 @@
 				border-radius: 50%;
 				color: $color-light;
 				text-align: center;
+				transition: all 0.3s ease-in-out;
 				span {
 					line-height: 2.3em;
 					font-size: 3.6em;
@@ -1751,6 +1764,16 @@
 			&__desc {
 				font-size: 1.8em;
 				font-weight: bold;
+				transition: all 0.3s ease-in-out;
+			}
+			&.active {
+				border-color: $btn-bg-color;
+				.item__image {
+					background: $btn-bg-color;
+				}
+				.item__desc {
+					color: $btn-bg-color;
+				}
 			}
 		}
 	}
@@ -1762,6 +1785,7 @@
 			border: 1px rgb(225, 225, 225) solid;
 			border-radius: 5px;
 			text-align: center;
+			transition: all 0.3s ease-in-out;
 			&__image {
 				position: relative;
 				display: inline-block;
@@ -1770,6 +1794,7 @@
 				margin-bottom: 23px;
 				background: rgb(190, 190, 190);
 				border-radius: 50%;
+				transition: all 0.3s ease-in-out;
 				.icon {
 					position: absolute;
 					top: 0;
@@ -1782,6 +1807,16 @@
 			&__desc {
 				font-size: 1.8em;
 				font-weight: bold;
+				transition: all 0.3s ease-in-out;
+			}
+			&.active {
+				border-color: $btn-bg-color;
+				.item__image {
+					background: $btn-bg-color;
+				}
+				.item__desc {
+					color: $btn-bg-color;
+				}
 			}
 		}
 	}
@@ -1803,7 +1838,7 @@
 	}
 	&-footer {
 		overflow: hidden;
-		padding: 15px 60px;
+		padding: 15px 30px;
 		background: rgb(74, 72, 81);
 		color: $color-light;
 		&__summary {
@@ -2020,7 +2055,7 @@
 		border-bottom: 1px rgb(235, 235, 235) solid;
 		&-left {
 			position: relative;
-			padding: 60px;
+			padding: 30px;
 			background: $color-light;
 			&::after {
 				content: '';
@@ -2116,10 +2151,10 @@
 			border-bottom: 1px rgb(235, 235, 235) solid;
 			td, th {
 				&:first-child {
-					padding-left: 60px;
+					padding-left: 30px;
 				}
 				&:last-child {
-					padding-right: 60px;
+					padding-right: 30px;
 				}
 			}
 		}
@@ -2211,7 +2246,7 @@
 .about {
 	&-header {
 		position: relative;
-		padding: 0 60px;
+		padding: 0 30px;
 		background: url('../img/about-1.jpg') center bottom / cover no-repeat;
 		color: $color-light;
 		.triangle-top, .triangle-bottom {
@@ -2335,7 +2370,7 @@
 		}
 	}
 	&-advantages {
-		padding: 90px 60px;
+		padding: 90px 30px;
 		background: url('../img/about-3.jpg') center center / cover no-repeat;
 		color: $color-light;
 		.title {
@@ -2505,11 +2540,51 @@
 	}
 }
 
-@media screen and (max-width: 1450px) {
-
+.accessories-tizers {
+	min-height: 370px;
+	&__item {
+		width: 100%;
+		margin-bottom: 30px;
+		padding: 25px 18px;
+		border: 1px rgb(215, 215, 215) solid;
+		text-align: center;
+		.image {
+			margin-bottom: 40px;
+			img {
+				max-width: 100%;
+			}
+		}
+		.title {
+			font-size: 1.8em;
+			line-height: 1.2em;
+			color: $color-link;
+		}
+		&:hover {
+			.title {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 1170px) {
+.tabs-content {
+	position: relative;
+	min-height:390px;
+	&-item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transform: translateX(-100%);
+		transition: all 1s;
+		&.active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
 	.wrapper {
 		display: block;
 	}
@@ -2627,6 +2702,10 @@
 	.content-section {
 		padding: 25px 10px;
 		&--breadcrumbs {
+			padding-bottom: 0;
+		}
+		&--menu {
+			padding-top: 10px;
 			padding-bottom: 0;
 		}
 	}
@@ -3120,11 +3199,8 @@
 			&-item {
 
 				&__content {
-					.status {
+					.link {
 						bottom: 10px;
-						span {
-							top: 0;
-						}
 					}
 				}
 			}
@@ -3202,6 +3278,12 @@
 					}
 				}
 			}
+		}
+	}
+	.accessories-tizers {
+		[class*="col-"] {
+			width: 50%;
+			float: left;
 		}
 	}
 	.footer {
@@ -3330,7 +3412,7 @@
 				margin-bottom: 20px;
 			}
 			textarea {
-				min-height: 200px;
+				min-height: 180px;
 			}
 		}
 		&-file {
@@ -3561,7 +3643,7 @@
 			&-item {
 				flex-direction: column;
 				margin-bottom: 30px;
-				padding: 15px 15px 40px 15px;
+				padding: 15px;
 				&__image {
 					width: 100%;
 					height: auto;
@@ -3581,20 +3663,10 @@
 						font-size: 1.6em;
 						line-height: 1.5em;
 					}
-					.status {
-						bottom: 15px;
-						right: auto;
-						left: 15px;
-						span {
-							top: 0;
-							font-size: 1.5em;
-						}
-					}
 					.promo {
 						font-size: 1.5em;
 						&__key {
 							max-width: 50%;
-							margin-bottom: 10px;
 							padding: 5px;
 						}
 					}
@@ -3764,6 +3836,12 @@
 					}
 				}
 			}
+		}
+	}
+	.accessories-tizers {
+		[class*="col-"] {
+			width: 100%;
+			float: none;
 		}
 	}
 }

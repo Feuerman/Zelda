@@ -12,7 +12,7 @@ body
 				section.content-section.content-section--breadcrumbs
 					ul.breadcrumbs
 						li.breadcrumbs__item
-							a.breadcrumbs__link(href="#") Главная
+							a.breadcrumbs__link(href="/") Главная
 						li.breadcrumbs__item
 							span Корзина
 				section.content-section
@@ -113,7 +113,7 @@ body
 							span Итого:
 							span.value 190 899 руб.
 							span.discount Скидка: 5%
-						button.button.button-default Оформить заказ									
+						a.button.button-default(href="/place-an-order.html") Оформить заказ									
 				include templates/bottom-menu.jade
 			include templates/footer.jade
 	include templates/modal/add-article.jade

@@ -11,14 +11,16 @@
 					button.modal-close
 				.modal-container-content
 					form.form-modal
-						input.input-text(type="text" placeholder="Логин")
-						input.input-text(type="text" placeholder="Пароль")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Логин")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Пароль")
 						input.button.button-default(type="submit" value="Войти на сайт")
 						.form-modal__bottom
 							.checkbox-wrap
 								input.checkbox(type="checkbox" id="remember")
 								label(for="remember") Запомнить меня
-							button.js-modal(data-fancybox-href="#js-modal-recovery") Забыли пароль?
+							button.js-modal(data-fancybox-href="#js-modal-recovery-1") Забыли пароль?
 				.modal-container-footer
 					p.p-title Вход через социальные сети
 					.social--color

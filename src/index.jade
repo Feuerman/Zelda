@@ -44,7 +44,7 @@ body
 					.col-sm-6.main-fast-order__left
 						.section-title Всего 16,5 минут для заказа новой кухни
 						p Мы — интернет-фабрика, работаем для розничных клиентов и небольших кухонных компаний
-						button.js-modal-buy.button.button-default
+						a.button.button-default(href="/step-1.html")
 							| купить кухню
 							i.icon.icon__basket
 					.col-sm-6.main-fast-order__right
@@ -198,7 +198,4 @@ body
 					p За время существования нашей компании мы шагнули далеко вперед. Наши кухни, которые выпускались пятнадцать лет назад, и те, которые мы выпускаем сейчас, имеют колоссальную разницу в качестве. Мы смогли улучшить нашу продукцию, и поэтому легко готовы предоставить Вам гарантию 12 лет. Гарантийные случаи возникают только у 0.02% наших клиентов. Это всего лишь 2 случая на 2000 кухонь!
 				include templates/bottom-menu.jade
 			include templates/footer.jade
-	include templates/modal/auth.jade
-	include templates/modal/reg.jade
-	include templates/modal/recovery.jade
-	include templates/modal/search.jade
+	include templates/modal/general.jade

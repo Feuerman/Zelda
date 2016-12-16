@@ -12,7 +12,7 @@ body
 				section.content-section
 					ul.breadcrumbs
 						li.breadcrumbs__item
-							a.breadcrumbs__link(href="#") Главная
+							a.breadcrumbs__link(href="/") Главная
 						li.breadcrumbs__item
 							a.breadcrumbs__link(href="#") Каталог
 						li.breadcrumbs__item
@@ -91,7 +91,7 @@ body
 				section.content-section.content-section--grey.content-section-head
 					.content-section-head__title О модели Анкона Плюс Polylac
 					.content-section-head__right.hidden-xs
-						a.content-section-head__right.button.button-transparent(href="#") Отзывы о модели
+						a.content-section-head__right.button.button-transparent(href="/reviews.html") Отзывы о модели
 				section.content-section
 					ul.dropdown-list
 						li.dropdown-list-item
@@ -156,7 +156,7 @@ body
 									.title Анкона Плюс Polylac – прямая, 3м
 									.bottom
 										.price 136 790 р.
-										a.button.button-transparent(href="#") Создать свой проект
+										a.button.button-transparent(href="/step-3.html") Создать свой проект
 						.col-sm-6
 							.catalog-variants-item
 								.catalog-variants-item__image
@@ -165,7 +165,7 @@ body
 									.title Анкона Плюс Polylac – прямая, 3м
 									.bottom
 										.price 136 790 р.
-										a.button.button-transparent(href="#") Создать свой проект
+										a.button.button-transparent(href="/step-3.html") Создать свой проект
 						.col-sm-6
 							.catalog-variants-item
 								.catalog-variants-item__image
@@ -174,7 +174,7 @@ body
 									.title Анкона Плюс Polylac – прямая, 3м
 									.bottom
 										.price 136 790 р.
-										a.button.button-transparent(href="#") Создать свой проект
+										a.button.button-transparent(href="/step-3.html") Создать свой проект
 						.col-sm-6
 							.catalog-variants-item
 								.catalog-variants-item__image
@@ -183,16 +183,69 @@ body
 									.title Анкона Плюс Polylac – прямая, 3м
 									.bottom
 										.price 136 790 р.
-										a.button.button-transparent(href="#") Создать свой проект
-				section.content-section.content-section--grey
-					.tabs.category-tabs
+										a.button.button-transparent(href="/step-3.html") Создать свой проект
+				section.content-section.content-section--grey.content-section--menu
+					.tabs(data-tabs="accessories")
 						ul.section-menu
-							li.section-menu__item
-								a.section-menu__link(href="#") Фасады
-							li.section-menu__item
-								a.section-menu__link(href="#") Ручки
-							li.section-menu__item
-								a.section-menu__link(href="#") Столешницы						
+							li.section-menu__item.tabs__item.active
+								button.section-menu__link(href="#") Фасады
+							li.section-menu__item.tabs__item
+								button.section-menu__link(href="#") Ручки
+							li.section-menu__item.tabs__item
+								button.section-menu__link(href="#") Столешницы
+				section.content-section
+					.tabs-content(data-tabs="accessories")
+						.tabs-content-item
+							.row.accessories-tizers
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-1.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-2.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-3.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+						.tabs-content-item
+							.row.accessories-tizers
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-3.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-1.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-2.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец								
+						.tabs-content-item
+							.row.accessories-tizers
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-3.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-1.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец
+								.col-sm-4
+									a.accessories-tizers__item(href="#")
+										.image
+											img(src="img/fasad-2.jpg", alt="")
+										.title Polylac 9140 Дуб Прага глянец		
 				include templates/bottom-menu.jade
 			include templates/footer.jade
 	include templates/modal/general.jade

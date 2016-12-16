@@ -35,7 +35,7 @@
 	}
 	&-content {
 		overflow: hidden;
-		padding: 25px 25px 50px 25px;
+		padding: 20px 25px 30px 25px;
 		background: $color-light;
 		.left {
 			display: table-cell;
@@ -56,7 +56,7 @@
 		}
 	}
 	&-footer {
-		padding: 20px 25px;
+		padding: 25px;
 		background: rgb(235, 235, 235);
 		text-align: center;
 		button {
@@ -81,7 +81,7 @@
 			position: absolute;
 		}
 		.bg-logo {
-			left: 10px;
+			left: 20px;
 			bottom: 20px;
 			width: 183px;
 			height: 25px;
@@ -93,7 +93,7 @@
 			background: url('../img/macbook.png') 0 center no-repeat;
 		}
 		.bg-change {
-			top: 35%;
+			top: 33%;
 			right: 50px;
 			width: 120px;
 			height: 130px;
@@ -106,12 +106,15 @@
 				background-image: url('../img/bg-auth.png');
 			}
 			&--recovery {
-				top: 0;
+				top: -20px;
 				right: 0;
 				width: 100%;
 				height: 100%;
 				background-position: center center;
 				background-image: url('../img/bg-recovery.png');
+				&-mail {
+					background-image: url('../img/bg-recovery-2.png');
+				}
 			}
 		}
 	}
@@ -120,8 +123,8 @@
 			width: 100%;
 		}
 		.modal-container-footer {
-			padding-top: 40px;
-			padding-bottom: 45px;
+			padding-top: 35px;
+			padding-bottom: 35px;
 		}
 		.p-title {
 			margin-bottom: 30px;
@@ -249,7 +252,6 @@
 @media screen and (max-width: 480px) {
 	.fancybox-wrap {
 		min-width: 100%;
-		top: 0!important;
 		left: 0!important;
 	}
 	.modal-close {

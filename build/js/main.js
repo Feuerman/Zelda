@@ -467,6 +467,34 @@ $(document).ready(function() {
 		});
 	}
 
+	// Tabs
+	$('.tabs__item').on('click', function (e) {
+		e.preventDefault();
+
+		var tabsID = $(this).parents('.tabs').data('tabs');
+		var currentIndex = $(this).index();
+
+		changeTab(tabsID, currentIndex);
+	})
+
+	function changeTab(id, index) {
+		$('.tabs[data-tabs="' + id + '"] .tabs__item').removeClass('active');
+		$('.tabs[data-tabs="' + id + '"] .tabs__item').eq(index).addClass('active');
+
+		$('.tabs-content[data-tabs="' + id + '"] .tabs-content-item').removeClass('active');
+		$('.tabs-content[data-tabs="' + id + '"] .tabs-content-item').eq(index).addClass('active');
+	}
+
+	// Place-an-order events
+	$('.form-order-payment .item').on('click', function() {
+		$('.form-order-payment .item').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.form-order-payment-method .item').on('click', function() {
+		$('.form-order-payment-method .item').removeClass('active');
+		$(this).addClass('active');
+	})
+
 	// Change file
 	$('.js-change-file').on('change', function () {
 		var fileName = $(this)[0].files[0].name;

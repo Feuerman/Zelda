@@ -1,0 +1,19 @@
+.modal-hide
+	#js-modal-recovery-4
+		.modal-two-cols
+			.modal-two-cols__left
+				.bg-logo
+				.bg-change.bg-change--recovery
+			.modal-two-cols__right
+				.modal-container-head
+					.modal-container-head__title Введите новый пароль
+					button.modal-close
+				.modal-container-content
+					form.form-modal
+						.form-modal__input-wrap
+							.form-modal__input-group
+								input.input-text(type="text" placeholder="Пароль")
+							.form-modal__input-group.error
+								input.input-text(type="text" placeholder="Повторить пароль")
+								.input-error Пароли не совпадают
+						input.button.button-default(type="submit" value="Сохранить")

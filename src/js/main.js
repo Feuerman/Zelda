@@ -266,6 +266,28 @@ $(document).ready(function() {
 		speed: 1000
 	});
 
+	// Accessories slider
+	$('.js-slider-accessories').slick({
+		slidesToShow: 3,
+		arrows: true,
+		dots: false,
+		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2
+					}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+					}
+			}
+		]
+	});
+
 	// Mobile menu
 	$('.js-menu-mobile').on('click', function(event) {
 		event.preventDefault();
@@ -290,12 +312,32 @@ $(document).ready(function() {
 		$('.configurator-category__item').removeClass('active');
 		$(this).addClass('active');
 		$('.configurator-product').addClass('active');
+		$(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+			adaptiveHeightConf();
+		});
 	});
 
 	$('.js-extend-choise').on('click', function(event) {
 		event.preventDefault();
 		$('.configurator-slider-wrap').toggleClass('active');
+		$(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+			adaptiveHeightConf();
+		});
 	});
+
+	function adaptiveHeightConf() {
+		var headerH = $('.top-mobile').outerHeight();
+		var bottmPanelH = $('.configurator__bottom-panel').outerHeight();
+		var imageH = $('.configurator__main-image').outerHeight();
+		var windowH = $(window).height();
+		if ((windowH - headerH - bottmPanelH - imageH) < 0) {
+			$('.configurator__bottom-panel').css('position', 'relative');
+			$('body').animate({scrollTop: windowH}, 1000);
+		} else {
+			$('.configurator__bottom-panel').css('position', 'absolute');
+		}
+	}
+
 
 	// Modal
 	$('.js-modal').fancybox({
@@ -365,8 +407,45 @@ $(document).ready(function() {
 		$(this).parent().toggleClass('active');
 	});
 
+	var products = [
+		{
+			id: 1,
+			items: [
+				{
+					name: 'Шкаф сушка 1 (720x600)',
+					articul: 'A-600-CR',
+					image: 'img/step3__image-small.png',
+					price: 359.62,
+					checked: true
+				},
+				{
+					name: 'Шкаф сушка 2 (800x600)',
+					articul: 'A-600-CR',
+					image: 'img/step3__image-small.png',
+					price: 359.62,
+					checked: false
+				},
+				{
+					name: 'Шкаф сушка 3 (860х600)',
+					articul: 'A-600-CR',
+					image: 'img/step3__image-small.png',
+					price: 359.62,
+					checked: false
+				},
+				{
+					name: 'Шкаф сушка 4 (960х600)',
+					articul: 'A-600-CR',
+					image: 'img/step3__image-small.png',
+					price: 359.62,
+					checked: false
+				}
+			]
+		}
+	];
+
 	$('.js-dropdown-spec').on('click', function () {
-		$(this).parents('.specification-table-dropdown').toggleClass('active');
+		// $(this).parents('.specification-table-dropdown').toggleClass('active');
+		console.log(products);
 	});
 
 	var specificationContainer = $('.specification-table-wrap');
@@ -394,6 +473,17 @@ $(document).ready(function() {
 	$('.js-toggle-filter').on('click', function() {
 		$(this).parents('.filter-wrap').toggleClass('active');
 	});
+
+	$('.accessories-btn-mobile').on('click', function() {
+		$(this).parents('.tabs-content-item').toggleClass('active');
+		var targetBlock = $(this).parents('.tabs-content-item');
+			scrollToBlock(targetBlock);
+	});
+
+	function scrollToBlock(block) {
+		var destination = block.offset().top;
+		$('body').animate({ scrollTop: destination }, 1100);
+	}
 
 	// Copy promo key code
 	$('.js-copy-promo-key').on('click', function(event) {
@@ -499,5 +589,11 @@ $(document).ready(function() {
 	$('.js-change-file').on('change', function () {
 		var fileName = $(this)[0].files[0].name;
 		$('.js-change-file-name').text(fileName);
+	});
+
+	// Scroll
+	$('.js-scroll-to-detail').on('click', function functionName() {
+		var targetH = $('.catalog-variants').offset().top + $('.catalog-variants').height();
+		$('body').animate({scrollTop: targetH}, 1000);
 	});
 });

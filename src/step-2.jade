@@ -94,34 +94,14 @@ body
 						a.content-section-head__right.button.button-transparent(href="/reviews.html") Отзывы о модели
 				section.content-section
 					ul.dropdown-list
-						li.dropdown-list-item
+						li.dropdown-list-item.active
 							.dropdown-list-item__head
 								.title О модели Анкона Плюс Polylac
 								.switch
 									i.icon.icon__plus
 							.dropdown-list-item__content
-								p Современная кухня Анкона Плюс Polylac — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием Polylac станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена Анкона Плюс Polylac, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.
-						li.dropdown-list-item
-							.dropdown-list-item__head
-								.title Материалы фасадов
-								.switch
-									i.icon.icon__plus
-							.dropdown-list-item__content
-								p test
-						li.dropdown-list-item
-							.dropdown-list-item__head
-								.title Преимущества
-								.switch
-									i.icon.icon__plus
-							.dropdown-list-item__content
-								p test
-						li.dropdown-list-item
-							.dropdown-list-item__head
-								.title Особенности модели
-								.switch
-									i.icon.icon__plus
-							.dropdown-list-item__content
-								p test
+								p Современная кухня Анкона Плюс Polylac — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием Polylac станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена Анкона Плюс Polylac, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.	
+					button.button.button-transparent.js-scroll-to-detail Подробнее					
 				section.content-section.content-section--grey.content-section-head
 					.content-section-head__title Посмотреть  варианты исполнения с ценами
 				section.content-section.content-section--grey
@@ -183,8 +163,8 @@ body
 									.title Анкона Плюс Polylac – прямая, 3м
 									.bottom
 										.price 136 790 р.
-										a.button.button-transparent(href="/step-3.html") Создать свой проект
-				section.content-section.content-section--grey.content-section--menu
+										a.button.button-transparent(href="/step-3.html") Создать свой проект					
+				section.content-section.content-section--grey.content-section--menu.hidden-xs
 					.tabs(data-tabs="accessories")
 						ul.section-menu
 							li.section-menu__item.tabs__item.active
@@ -195,57 +175,88 @@ body
 								button.section-menu__link(href="#") Столешницы
 				section.content-section
 					.tabs-content(data-tabs="accessories")
+						.tabs-content-item.active
+							button.accessories-btn-mobile
+								span Фасады
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
 						.tabs-content-item
-							.row.accessories-tizers
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-1.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-2.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-3.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
+							button.accessories-btn-mobile
+								span Ручки
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец								
 						.tabs-content-item
-							.row.accessories-tizers
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-3.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-1.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-2.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец								
-						.tabs-content-item
-							.row.accessories-tizers
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-3.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-1.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец
-								.col-sm-4
-									a.accessories-tizers__item(href="#")
-										.image
-											img(src="img/fasad-2.jpg", alt="")
-										.title Polylac 9140 Дуб Прага глянец		
+							button.accessories-btn-mobile
+								span Столешницы
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец	
+				section.content-section
+					ul.dropdown-list
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Материалы фасадов
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Высокоглянцевые фасады из МДФ  с полимерным  PET покрытием  Polylac. Обратная сторона фасада матовая в цвет лицевой стороны. По периметру фасада кромка АВС в цвет лицевой стороны фасада на древесных декорах и  2-х цветная 3D кромка с эффектом стекла на однотонных декорах.
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Преимущества
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Ультраглянцевые фасады, высокая устойчивость к механическим повреждениям, абсолютная ровность поверхности, эффект глубины поверхности, отсутствие в составе ПВХ, высокая термоустойчивость.
+						li.dropdown-list-item
+							.dropdown-list-item__head
+								.title Особенности модели
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Возможно изготовление открытых модулей из фасадного материала, возможно изготовление шкафов купе с дверьми в цвет фасадов кухни. Возможно, использовать фасады без применения ручек с профилем-нишей верхних и нижних модулей.	
 				include templates/bottom-menu.jade
 			include templates/footer.jade
 	include templates/modal/general.jade

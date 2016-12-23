@@ -319,3 +319,17 @@ body
 				button.button.button-default оформить заказ
 				button.button.button-transparent Продолжить покупки
 	include templates/modal/general.jade
+	script#movieTmpl(type='text/x-jquery-tmpl').
+		<div class="movie-bag">
+		<img src="Content/Thumbnails/${thumbnail}" class="thumbnail" />
+		<div class="base-info">
+		<h2>
+		${title}
+		</h2>
+		<p>
+		Режиссер: ${director}<br />
+		В ролях: ${actors}<br />
+		Год: ${year}
+		</p>
+		</div>
+		</div>

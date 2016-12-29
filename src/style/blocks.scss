@@ -1005,6 +1005,32 @@
 	outline: none!important;
 }
 
+.table-products {
+	width: 100%;
+	border-style: solid;
+	border-color: rgb(215, 215, 215);
+	border-width: 1px 0 0 1px;
+	tr {
+		cursor: pointer;
+	}
+	td, th {
+		padding: 10px;
+		border-style: solid;
+		border-color: rgb(215, 215, 215);
+		border-width: 0 1px 1px 0;
+		font-size: 1.4em;
+		text-align: center;
+	}
+	td, th {
+		&.name {
+			text-align: left;
+		}
+	}
+	input {
+		outline: none!important;
+	}
+}
+
 .specification-table {
 	&-wrap {
 		position: relative;
@@ -1284,6 +1310,7 @@
 }
 
 .basket-float {
+	display: none;
 	z-index: 1000;
 	position: fixed;
 	top: 80px;

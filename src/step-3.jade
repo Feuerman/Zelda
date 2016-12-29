@@ -107,7 +107,7 @@ body
 									a.button.button-default(href="/configurator.html") Запустить онлайн конструктор
 					.specification-table-wrap
 						.specification-table__title Стандартные модули
-						.specification-table
+						.specification-table(data-product-container-id="1")
 							.specification-table-col.specification-table-col--number
 								.title Номер на рисунке
 								.content
@@ -115,30 +115,17 @@ body
 							.specification-table-col.specification-table-col--art
 								.title Арктикул
 								.content
-									span A-600-CR
+									span.js-product-articul A-600-CR
 							.specification-table-col.specification-table-col--image
 								.title Изображение
 								.content.content
-									img(src="img/step3__image-small.png", alt="")
+									img.js-product-image(src="img/step3__image-small.png", alt="")
 							.specification-table-col.specification-table-col--list
 								.title Наименование
 								.content
 									.specification-table-dropdown
-										span Шкаф сушка 1 (720x600)
-										button.icon.icon__arrow-down-circle--grey.js-dropdown-spec
-										.specification-table-dropdown__list
-											.radio-wrap
-												input.radio(type="radio" id="radio1" name="item1" checked)
-												label(for="radio1") Шкаф сушка 1 (720x600)
-											.radio-wrap
-												input.radio(type="radio" id="radio2" name="item1")
-												label(for="radio2") Шкаф сушка 2 (800x600)
-											.radio-wrap
-												input.radio(type="radio" id="radio3" name="item1")
-												label(for="radio3") Шкаф сушка 3 (860х600)
-											.radio-wrap
-												input.radio(type="radio" id="radio4" name="item1")
-												label(for="radio4") Шкаф сушка 4 (960х600)
+										span.js-product-name Шкаф сушка 1 (720x600)
+										button.icon.icon__arrow-down-circle--grey.js-modal-spec(data-product-id="1")
 							.specification-table-col.specification-table-col--count
 								.title Кол.
 								.content
@@ -146,15 +133,18 @@ body
 							.specification-table-col.specification-table-col--price
 								.title Цена
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--summ
 								.title Сумма
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--result
 								.title Итого
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--add
 								.title Добавить
 								.content
@@ -166,7 +156,7 @@ body
 								.specification-table__row-list
 									span 1.  ЛДС 18 мм (Белый 701/Бежевый 713)
 									span 2. Афина 72x60 (Афина неро 726x60)
-						.specification-table
+						.specification-table(data-product-container-id="2")
 							.specification-table-col.specification-table-col--number
 								.title Номер на рисунке
 								.content
@@ -174,30 +164,17 @@ body
 							.specification-table-col.specification-table-col--art
 								.title Арктикул
 								.content
-									span B-456
+									span.js-product-articul B-456
 							.specification-table-col.specification-table-col--image
 								.title Изображение
 								.content.content
-									img(src="img/step3__image-small.png", alt="")
+									img.js-product-image(src="img/step3__image-small.png", alt="")
 							.specification-table-col.specification-table-col--list
 								.title Наименование
 								.content
 									.specification-table-dropdown
-										span База ящик 1 ДМ 
-										button.icon.icon__arrow-down-circle--grey.js-dropdown-spec
-										.specification-table-dropdown__list
-											.radio-wrap
-												input.radio(type="radio" id="radio1" name="item1" checked)
-												label(for="radio1") База ящик 1 ДМ  (720x600)
-											.radio-wrap
-												input.radio(type="radio" id="radio2" name="item1")
-												label(for="radio2") База ящик 1 ДМ  (800x600)
-											.radio-wrap
-												input.radio(type="radio" id="radio3" name="item1")
-												label(for="radio3") База ящик 1 ДМ  (860х600)
-											.radio-wrap
-												input.radio(type="radio" id="radio4" name="item1")
-												label(for="radio4") База ящик 1 ДМ  (960х600)
+										span.js-product-name База ящик 1 ДМ 
+										button.icon.icon__arrow-down-circle--grey.js-modal-spec(data-product-id="2")
 							.specification-table-col.specification-table-col--count
 								.title Кол.
 								.content
@@ -205,15 +182,18 @@ body
 							.specification-table-col.specification-table-col--price
 								.title Цена
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--summ
 								.title Сумма
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--result
 								.title Итого
 								.content
-									span 359,62 р.
+									span.js-product-price 359,62
+									span р.
 							.specification-table-col.specification-table-col--add
 								.title Добавить
 								.content
@@ -319,17 +299,13 @@ body
 				button.button.button-default оформить заказ
 				button.button.button-transparent Продолжить покупки
 	include templates/modal/general.jade
-	script#movieTmpl(type='text/x-jquery-tmpl').
-		<div class="movie-bag">
-		<img src="Content/Thumbnails/${thumbnail}" class="thumbnail" />
-		<div class="base-info">
-		<h2>
-		${title}
-		</h2>
-		<p>
-		Режиссер: ${director}<br />
-		В ролях: ${actors}<br />
-		Год: ${year}
-		</p>
-		</div>
-		</div>
+	.modal-hide
+		.modal-container#js-modal-product
+			//- .modal-container-head
+			//- 	.modal-container-head__title
+			//- 	button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					table.table-products(id="modal-products")						
+			.modal-container-footer
+				button.button.button-transparent.js-product-choise Выбрать

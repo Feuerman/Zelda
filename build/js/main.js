@@ -407,6 +407,7 @@ $(document).ready(function() {
 		$(this).parent().toggleClass('active');
 	});
 
+	// Selected products function --start
 	var products = [
 		{
 			id: 1,
@@ -420,33 +421,144 @@ $(document).ready(function() {
 				},
 				{
 					name: 'Шкаф сушка 2 (800x600)',
-					articul: 'A-600-CR',
+					articul: 'A-700-CR',
 					image: 'img/step3__image-small.png',
-					price: 359.62,
+					price: 369.62,
 					checked: false
 				},
 				{
 					name: 'Шкаф сушка 3 (860х600)',
-					articul: 'A-600-CR',
+					articul: 'A-800-CR',
 					image: 'img/step3__image-small.png',
-					price: 359.62,
+					price: 379.62,
 					checked: false
 				},
 				{
 					name: 'Шкаф сушка 4 (960х600)',
-					articul: 'A-600-CR',
+					articul: 'A-900-CR',
 					image: 'img/step3__image-small.png',
-					price: 359.62,
+					price: 379.62,
+					checked: false
+				}
+			]
+		},
+		{
+			id: 2,
+			items: [
+				{
+					name: 'База ящик 1 ДМ',
+					articul: 'B-456',
+					image: 'img/step3__image-small.png',
+					price: 559.62,
+					checked: true
+				},
+				{
+					name: 'База ящик 2 ДМ',
+					articul: 'B-457',
+					image: 'img/step3__image-small.png',
+					price: 549.62,
 					checked: false
 				}
 			]
 		}
 	];
 
-	$('.js-dropdown-spec').on('click', function () {
-		// $(this).parents('.specification-table-dropdown').toggleClass('active');
-		console.log(products);
+	$('.js-modal-spec').on('click', function () {
+		var productId = $(this).data('product-id');
+		var productController = new ProductController(productId);
+		$('.js-product-choise').on('click', function() {
+			productController.closeModal();
+			productController.editMainTable(productId);
+		});
+		$('input[name="product"]').on('click', function() {
+			var key = $(this).data('product-articul');
+			productController.findProduct(key);
+		});
 	});
+
+	$('.table-products').on('click', function(e) {
+		if (e.target.nodeName != 'INPUT') {
+			$(e.target).parents('tr').find('input').trigger('click');
+		}
+	});
+
+	function ProductController(id){
+		this.id = id;
+		this.products = products;
+		this.currentProductsArr = [];
+		this.selectedProduct = {};
+
+		this.findArrById(this.id);
+		this.createTable(this.currentProductsArr);
+		this.openModal();
+	};
+
+	ProductController.prototype.findArrById = function (id) {
+		var that = this;
+		that.products.forEach(function(item, i, arr) {
+			if ( item.id === id ) that.currentProductsArr = that.products[i].items;
+		});
+	};
+	ProductController.prototype.findProduct = function (key) {
+		var that = this;
+		that.currentProductsArr.forEach(function(item, i, arr) {
+			item.checked = false;
+			if (item.articul === key) {
+				item.checked = true;
+				that.selectedProduct = item;
+			}
+		});
+	};
+
+	ProductController.prototype.createTable = function (data) {
+		var trHead = $('<tr/>')
+		trHead.append("<th></th><th>Артикул</th><th>Изображение</th><th>Наименование</th><th>Цена</th>");
+		$('#modal-products').append(trHead);
+		var tr;
+		for (var i = 0; i < data.length; i++) {
+			tr = $('<tr/>');
+			if (data[i].checked) {
+				tr.append("<td><input type='radio' name='product' data-product-articul='" + data[i].articul + "' checked></td>");
+			} else {
+				tr.append("<td><input type='radio' name='product' data-product-articul='" + data[i].articul + "'></td>");
+			}
+			tr.append("<td>" + data[i].articul + "</td>");
+			tr.append("<td><img src=" + data[i].image + "></td>");
+			tr.append("<td class='name'>" + data[i].name + "</td>");
+			tr.append("<td>" + data[i].price + "р.</td>");
+			$('#modal-products').append(tr);
+		};
+	};
+
+	ProductController.prototype.openModal = function () {
+		var that = this;
+		$.fancybox.open({
+			href: '#js-modal-product',
+			closeBtn: false,
+			afterShow: function() {
+				$('.modal-close').click(function(event) {
+					that.closeModal();
+				});
+			}
+		});
+	};
+	ProductController.prototype.closeModal = function () {
+		$.fancybox.close();
+		$('#modal-products').html('');
+	};
+
+	ProductController.prototype.editMainTable = function (data) {
+		var that = this;
+		products = that.products;
+		var edited = $('.specification-table[data-product-container-id="' + this.id + '"]');
+		edited.find('.js-product-articul').text(that.selectedProduct.articul);
+		edited.find('.js-product-name').text(that.selectedProduct.name);
+		edited.find('.js-product-image').attr('src', that.selectedProduct.image);
+		edited.find('.js-product-price').text(that.selectedProduct.price);
+	};
+	// Selected products function --end
+
+
 
 	var specificationContainer = $('.specification-table-wrap');
 	$('.js-toggle-spec').on('click', function () {

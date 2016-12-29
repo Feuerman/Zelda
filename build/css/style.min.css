@@ -20,15 +20,20 @@ body {
 }
 
 .wrapper {
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
+}
+
+.wrapper.configurator {
+    width: 100%;
 }
 
 .aside {
     z-index: 200;
     position: fixed;
     top: 0;
-    left: 0;
+    left: calc(50% - 600px);
     width: 230px;
     height: 100%;
     background: #2f2e33;
@@ -2067,6 +2072,25 @@ textarea {
   .radio:checked + label {
     font-weight: 700; }
 
+.table-products {
+  width: 100%;
+  border-style: solid;
+  border-color: #d7d7d7;
+  border-width: 1px 0 0 1px; }
+  .table-products tr {
+    cursor: pointer; }
+  .table-products td, .table-products th {
+    padding: 10px;
+    border-style: solid;
+    border-color: #d7d7d7;
+    border-width: 0 1px 1px 0;
+    font-size: 1.4em;
+    text-align: center; }
+  .table-products td.name, .table-products th.name {
+    text-align: left; }
+  .table-products input {
+    outline: none !important; }
+
 .specification-table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2315,6 +2339,7 @@ textarea {
       border-color: transparent; }
 
 .basket-float {
+  display: none;
   z-index: 1000;
   position: fixed;
   top: 80px;
@@ -4950,6 +4975,7 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .wrapper {
+    width: 100%;
     display: block; }
   .top-mobile {
     display: block; }

@@ -1,0 +1,14 @@
+@import 'sprite.scss';
+
+.icon {
+	display: inline-block;
+}
+
+@include sprites($spritesheet-sprites);
+
+.icon__arrow-right-circle--grey:hover {
+	background-position: $icon-arrow-right-circle-red-offset-x $icon-arrow-right-circle-red-offset-y;
+}
+.icon__arrow-left-circle--grey:hover {	
+	background-position: $icon-arrow-left-circle-red-offset-x $icon-arrow-left-circle-red-offset-y;
+}

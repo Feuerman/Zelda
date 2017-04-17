@@ -1,0 +1,15 @@
+.modal-hide
+	.modal-container#js-modal-add-comment
+		.modal-container-head
+			.modal-container-head__title Написать комментарий
+			button.modal-close
+		form.form-comment
+			.modal-container-content
+				.row
+					.col-sm-6
+						input.input-text(type="text" name="username" placeholder="Имя")
+					.col-sm-6
+							input.input-text(type="text" name="email" placeholder="Электронная почта")
+				textarea.input-text(name="message" rows="5" placeholder="Текст комментария")
+			.modal-container-footer
+				input.button.button-default(type="submit" value="Отправить комментарий")

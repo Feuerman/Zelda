@@ -1,0 +1,34 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title
+						h1 Услуги
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Услуги
+						li.breadcrumbs__item
+							span Вызов замерщика
+				section.service-detail
+					.col-sm-6.service-detail-left
+						.title Вы сможете точно рассчитать бюджет на покупку кухни с помощью бесплатной услуги «Вызов замерщика»
+						.desc Наш дизайнер-замерщик приедет в удобное для Вас время, сделает необходимые замеры и предложит варианты грамотной планировки, учитывая все Ваши пожелания.
+						.panel                            
+							button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+								span В корзину
+								i.icon.icon__basket
+							button.button.button-transparent КУПИТЬ В 1 КЛИК
+					.col-sm-6.service-detail-right
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

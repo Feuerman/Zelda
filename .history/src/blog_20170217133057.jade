@@ -1,0 +1,104 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title
+						h1 Блог
+					.content-header__right
+						a.button.button-transparent(href="/blog-add-article.html") Добавить сатью
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							span Блог
+				section.content-section
+					.blog
+						.blog-item
+							.blog-item__image
+								img(src="img/blog-1.jpg", alt="")
+								.count-block
+									i.icon.icon__eye
+									span 145 
+							.blog-item__content
+								.title Как же правильно выбрать качественную и практичную кухню? 
+								.info
+									span.info__category Советы
+									span.info__author Автор: КухниСтрой
+									span.info__date 18.01.16
+								.desc Обязательно сделайте замеры помещения: - точно измерьте площадь и «полезный» периметр, высоту помещения, длину подоконника, отрезок между подоконниками и полом, длину стен на кухне и т.п.
+								a.link(href="/blog-detail.html")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/blog-2.jpg", alt="")
+								.count-block
+									i.icon.icon__eye
+									span 145 
+							.blog-item__content
+								.title Планировка и функциональность  
+								.info
+									span.info__category Советы
+									span.info__author Автор: Наталья Смирнова
+									span.info__date 18.01.16
+								.desc Решите для себя, в каком порядке будет размещена ваша кухонная мебель, плита, холодильник, мойка и пр.		
+								a.link(href="/blog-detail.html")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/blog-3.jpg", alt="")
+								.count-block
+									i.icon.icon__eye
+									span 145
+							.blog-item__content
+								.title Выбор стиля и цветовой гаммы
+								.info
+									span.info__category Планировка кухни
+									span.info__author Автор: КухниСтрой
+									span.info__date 18.01.16
+								.desc Обязательно сделайте замеры помещения: - точно измерьте площадь и «полезный» периметр, высоту помещения, длину подоконника, отрезок между подоконниками и полом, длину стен на кухне и т.п.
+								a.link(href="/blog-detail.html")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/blog-4.jpg", alt="")
+								.count-block
+									i.icon.icon__eye
+									span 145
+							.blog-item__content
+								.title Как правильно подойти к выбору материала?
+								.info
+									span.info__category Советы
+									span.info__author Автор: Игорь Смирнов
+									span.info__date 18.01.16
+								.desc Сегодня для кухонной мебели используется довольно материалов, среди которых основными являются дерево, ДСП, МДФ, стекло, алюминий и даже камень. Например, для фасада кухонного гарнитура в этом отношении можно выделить
+								a.link(href="/blog-detail.html")
+									i.icon.icon__arrow-left-circle--red
+						.blog-item
+							.blog-item__image
+								img(src="img/blog-5.jpg", alt="")
+								.count-block
+									i.icon.icon__eye
+									span 145
+							.blog-item__content
+								.title Внутреннее устройство и аксессуары 
+								.info
+									span.info__category Советы
+									span.info__author Автор: КухниСтрой
+									span.info__date 18.01.16
+								.desc Спланируйте, чтобы на кухне были все необходимые ящички для посуды, кастрюль и пр. Предусмотрите по необходимости открытее полочки с розетками или ниши с дверками-жалюзи
+								a.link(href="/blog-detail.html")
+									i.icon.icon__arrow-left-circle--red
+					.text-center.show-more-wrap
+						button.show-more
+							.image
+								i.icon.icon__show-more
+							span Показать еще
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

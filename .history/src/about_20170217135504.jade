@@ -1,0 +1,83 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey.content-section--header
+					.content-header__title
+						h1 О компании
+					.content-header__right
+						button.button.button-transparent Обратная связь
+					ul.section-menu
+						li.section-menu__item
+							a.section-menu__link(href="#") Компания
+						li.section-menu__item
+							a.section-menu__link.active(href="#") Контакты
+						li.section-menu__item
+							a.section-menu__link(href="#") Производство
+						li.section-menu__item
+							a.section-menu__link(href="#") Преимущества
+				section.about-header
+					.triangle-top
+					.title
+						span
+							| 1-я ИНТЕРНЕТ-ФАБРИКА
+							br
+							| КУХОННОЙ МЕБЕЛИ
+						.line
+					.desc Образована Фабрика в 1998 году и производит кухни в духе старой доброй классики и смелых  модернистских идей. При производстве кухонь наши специалисты ориентируются на тенденции
+					.triangle-bottom
+				section.content-section
+					.about-desc.about-desc--bg
+						.title
+							h2 Несколько слов о нас
+						p Фабрика Кухни «ZETTA» оснащена современным немецким и итальянским оборудованием. Тщательный отбор поставщиков позволяет использовать в производстве мебели только лучшие европейские комплектующие и материалы, проверенные годами, и соответствующие всем техническим требованиям.
+						p На кухни «ZETTA» действует 12-летняя гарантия. А это значит, что приобретая кухни у нас, Вы можете не беспокоиться о сроке эксплуатации кухни. Она прослужит Вам долгие годы.
+				section.about-advantages
+					.title
+					 	h2 Несколько фактов о нас
+					.about-advantages-list
+						.item
+							.item-count 135
+							.item-desc Моделей мебели
+						.item
+							.item-count 260
+							.item-desc Сотрудников
+						.item
+							.item-count 14
+							.item-desc Магазинов
+						.item
+							.item-count 18
+							.item-desc Лет работы
+				section.content-section
+					.about-desc
+						.title
+							h2 Еще один заголовок про нашу фабрику
+						p На кухни «ZETTA» действует 12-летняя гарантия. А это значит, что приобретая кухни у нас, Вы можете не беспокоиться о сроке эксплуатации кухни. Она прослужит Вам долгие годы.
+						p Наши специалисты воплощают в жизнь все Ваши пожелания, создавая идеальное кухонное пространство и атмосферу уюта для Вас и Ваших родных.
+						.about-desc-list.row
+							.col-sm-3.item
+								.item-icon
+									i.icon.icon__about-1
+								.item-title Название пункта
+							.col-sm-3.item
+								.item-icon
+									i.icon.icon__about-2
+								.item-title Еще одно название
+							.col-sm-3.item
+								.item-icon
+									i.icon.icon__about-3
+								.item-title Название пункта
+							.col-sm-3.item
+								.item-icon
+									i.icon.icon__about-4
+								.item-title Название пункта
+				section.main-bottom
+					p Мы обзвонили тысячу клиентов, которые покупали у нас кухни в период с 2000 по 2002 год, для того, чтобы понять, как кухни прошли эту долгую проверку временем. Кто-то просил заменить им плиту или холодильник, потому что они уже старые и плохо работают. У кого-то из-за затопления кухни соседями из строя вышли модули. Однако не было ни одного случая брака фасада или корпуса!
+					p Сотрудники Фабрики ZETTA приехали в гости к клиентам, чтобы своими глазами увидеть, как выглядят кухни спустя такой долгий срок, и были очень обрадованы. Фасады из массива дерева никак не изменили своих свойств и сохранили отличный внешний вид.  А ведь эти кухни стоят уже пятнадцать лет!
+					p За время существования нашей компании мы шагнули далеко вперед. Наши кухни, которые выпускались пятнадцать лет назад, и те, которые мы выпускаем сейчас, имеют колоссальную разницу в качестве. Мы смогли улучшить нашу продукцию, и поэтому легко готовы предоставить Вам гарантию 12 лет. Гарантийные случаи возникают только у 0.02% наших клиентов. Это всего лишь 2 случая на 2000 кухонь!
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/general.jade

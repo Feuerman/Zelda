@@ -1,0 +1,109 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title
+						h1 Бытовая техника
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Бытовая техника
+						li.breadcrumbs__item
+							span Духовые шкафы					
+					.product
+						.product-title
+							h2 Духовой шкаф Zaussi ЯЩГ 261
+						.product-gallery
+							.product-gallery__main.js-slider-product
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+								.item
+									img(src="img/product-main.jpg", alt="")
+							.product-gallery__thumbs.js-slider-product-thumbs
+								.item
+									img(src="img/product-thumb-1.jpg", alt="")
+								.item
+									img(src="img/product-thumb-2.jpg", alt="")
+								.item
+									img(src="img/product-thumb-3.jpg", alt="")
+								.item
+									img(src="img/product-thumb-1.jpg", alt="")
+								.item
+									img(src="img/product-thumb-2.jpg", alt="")
+						.product-info
+							.product-info__text-desc
+								p.title Описание
+								p 
+									span Модель:
+									| Электрическая зависимая духовка, цвет серебро, и еще пару парамметров
+								p 
+									span Габариты:
+									| 59 x 59,4 x 56 см
+							.product-info__price
+								span.product-info__price-value 13 390 руб.
+								button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+									| В корзину
+									i.icon.icon__basket
+							.product-info__panel
+								button.button.button-small.js-one-click-buy Купить в 1 клик
+								button.button.button-small.js-add-set Добавить к комплекту
+							.share-block
+								.share-block__title Поделиться:
+								.share-block__socials
+									img(src="img/share-block.jpg", alt="")
+				section.content-section.content-section--grey.recommended
+						.recommended-head
+							.recommended-head__title
+								h2 Рекомендуемые товары
+							.recommended-head__right.js-slider-recommended-nav
+								button.prev.icon.icon__arrow-right-circle--grey
+								button.next.icon.icon__arrow-left-circle--grey
+						.recommended-slider.js-slider-recommended
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-1.jpg", alt="")
+								.title Название товара в несколько строк
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-2.jpg", alt="")
+								.title Еще одно название товара на сайте
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-3.jpg", alt="")
+								.title Название товара в несколько строк
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-4.jpg", alt="")
+								.title Еще одно название товара на сайте
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-1.jpg", alt="")
+								.title Название товара в несколько строк
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-2.jpg", alt="")
+								.title Еще одно название товара на сайте
+							a.recommended-slider__item(href="#")
+								.image
+									img(src="img/recommend-3.jpg", alt="")
+								.title Название товара в несколько строк
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

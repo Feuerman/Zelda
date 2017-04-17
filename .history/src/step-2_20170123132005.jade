@@ -1,0 +1,262 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title Кухни
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Кухни модерн
+						li.breadcrumbs__item
+							span Анкона Плюс Polylac 
+					.catalog-step-title
+						span Шаг №2 
+						| Посмотреть варианты исполнения в выбранном размере
+				section.top-slider
+					.top-slider-wrap.js-slider-top-catalog
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м 
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+					.top-slider-nav.hidden-xs
+						button.prev.icon.icon__arrow-left-circle--white
+						button.next.icon.icon__arrow-right-circle--white
+					.top-slider__desc.hidden-xs
+						.catalog-slider-desc
+							.catalog-slider-desc__left
+								.text Анкона Плюс Polylac, Прямая длина, 3 м 
+								.price от 136  970 р.
+							.catalog-slider-desc__right
+								.text 45 600 руб. за погонный метр
+				.top-slider-thumbs.js-slider-top-thumbs
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-4.jpg", alt="")
+						img(src="img/step2-image-5.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+				.top-slider__desc.visible-xs
+					.catalog-slider-desc
+						.catalog-slider-desc__left
+							.text
+								span Анкона Плюс Polylac,
+								span Прямая длина, 3 м 
+							.price от 136  970 р.
+						.catalog-slider-desc__right
+							.text 45 600 руб. за погонный метр
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title О модели Анкона Плюс Polylac
+					.content-section-head__right.hidden-xs
+						a.content-section-head__right.button.button-transparent(href="/reviews.html") Отзывы о модели
+				section.content-section
+					ul.dropdown-list
+						li.dropdown-list-item.active
+							.dropdown-list-item__head
+								.title О модели Анкона Плюс Polylac
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Современная кухня Анкона Плюс Polylac — это беспроигрышный вариант для создания стильного и современного интерьера. Фасады из МДФ с полимерным PET покрытием Polylac станут главным её украшением, ведь от их сверкающей поверхности просто невозможно отвести взгляд. Приглушенные тона, в которых выполнена Анкона Плюс Polylac, в сочетании с глянцем, придадут Вашему интерьеру нотку торжественности. Ультраглянцевые фасады обладают высокой устойчивостью к механическим и термо повреждениям, а абсолютно ровное покрытие создаёт потрясающий эффект глубины поверхности.	
+					button.button.button-transparent.js-scroll-to-detail Подробнее					
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title Посмотреть  варианты исполнения с ценами
+				section.content-section.content-section--grey
+					.filter
+						.row
+							.col-sm-4.select-wrap
+								select.select(name="form")
+									option(value="" hidden) Выбрать форму
+									option(value="form1") Прямая
+									option(value="form2") Угловая
+							.col-sm-4.select-wrap
+								select.select(name="size")
+									option(value="" hidden) РАЗМЕР
+									option(value="size1") 3 метра
+									option(value="size2") 4 метра
+									option(value="size3") 5 метров
+							.col-sm-4
+								input.input-text(name="custom-size" placeholder="Укажите свой размер")
+					.filter-selected
+						.filter-selected-items
+						button.filter-clear.js-filter-clear Сбросить фильтр
+				section.content-section.text-center
+					a.button.button-default(href="#") Посмотреть варианты исполнения
+					p Вы может выбрать любой представленный вариант и доработать его в соответствии со своими требованиями.
+				section.content-section
+					.row.catalog-variants
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-1.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="/step-3.html") Доработать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-2.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="/step-3.html") Доработать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-3.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="/step-3.html") Доработать свой проект
+						.col-sm-6
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step2-product-4.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+										a.button.button-transparent(href="/step-3.html") Доработать свой проект					
+				section.content-section.content-section--grey.content-section--menu.hidden-xs
+					.tabs(data-tabs="accessories")
+						ul.section-menu
+							li.section-menu__item.tabs__item.active
+								button.section-menu__link(href="#") Фасады
+							li.section-menu__item.tabs__item
+								button.section-menu__link(href="#") Ручки
+							li.section-menu__item.tabs__item
+								button.section-menu__link(href="#") Столешницы
+				section.content-section
+					.tabs-content(data-tabs="accessories")
+						.tabs-content-item.active
+							button.accessories-btn-mobile
+								span Фасады
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+						.tabs-content-item
+							button.accessories-btn-mobile
+								span Ручки
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец								
+						.tabs-content-item
+							button.accessories-btn-mobile
+								span Столешницы
+								i.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-accessories
+							.accessories-tizers.js-slider-accessories
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-3.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-1.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец
+								a.accessories-tizers__item(href="#")
+									.image
+										img(src="img/fasad-2.jpg", alt="")
+									.title Polylac 9140 Дуб Прага глянец	
+				section.content-section
+					ul.dropdown-list
+						li.dropdown-list-item.active
+							.dropdown-list-item__head
+								.title Материалы фасадов
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Высокоглянцевые фасады из МДФ  с полимерным  PET покрытием  Polylac. Обратная сторона фасада матовая в цвет лицевой стороны. По периметру фасада кромка АВС в цвет лицевой стороны фасада на древесных декорах и  2-х цветная 3D кромка с эффектом стекла на однотонных декорах.
+						li.dropdown-list-item.active
+							.dropdown-list-item__head
+								.title Преимущества
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Ультраглянцевые фасады, высокая устойчивость к механическим повреждениям, абсолютная ровность поверхности, эффект глубины поверхности, отсутствие в составе ПВХ, высокая термоустойчивость.
+						li.dropdown-list-item.active
+							.dropdown-list-item__head
+								.title Особенности модели
+								.switch
+									i.icon.icon__plus
+							.dropdown-list-item__content
+								p Возможно изготовление открытых модулей из фасадного материала, возможно изготовление шкафов купе с дверьми в цвет фасадов кухни. Возможно, использовать фасады без применения ручек с профилем-нишей верхних и нижних модулей.	
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/general.jade

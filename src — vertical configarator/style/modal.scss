@@ -1,0 +1,267 @@
+.fancybox-opened .fancybox-skin, .fancybox-skin {
+	padding: 0!important;
+	border-radius: 0;
+}
+.fancybox-inner {
+	overflow: hidden!important;
+	width: auto!important;
+	height: auto!important;
+}
+.fancybox-skin {
+	background: none;
+}
+.fancybox-opened .fancybox-skin {
+	box-shadow: none;
+}
+
+
+
+.modal-container {
+	min-width: 700px;
+	max-width: 700px;
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+	}
+	&-head {
+		position: relative;
+		padding: 25px;
+		border-bottom: 1px rgb(235, 235, 235) solid;
+		background: $color-light;
+		&__title {
+			font-size: 2.6em;
+			font-weight: bold;
+			line-height: 1.2em;
+		}
+	}
+	&-content {
+		overflow: hidden;
+		padding: 20px 25px 30px 25px;
+		background: $color-light;
+		.left {
+			display: table-cell;
+			padding-right: 30px;
+		}
+		.right {
+			display: table-cell;
+			vertical-align: top;
+		}
+		p {
+			margin-top: 1em;
+			font-size: 1.8em;
+			line-height: 1.33em;
+			span {
+				display: inline-block;
+				margin-right: 5px;
+			}
+		}
+	}
+	&-footer {
+		padding: 25px;
+		background: rgb(235, 235, 235);
+		text-align: center;
+		button {
+			text-transform: uppercase;
+			& + button {
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+.modal-two-cols {
+	width: 720px;
+	display: flex;
+	&__left, &__right {
+		width: 50%;
+	}
+	&__left {
+		position: relative;
+		background-color: rgba(97, 95, 103, 0.9);
+		.bg-logo, .bg-macbook, .bg-change {
+			position: absolute;
+		}
+		.bg-logo {
+			left: 20px;
+			bottom: 20px;
+			width: 183px;
+			height: 25px;
+			background: url('../img/logo.png') 0 0 no-repeat;
+		}
+		.bg-macbook {
+			width: 100%;
+			height: 100%;
+			background: url('../img/macbook.png') 0 center no-repeat;
+		}
+		.bg-change {
+			top: 33%;
+			right: 50px;
+			width: 120px;
+			height: 130px;
+			background-position: 0 center;
+			background-repeat: no-repeat;
+			&--reg {
+				background-image: url('../img/bg-reg.png');
+			}
+			&--auth {
+				background-image: url('../img/bg-auth.png');
+			}
+			&--recovery {
+				top: -20px;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				background-position: center center;
+				background-image: url('../img/bg-recovery.png');
+				&-mail {
+					background-image: url('../img/bg-recovery-2.png');
+				}
+			}
+		}
+	}
+	&__right {
+		& > div {
+			width: 100%;
+		}
+		.modal-container-footer {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+		.p-title {
+			margin-bottom: 30px;
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+	}
+}
+
+.modal-search {
+	width: 700px;
+	&__title {
+		margin-bottom: 40px;
+		font-size: 2.8em;
+		font-weight: bold;
+		color: $color-light;
+	}
+	&-form {
+		&__input-text {
+			width: 100%;
+			margin-bottom: 30px;
+			padding: 10px;
+			background: none;
+			font-size: 1.8em;
+			line-height: 1.33em;
+			color: $color-light;
+			border-width: 0 0 2px 0;
+			border-color: $color-light;
+			border-style: solid;
+			outline: none;
+			text-align: center;
+		}
+		.icon {
+			border: none;
+			background-color: transparent;
+			outline: none;
+		}
+	}
+}
+
+.modal-close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 18px;
+	height: 18px;
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: rgb(155, 155, 155);
+	}
+	&::before {
+		top: 8px;
+		transform: rotate(45deg)
+	}
+	&::after {
+		bottom: 8px;
+		transform: rotate(-45deg)
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fancybox-wrap {
+		min-width: 90%;
+	}
+	.modal-container {
+		min-width: auto;
+		&-head {
+			padding: 20px;
+		}
+		&-content {
+			padding: 20px;
+			.left {
+				display: none;
+			}
+			.right {
+				margin: 20px 0;
+			}
+		}
+		&-footer {
+			button {
+				& + button {
+					margin-left: 0;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.modal-close {
+		right: 15px;
+	}
+	.modal-two-cols {
+		width: 100%;
+	}
+	.modal-search {
+		margin: 50px auto;
+		width: 90%;
+	}
+	.modal-two-cols {
+		&__left {
+			display: none;
+		}
+		&__right {
+			width: 100%;
+		}
+	}
+	.modal-search {
+		&__title {
+			margin-bottom: 30px;
+			font-size: 1.8em;
+		}
+		&-form {
+			&__input-text {
+				font-size: 1.6em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.fancybox-wrap {
+		min-width: 100%;
+		left: 0!important;
+	}
+	.modal-close {
+		right: 10px;
+	}
+	.modal-two-cols {
+		&__right {
+			.modal-container-footer {
+				padding: 20px 10px;
+			}
+		}
+	}
+}

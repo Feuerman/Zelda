@@ -1,0 +1,120 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title
+						h1 Корзина:
+						span 4 ш.  190 899 руб.
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="") Главная
+						li.breadcrumbs__item
+							span Корзина
+				section.content-section
+					.basket-products
+						.basket-products-item
+							button.basket-products-item__remove.js-basket-item-remove
+								i.icon.icon__close--white
+							.basket-products-item__image
+								img(src="img/basket-example-1.jpg", alt="")
+							.basket-products-item__name
+								.title Название
+								.name Кухня «Порто»
+								.info
+									span.info__articul Арктикул: 12545
+									a(href="#") Спецификация
+							.basket-products-item__price
+								.title Цена
+								.value 149 420 руб.
+							.basket-products-item__count
+								.title Кол-во по спецификации
+								button.edit.button.button-small Редактировать
+						.basket-products-item
+							button.basket-products-item__remove.js-basket-item-remove
+								i.icon.icon__close--white
+							.basket-products-item__image
+								img(src="img/basket-example-2.jpg", alt="")
+							.basket-products-item__name
+								.title Название
+								.name Духовой шкаф Zanussi ZOU 261
+								.info
+									span.info__articul Арктикул: 12545
+									a(href="#") Характеристики
+							.basket-products-item__price
+								.title Цена
+								.value 13 390 руб.
+							.basket-products-item__count
+								.title Кол-во по спецификации
+								.input-count
+									button.js-count-minus
+										i.icon.icon__minus--large
+									input(type="text" value="1")
+									button.js-count-plus
+										i.icon.icon__plus--large
+								button.edit.button.button-small Редактировать
+						.basket-products-item
+							button.basket-products-item__remove.js-basket-item-remove
+								i.icon.icon__close--white
+							.basket-products-item__image
+								img(src="img/basket-example-3.jpg", alt="")
+							.basket-products-item__name
+								.title Название
+								.name Мойка BLANCOLEVOS-S 
+								.info
+									span.info__articul Арктикул: 12545
+									a(href="#") Характеристики
+							.basket-products-item__price
+								.title Цена
+								.value 28 380 руб.
+							.basket-products-item__count
+								.title Кол-во по спецификации
+								.input-count
+									button.js-count-minus
+										i.icon.icon__minus--large
+									input(type="text" value="1")
+									button.js-count-plus
+										i.icon.icon__plus--large
+								button.edit.button.button-small Редактировать
+						.basket-products-item
+							button.basket-products-item__remove.js-basket-item-remove
+								i.icon.icon__close--white
+							.basket-products-item__image
+								img(src="img/basket-example-4.png", alt="")
+							.basket-products-item__name
+								.title Название
+								.name Вызов замерщика
+								.info
+									a(href="#") Подробнее
+							.basket-products-item__price
+								.title Цена
+								.value Бесплатно
+							.basket-products-item__count
+								.title Кол-во по спецификации
+								.input-count
+									button.js-count-minus
+										i.icon.icon__minus--large
+									input(type="text" value="1")
+									button.js-count-plus
+										i.icon.icon__plus--large
+								button.edit.button.button-small Редактировать
+				section.content-section.content-section--grey.basket-footer
+					.basket-footer__promo
+						.title Промо-код на скидку
+						.input-promo
+							input.input-text(type="text" placeholder="Ввести код")
+							button.icon.icon__arrow-left-circle--red
+					.basket-footer__result
+						.price
+							span Итого:
+							span.value 190 899 руб.
+							span.discount Скидка: 5%
+						a.button.button-default(href="/place-an-order.html") Оформить заказ									
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-article.jade
+	include templates/modal/general.jade

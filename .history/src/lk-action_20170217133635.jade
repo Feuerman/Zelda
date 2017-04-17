@@ -1,0 +1,96 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.lk-header
+					.lk-header__title
+						h1 Личный кабинет
+					button.lk-header__close
+						i.icon.icon__close
+						span Выход
+					ul.section-menu
+						li.section-menu__item
+							a.section-menu__link(href="#") Профиль
+						li.section-menu__item
+							a.section-menu__link(href="#") Список заказов
+						li.section-menu__item
+							a.section-menu__link(href="#") Подписки
+						li.section-menu__item
+							a.section-menu__link.active(href="#") Акции и промокоды
+				.section-menu--mobile
+					button.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-menu
+					ul
+						li.section-menu--mobile__current.js-toggle-section-menu Акции и промокоды
+						li
+							a(href="/lk.html") Профиль
+						li
+							a(href="/lk-orders.html") Список заказов
+						li
+							a(href="#") Подписки
+						li
+							a.active(href="/lk-action.html") Акции и промокоды
+				section.content-section
+					.lk-actions
+						.lk-actions-item
+							.lk-actions-item__image
+								img(src="img/lk-action-1.jpg", alt="")
+							.lk-actions-item__content
+								.top
+									.title Продление акции «Посудомоечная машина в подарок!»
+									.info
+										span.info__category Акции
+										span.info__date 18.01.16
+									.desc По многочисленным просьбам наших дорогих клиентов мы, совместно с партнерами, продлеваем акцию «Посудомоечная машина от BELTRATTO в подарок»!
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.lk-actions-item
+							.lk-actions-item__image
+								img(src="img/lk-action-2.jpg", alt="")
+							.lk-actions-item__content
+								.top
+									.title Промокод на покупку посудомоечной машины со скидой 10%
+									.info
+										span.info__category Промокоды
+										span.info__date 18.01.16 — 25.05.16
+									.desc Вы можете купить посудомоечную машину AEG F 55402 VI с этим промокодом со скидкой 10%
+								.bottom
+									.promo
+										input(type="text" value="DSCI09813Y").promo__key.promo__key--danger
+										button.js-copy-promo-key Скопировать
+									.status
+										span.status__danger Не использован								
+						.lk-actions-item
+							.lk-actions-item__image
+								img(src="img/lk-action-3.jpg", alt="")
+							.lk-actions-item__content
+								.top
+									.title Осенняя распродажа товаров
+									.info
+										span.info__category Акции
+										span.info__date 18.01.16
+									.desc По многочисленным просьбам наших дорогих клиентов мы, совместно с партнерами, продлеваем акцию «Посудомоечная машина от BELTRATTO в подарок»!
+								a.link(href="#")
+									i.icon.icon__arrow-left-circle--red
+						.lk-actions-item
+							.lk-actions-item__image
+								img(src="img/lk-action-4.jpg", alt="")
+							.lk-actions-item__content
+								.top
+									.title Промокод на покупку варочной панели
+									.info
+										span.info__category Промокоды
+										span.info__date 18.01.16 — 25.05.16
+									.desc Вы можете купить варочную панель Ariston со скидкой 10%
+								.bottom
+									.promo
+										input(type="text" value="DSCI09813T").promo__key
+										button.js-copy-promo-key Скопировать
+									.status
+										span Погашен								
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

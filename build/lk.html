@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head></head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="vendor/slick/slick.css">
-<link rel="stylesheet" href="vendor/slick/slick-theme.css">
-<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
-<link rel="stylesheet" href="css/style.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="vendor/slick/slick.min.js"></script>
-<script src="js/main.js"></script>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="vendor/jquery/jquery-2.2.4.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+</html>
 <body>
   <div class="wrapper">
     <aside class="aside aside">
@@ -118,53 +120,55 @@
           <button class="icon icon__arrow-down-circle--middle--grey js-toggle-section-menu"></button>
           <ul>
             <li class="section-menu--mobile__current js-toggle-section-menu">Профиль</li>
-            <li class="active"><a href="/lk.html">Профиль</a></li>
-            <li><a href="/lk-orders.html">Список заказов</a></li>
+            <li class="active"><a href="/wide/lk.html">Профиль</a></li>
+            <li><a href="/wide/lk-orders.html">Список заказов</a></li>
             <li><a href="#">Подписки</a></li>
-            <li><a href="/lk-action.html">Акции и промокоды		</a></li>
+            <li><a href="/wide/lk-action.html">Акции и промокоды</a></li>
           </ul>
         </div>
-        <section class="content-section content-section--overflow-visible">
-          <div class="lk-user-info">
-            <div class="lk-user-info__left">
-              <div class="greeting"><span>Алексей</span>, добро пожаловать в личный кабинет.  Вы можете дополнить или изменить свои контактные данные, изменить пароль для входа в личный кабинет.</div>
-              <form class="form-lk">
-                <div class="row">
-                  <div class="col-sm-6 form-lk__group">
-                    <label>Ваше имя</label>
-                    <input type="text" value="Алексей" placeholder="Имя" class="input-text">
-                  </div>
-                  <div class="col-sm-6 form-lk__group">
-                    <label>Фамилия</label>
-                    <input type="text" value="Разыграев" placeholder="Фамилия" class="input-text">
-                  </div>
-                  <div class="col-sm-6 form-lk__group">
-                    <label>Телефон</label>
-                    <input type="text" value="+7(909) 657-35-67" placeholder="Телефон" class="input-text">
-                  </div>
-                  <div class="col-sm-6 form-lk__group">
-                    <label>E-mail</label>
-                    <input type="text" value="mumijo@yandex.ru" placeholder="E-mail" class="input-text">
+        <form action="">
+          <section class="content-section content-section--overflow-visible">
+            <div class="lk-user-info">
+              <div class="lk-user-info__left">
+                <div class="greeting"><span>Алексей</span>, добро пожаловать в личный кабинет.  Вы можете дополнить или изменить свои контактные данные, изменить пароль для входа в личный кабинет.</div>
+                <div class="form-lk">
+                  <div class="row">
+                    <div class="col-sm-6 form-lk__group">
+                      <label>Ваше имя</label>
+                      <input type="text" value="Алексей" placeholder="Имя" class="input-text">
+                    </div>
+                    <div class="col-sm-6 form-lk__group">
+                      <label>Фамилия</label>
+                      <input type="text" value="Разыграев" placeholder="Фамилия" class="input-text">
+                    </div>
+                    <div class="col-sm-6 form-lk__group">
+                      <label>Телефон</label>
+                      <input type="text" value="+7(909) 657-35-67" placeholder="Телефон" class="input-text">
+                    </div>
+                    <div class="col-sm-6 form-lk__group">
+                      <label>E-mail</label>
+                      <input type="text" value="mumijo@yandex.ru" placeholder="E-mail" class="input-text">
+                    </div>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="form-lk__bottom form-lk__bottom--mobile">
-              <button class="button button-grey">Сохранить</button>
-              <button class="button button-transparent">Изменить пароль</button>
-            </div>
-            <div class="lk-user-info__right">
-              <div class="lk-slider-wrap">
-                <div class="lk-slider js-slider-lk"><img src="img/lk-slider.jpg" alt=""><img src="img/lk-slider.jpg" alt=""><img src="img/lk-slider.jpg" alt=""></div>
-                <div class="slider-dots slider-dots--dark js-slider-lk-dots"></div>
+              </div>
+              <div class="form-lk__bottom form-lk__bottom--mobile">
+                <button type="submit" class="button button-grey">Сохранить</button>
+                <button class="button button-transparent">Изменить пароль</button>
+              </div>
+              <div class="lk-user-info__right">
+                <div class="lk-slider-wrap">
+                  <div class="lk-slider js-slider-lk"><img src="img/lk-slider.jpg" alt=""><img src="img/lk-slider.jpg" alt=""><img src="img/lk-slider.jpg" alt=""></div>
+                  <div class="slider-dots slider-dots--dark js-slider-lk-dots"></div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="content-section content-section--grey form-lk__bottom">
-          <button class="button button-grey">Сохранить</button>
-          <button class="button button-transparent">Изменить пароль</button>
-        </section>
+          </section>
+          <section class="content-section content-section--grey form-lk__bottom">
+            <button type="submit" class="button button-grey">Сохранить</button>
+            <button class="button button-transparent">Изменить пароль</button>
+          </section>
+        </form>
         <section class="main-menu-bottom container-fluid hidden-xs">
           <div class="row">
             <div class="col-sm-3 main-menu-bottom__col">

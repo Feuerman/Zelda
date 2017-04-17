@@ -1,0 +1,318 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				//- section.content-header.content-section.content-section--grey
+				//- 	.content-header__title Кухни
+				//- 	.content-header__right
+				//- 		a.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section.content-section--header
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Кухни модерн
+						li.breadcrumbs__item
+							span Анкона Плюс Polylac
+					.catalog-step-title
+						span Шаг №3
+						| Создайте свой проект
+					.catalog-step-map
+						span Шаг 1
+						span Шаг 2
+						span.active Шаг 3
+						span Шаг 4
+				section.top-slider
+					.top-slider-wrap.js-slider-top-catalog
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-2.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+						.top-slider__item
+							.top-slider__image
+								img(src="img/step2-image-1.jpg", alt="")
+							.top-slider__desc.hidden-xs
+								.catalog-slider-desc
+									.catalog-slider-desc__left
+										.text Анкона Плюс Polylac, Прямая длина, 3 м
+										.price от 136  970 р.
+									.catalog-slider-desc__right
+										.text 45 600 руб. за погонный метр
+					.top-slider-nav.hidden-xs
+						button.prev.icon.icon__arrow-left-circle--white
+						button.next.icon.icon__arrow-right-circle--white
+				.top-slider-thumbs.js-slider-top-thumbs
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-4.jpg", alt="")
+						img(src="img/step2-image-5.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+						img(src="img/step2-image-3.jpg", alt="")
+				.top-slider__desc.visible-xs
+					.catalog-slider-desc
+						.catalog-slider-desc__left
+							.text
+								span Анкона Плюс Polylac,
+								span Прямая длина, 3 м
+							.price от 136  970 р.
+						.catalog-slider-desc__right
+							.text 45 600 руб. за погонный метр
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title Выбранный вариант исполнения
+				section.content-section
+					.row.create-project-spec
+						.col-sm-6.create-project-spec__image
+							.catalog-variants-item
+								.catalog-variants-item__image
+									img(src="img/step-3__image-1.jpg", alt="")
+								.catalog-variants-item__content
+									.title Анкона Плюс Polylac – прямая, 3м
+									.bottom
+										.price 136 790 р.
+						.col-sm-6
+							.create-project-spec__desc
+								.item
+									p
+										strong Третий шаг к вашей кухне - созднание своего дизайн-проекта на основе выбранного вами варианта.
+									p Определитесь с набором модулей в вашем кухонном гарнитуре. Для этого – зайти в спецификацию и подтвердить свой выбор по каждой опции в спецификации.
+									button.button.button-default.js-toggle-spec Спецификация Выбранного проекта
+								.item
+									p 2. В онлайн-конструкторе выбрать цвет фасадов, столешниц, бытовую технику, аксессуары для кухни.
+									a.button.button-default(href="/configurator.html") Запустить онлайн конструктор
+					.specification-table-wrap
+						.specification-table__title Стандартные модули
+						.specification-table(data-product-container-id="1")
+							.specification-table-col.specification-table-col--number
+								.title Номер на рисунке
+								.content
+									span 1
+									a.gallery-item(href="img/step-3__image-1.jpg") см. на рисунке
+							.specification-table-col.specification-table-col--art
+								.title Арктикул
+								.content
+									span.js-product-articul A-600-CR
+							.specification-table-col.specification-table-col--image
+								.title Изображение
+								.content.content
+									img.js-product-image(src="img/step3__image-small.png", alt="")
+							.specification-table-col.specification-table-col--list
+								.title Наименование
+								.content
+									.specification-table-dropdown
+										span.js-product-name Шкаф сушка 1 (720x600)
+										button.icon.icon__arrow-down-circle--grey.js-modal-spec(data-product-id="1")
+							.specification-table-col.specification-table-col--count
+								.title Кол.
+								.content
+									span 1 шт.
+							.specification-table-col.specification-table-col--price
+								.title Цена
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--summ
+								.title Сумма
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--result
+								.title Итого
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--add
+								.title Добавить
+								.content
+									.checkbox-wrap
+										input.checkbox(type="checkbox" id="add1" checked)
+										label(for="add1") Добавить
+						.specification-table
+							.specification-table-col
+								.specification-table__row-list
+									span 1.  ЛДС 18 мм (Белый 701/Бежевый 713)
+									span 2. Афина 72x60 (Афина неро 726x60)
+						.specification-table(data-product-container-id="2")
+							.specification-table-col.specification-table-col--number
+								.title Номер на рисунке
+								.content
+									span 2
+									a.gallery-item(href="img/step-3__image-1.jpg") см. на рисунке
+							.specification-table-col.specification-table-col--art
+								.title Арктикул
+								.content
+									span.js-product-articul B-456
+							.specification-table-col.specification-table-col--image
+								.title Изображение
+								.content.content
+									img.js-product-image(src="img/step3__image-small.png", alt="")
+							.specification-table-col.specification-table-col--list
+								.title Наименование
+								.content
+									.specification-table-dropdown
+										span.js-product-name База ящик 1 ДМ
+										button.icon.icon__arrow-down-circle--grey.js-modal-spec(data-product-id="2")
+							.specification-table-col.specification-table-col--count
+								.title Кол.
+								.content
+									span 1 шт.
+							.specification-table-col.specification-table-col--price
+								.title Цена
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--summ
+								.title Сумма
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--result
+								.title Итого
+								.content
+									span.js-product-price 359,62
+									span р.
+							.specification-table-col.specification-table-col--add
+								.title Добавить
+								.content
+									.checkbox-wrap
+										input.checkbox(type="checkbox" id="add1" checked)
+										label(for="add1") Добавить
+						.specification-table-summary
+							.specification-table-summary__row
+								.specification-table-summary__prop Стоимость товаров:
+								.specification-table-summary__value 2 099.65 руб.
+							.specification-table-summary__row
+								.specification-table-summary__prop Стоимость услуги:
+								.specification-table-summary__value 00.00 руб.
+							.specification-table-summary__row.specification-table-summary__row--last
+								.specification-table-summary__prop Общая стоимость заказа:
+								.specification-table-summary__value 2 099.65 руб.
+							.specification-table-summary__panel
+								//- a.button.button-default(href="/configurator.html") Сохранить и Перейти в онлайн -конструктор
+								a.button.button-transparent(href="/basket.html") В корзину
+						button.specification-table__hide.js-toggle-spec
+							i.icon.icon__arrow-top-circle--blue
+							span Свернуть
+				section.content-section
+					.constructor-faq-preview
+						p С помощью онлайн-конструктора вы можете изменить опции и спецификации выбранной модели, а также укомлектовать кухню встраивоемой техникой.
+						a(href="#") Как работать в конструкторе
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title О работе онлайн-конструктора
+				section.content-section
+					.description-of-constructor
+						.description-of-constructor__item
+							.image
+								img(src="img/step3__image-3.png", alt="")
+							.text Наша интернет-фабрика предоставляет вам уникальную возможность создать проект кухонного гарнитура прямо на экране своего компьютера.
+						.description-of-constructor__item
+							.image
+								img(src="img/step3__image-4.png", alt="")
+							.text После составления проекта и расчета цены кухни осуществляется немедленная отправка заявки в пункт выдачи заказа.  Для исключения ошибок каждая заявка будет внимательно перепроверяться нашими сотрудниками.
+						.description-of-constructor__item
+							.image
+								img(src="img/step3__image-5.png", alt="")
+							.text Наша программа производит мгновенный расчет созданного проекта, а также позволяет в режиме реального времени выбрать модель фасада и декоры всех материалов (фасд, корпус, столешница) из ассортимента фабрики.
+						.description-of-constructor__item
+							.image
+								img(src="img/step3__image-6.png", alt="")
+							.text Пункты выдачи заказа находятся на территории наших салонов, где при желании, вы можете посмотреть выбранную вами модель в реальном исполнении перед покупкой.
+				section.content-section.content-section--grey.content-section-head
+					.content-section-head__title Вы можете сразу заказать необходимые услуги
+					.content-section-head__right
+						.service-slider-nav.js-slide-service-nav
+							button.icon.icon__arrow-right-circle--grey.prev
+							button.icon.icon__arrow-left-circle--grey.next
+				.service-slider.js-slide-service
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__lift
+						.text Подъем до квартиры с помощью лифта
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__truck
+						.text Доставка до места разгрузки
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__calendar
+						.text Срочное изготовление заказа
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__key
+						.text Мебель «под ключ»
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__lift
+						.text Подъем до квартиры с помощью лифта
+					a.service-slider__item(href="/service-detail.html")
+						.image
+							i.icon.icon__truck
+						.text Доставка до места разгрузки
+				section.content-section.content-section--grey
+					.share-block--bottom.text-center
+						img(src="img/share-block-2.jpg", alt="")
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	.modal-hide
+		.modal-container#js-modal-basket
+			.modal-container-head
+				.modal-container-head__title Товар добавлен в корзину
+				button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					.left
+						i.icon.icon__basket--large
+					.right
+						p
+							span Товар:
+							| Духовой шкаф Zanussi ZOU 261
+						p
+							span Стоимостью:
+							| 13 390 руб.
+						p Добавлен в корзину.
+			.modal-container-footer
+				button.button.button-default оформить заказ
+				button.button.button-transparent Продолжить покупки
+	include templates/modal/general.jade
+	.modal-hide
+		.modal-container#js-modal-product
+			//- .modal-container-head
+			//- 	.modal-container-head__title
+			//- 	button.modal-close
+			.modal-container-content
+				.modal-basket__content
+					table.table-products(id="modal-products")
+			.modal-container-footer
+				button.button.button-transparent.js-product-choise Выбрать

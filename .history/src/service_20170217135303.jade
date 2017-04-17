@@ -1,0 +1,230 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.content-header.content-section.content-section--grey
+					.content-header__title
+						h1 Услуги
+					.content-header__right
+						a.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section.content-section--breadcrumbs
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							span Услуги
+				section.content-section
+					.row.service-list
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Вызов замерщика
+									.desc Замер помещения соответствует размерам, указанным в бланке замера
+									.price
+										.price__value 950 р.
+										.price__desc Бесплатно, если услуга заказывается под «ключ»
+										.price__icon
+											i.icon.icon__service-1
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Дизайн-проект
+									.desc По утвержденному клиентом или замерщиком замеру
+									.price
+										.price__value 1,5%
+										.price__desc от стоимости заказа, но менее 950 руб.
+										.price__icon
+											i.icon.icon__service-2
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Мебель «под ключ»
+									.desc Включает все работы от выезда замерщика до монтажа и гарантии
+									.price
+										.price__value 7,5%
+										.price__desc От стоимости, но не менее 12 000 р.
+										.price__icon
+											i.icon.icon__service-3
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Подъём с помощью лифта
+									.desc Поднятие  в квартиру с помощью лифта клиенту или монтажникам
+									.price
+										.price__value 1%
+										.price__desc от стоимости товара, но не более 1 500 р.
+										.price__icon
+											i.icon.icon__service-4
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Подъём без лифта
+									.desc Поднятие  в квартиру с помощью лифта клиенту или монтажникам
+									.price
+										.price__value 1%
+										.price__desc от стоимости товара + 0,3% от стоимости на каждый этаж
+										.price__icon
+											i.icon.icon__service-5
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Монтаж
+									.desc Монтажа с сохранением качества модулей и аксессуаров
+									.price
+										.price__value 5%
+										.price__desc от стоимости товара, но не менее 9000р.
+										.price__icon
+											i.icon.icon__service-6
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Доставка до места разгрузки
+									.desc Доставка заказанных товаров до места разгрузки
+									.price
+										.price__value 1 500 р.
+										.price__icon
+											i.icon.icon__service-7
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Консультация
+									.desc По телефону и в салоне, в том числе проектирование мебели
+									.price
+										.price__value —
+										.price__desc Услуга предоставляется бесплатно
+										.price__icon
+											i.icon.icon__service-8
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Нестандартные решения
+									.desc Заказ не стандарта в базе не стандартных модулей интернет-фабрики
+									.price
+										.price__value —
+										.price__desc Цены РПЛ интернет-фабрики
+										.price__icon
+											i.icon.icon__service-9
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Стандартные решения
+									.desc Заказ не стандарта, по размерам клиента
+									.price
+										.price__value —
+										.price__desc Цена формируется на сайте
+										.price__icon
+											i.icon.icon__service-10
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Заказ без предоплаты
+									.desc Оплатите страховку в размере 3% или 5% и сделайте заказ без предоплаты
+									.price
+										.price__value 3-5%
+										.price__desc от суммы заказа
+										.price__icon
+											i.icon.icon__service-11
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Срочное изготовление заказа
+									.desc Изготовить заказ в указанный срок (20 рабочих дней). 
+									.price
+										.price__value 10 000 р.
+										.price__icon
+											i.icon.icon__service-12
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+						.col-sm-6
+							.service-list-item
+								.top
+									.title
+										h2 Гарантия
+									.desc В зависимости от выбранного товара 
+									.price
+										.price__value —
+										.price__desc Услуга предоставляется бесплатно
+										.price__icon
+											i.icon.icon__service-13
+								.bottom
+									a.button.button-transparent(href="#") Подробнее
+									button.button.button-default.js-modal(data-fancybox-href="#js-modal-basket")
+										span В корзину
+										i.icon.icon__basket
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

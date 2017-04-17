@@ -1,0 +1,63 @@
+.basket-float
+	.basket-float__icon
+		i.icon.icon__basket
+		span.count 4
+header.header(class=configurator? "hidden" : "hidden-xs")
+	nav.top-menu-wrap.pull-left
+		ul.top-menu
+			li.top-menu__item
+				a.top-menu__link(href="/about.html") О компании
+			li.top-menu__item
+				a.top-menu__link(href="/news.html") Новости и акции
+			li.top-menu__item
+				a.top-menu__link(href="/service.html") Услуги
+			li.top-menu__item
+				a.top-menu__link(href="/blog.html") Блог
+			li.top-menu__item
+				a.top-menu__link(href="#") Оплата
+			li.top-menu__item
+				a.top-menu__link(href="#") Доставка
+			li.top-menu__item
+				a.top-menu__link(href="/contacts.html") Адреса
+	.header-city.pull-right
+		i.icon.icon__geo
+		span Москва
+.top-mobile
+	.top-mobile__header
+		.top-mobile-logo.site-logo
+			button.js-menu-mobile.btn-menu.visible-xs
+				span
+			a(href="/sitemap.html")
+				img(src="img/logo.png", alt="")
+			.site-logo__title.hidden-xs
+				span 1-я интернет-фабрика
+			button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth--large
+		.top-mobile-contacts
+			.top-mobile-contacts__phone 8 800 345 56 56
+			button.button.button-default.top-mobile-contacts__callback.js-modal(data-fancybox-href="#js-modal-callback") Обратный звонок
+			button.hidden-xs.top-mobile-contacts__auth.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth--large
+	.top-mobile__footer(class=(configurator|!mainPage)? "hidden-xs" : "")
+		ul.top-menu.pull-left
+			li.top-menu__item
+				a.top-menu__link(href="/step-1.html") КУХНИ
+			li.top-menu__item
+				a.top-menu__link(href="#") ГОСТИННЫЕ
+			li.top-menu__item
+				a.top-menu__link(href="#") ШКАФЫ
+			li.top-menu__item
+				a.top-menu__link(href="/product-detail.html") БЫТОВАЯ ТЕХНИКА
+		.social.pull-right.hidden-xs
+			a.social__item(href="#")
+				i.dark-theme.icon.icon__social__vk
+				i.light-theme.icon.icon__social__vk--red
+			a.social__item(href="#")
+				i.dark-theme.icon.icon__social__fb
+				i.light-theme.icon.icon__social__fb--red
+			a.social__item(href="#")
+				i.dark-theme.icon.icon__social__tw
+				i.light-theme.icon.icon__social__tw--red
+			a.social__item(href="#")
+				i.dark-theme.icon.icon__social__ok
+				i.light-theme.icon.icon__social__ok--red

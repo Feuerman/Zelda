@@ -1,0 +1,38 @@
+.modal-hide
+	#js-modal-auth
+		.modal-two-cols
+			.modal-two-cols__left
+				.bg-logo
+				.bg-macbook
+				.bg-change.bg-change--auth
+			.modal-two-cols__right
+				.modal-container-head
+					.modal-container-head__title Авторизация
+					button.modal-close
+				.modal-container-content
+					form.form-modal
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Логин")
+						.form-modal__input-group
+							input.input-text(type="text" placeholder="Пароль")
+						input.button.button-default(type="submit" value="Войти на сайт")
+						.form-modal__bottom
+							.checkbox-wrap
+								input.checkbox(type="checkbox" id="remember")
+								label(for="remember") Запомнить меня
+							button.js-modal(data-fancybox-href="#js-modal-recovery-1") Забыли пароль?
+				.modal-container-footer
+					p.p-title Вход через социальные сети
+					.social--color
+						a.social--color__item(href="#")
+							i.icon.icon__vk--color
+						a.social--color__item(href="#")
+							i.icon.icon__inst
+						a.social--color__item(href="#")
+							i.icon.icon__fb--color
+						a.social--color__item(href="#")
+							i.icon.icon__mailru
+						a.social--color__item(href="#")
+							i.icon.icon__yandex
+						a.social--color__item(href="#")
+							i.icon.icon__gplus

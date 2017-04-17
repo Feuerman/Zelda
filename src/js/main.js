@@ -330,9 +330,11 @@ $(document).ready(function() {
 		var bottmPanelH = $('.configurator__bottom-panel').outerHeight();
 		var imageH = $('.configurator__main-image').outerHeight();
 		var windowH = $(window).height();
+		var windowW = $(window).width();
+		if (windowW >= 768) return false;
 		if ((windowH - headerH - bottmPanelH - imageH) < 0) {
 			$('.configurator__bottom-panel').css('position', 'relative');
-			$('body').animate({scrollTop: windowH}, 1000);
+			$('html').animate({scrollTop: windowH }, 0);
 		} else {
 			$('.configurator__bottom-panel').css('position', 'absolute');
 		}
@@ -707,5 +709,7 @@ $(document).ready(function() {
 	$('.js-scroll-to-detail').on('click', function functionName() {
 		var targetH = $('.catalog-variants').offset().top + $('.catalog-variants').height();
 		$('body').animate({scrollTop: targetH}, 1000);
-	});
+	});	
+
+	$('.gallery-item').fancybox();
 });

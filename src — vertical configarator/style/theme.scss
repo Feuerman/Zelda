@@ -1,0 +1,108 @@
+.light-theme {
+	.aside {
+		background: $section-bg-color;
+		&-header {
+			.title {
+				color: $color-primary;
+			}
+			button {
+				color: $color-primary;
+			}
+		}
+		&-search {
+			background: rgb(100, 100, 100);
+			color: $color-light;
+		}
+		&-city {
+			background: $color-light;
+			border-bottom: 1px rgb(223, 223, 223) solid;
+			span {
+				color: $color-primary;
+			}
+		}
+		&-auth {
+			border-bottom: 1px rgb(223, 223, 223) solid;
+			button {
+				color: $color-primary;
+			}
+			button + button {
+				&::before {
+					background: $color-primary;
+				}
+			}
+		}
+		&-contacts {
+			background-image: url('../img/aside_callback__bg.png');
+			&__phone {
+				color: $color-primary;
+			}
+		}
+	}
+	.left-menu {
+		&-wrap {
+			border-bottom: 1px rgb(223, 223, 223) solid;
+			&--bottom {
+				background: none;
+			}
+		}
+		&__item {
+			&:hover, &.active {
+				background: $btn-bg-color;
+				a {
+					color: $color-light;
+				}
+			}
+			a {
+				color: $color-primary;
+			}
+		}
+		&__item + .left-menu__item {
+			a {
+				border-top: 1px rgb(226, 226, 226) solid;
+			}
+		}
+	}
+	.social {
+		&__item {
+			.dark-theme {
+				display: none;
+			}
+			.light-theme {
+				display: block;
+			}
+		}
+	}
+	.header {
+		background: $section-bg-color;
+		&-city {
+			span {
+				color: $color-primary;
+			}
+		}
+	}
+	.top-mobile {
+		&__footer {
+			background: $section-bg-color;
+		}
+		.top-menu {
+			&__link {
+				color: $color-primary;
+			}
+		}
+	}
+	.top-menu {
+		&__item + .top-menu__item {
+			&::before {
+				background: rgb(182, 182, 182);
+			}
+		}
+		&__link {
+			color: $color-primary;
+			transition: all 0.1s ease-in-out;
+			&:hover, &.active {
+				color: $color-light;
+				box-shadow: 0 0 0.2em 0.2em rgb(182, 182, 182);
+			}
+		}
+	}
+}

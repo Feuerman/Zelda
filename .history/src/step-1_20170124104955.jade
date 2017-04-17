@@ -1,0 +1,195 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				//- section.content-header.content-section.content-section--grey
+				//- 	.content-header__title Кухни
+				//- 	a.content-header__right.icon.icon__arrow-right-circle--grey.back-link(href="#")
+				section.content-section.content-section--header
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Каталог
+						li.breadcrumbs__item
+							span Кухни
+					.catalog-step-title
+						span Шаг №1
+						| Выбрать модель кухни
+					.catalog-step-map
+						span.active Шаг 1
+						span Шаг 2
+						span Шаг 3
+						span Шаг 4
+				section.content-section.content-section--grey.filter-wrap
+					button.filter-show-mobile.js-toggle-filter
+						span Открыть фильтр
+						i.icon.icon__arrow-down-circle--middle--grey
+					.filter
+						.row
+							.col-sm-4.select-wrap
+								select.select(name="style")
+									option(value="" hidden) СТИЛЬ
+									option(value="style1") классический
+									option(value="style2") модерн
+									option(value="style3") минимализм
+									option(value="style4") рококо
+									option(value="style5") хай-тек
+							.col-sm-4.select-wrap
+								select.select(name="material")
+									option(value="" hidden) МАТЕРИАЛ
+									option(value="material1") ДСП
+									option(value="material2") МДФ
+									option(value="material3") Дерево
+							.col-sm-4.select-wrap
+								select.select(name="tone")
+									option(value="" hidden) ТОН
+									option(value="tone1") Светлый
+									option(value="tone2") Темный
+					.filter-selected
+						.filter-selected-items
+						button.button.button-default.filter-selected-apply Применить
+						button.filter-clear.js-filter-clear Сбросить фильтр
+				section.content-section
+					.catalog-sort.hidden-xs
+						button
+							i.icon.icon__check--red
+							| По популярности
+						button
+							i.icon.icon__check--red
+							| Новинки
+						button
+							i.icon.icon__check--red
+							| Уменьшение цены
+						button
+							i.icon.icon__check--red
+							| Увеличение цены
+					.catalog-view-select.js-view-select.hidden-xs
+						button.catalog-view-select--grid.active(data-view="grid")
+							i.icon.icon__grid--grey
+						button.catalog-view-select--list(data-view="list")
+							i.icon.icon__list--grey
+					.catalog-tizers.js-variable-display
+						.row
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-1.jpg", alt="")
+								.content
+									.title Сатнина
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-2.jpg", alt="")
+								.content
+									.title Аркобалена лайн
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-3.jpg", alt="")
+								.content
+									.title Аркобалена
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-4.jpg", alt="")
+								.content
+									.title Верона
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-5.jpg", alt="")
+								.content
+									.title Эльба
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-6.jpg", alt="")
+								.content
+									.title Имола
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-7.jpg", alt="")
+								.content
+									.title Сатнина
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-8.jpg", alt="")
+								.content
+									.title Аркобалена лайн
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-9.jpg", alt="")
+								.content
+									.title Аркобалена
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-10.jpg", alt="")
+								.content
+									.title Верона
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-11.jpg", alt="")
+								.content
+									.title Эльба
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+							a.col-sm-4.catalog-tizers__item(href="/step-2.html")
+								.image
+									img(src="img/step1-image-12.jpg", alt="")
+								.content
+									.title Имола
+									p Изготовление: 20 дней
+									.content__bottom
+										.price 68 310 р.
+										i.icon.icon__arrow-left-circle--grey
+					.text-center.show-more-wrap
+						button.show-more
+							.image
+								i.icon.icon__show-more
+							span Показать еще
+				section.content-section.content-section--grey
+					.share-block--bottom.text-center
+						img(src="img/share-block-2.jpg", alt="")
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/general.jade

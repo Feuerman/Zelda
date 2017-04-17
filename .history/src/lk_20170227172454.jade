@@ -1,0 +1,71 @@
+include templates/head.jade
+body
+	.wrapper
+		include templates/aside.jade
+		.main-content
+			include templates/header.jade
+			.float-wrapper
+				section.lk-header
+					.lk-header__title Личный кабинет
+					button.lk-header__close
+						i.icon.icon__close
+						span Выход
+					ul.section-menu
+						li.section-menu__item.active
+							a.section-menu__link(href="#") Профиль
+						li.section-menu__item
+							a.section-menu__link(href="#") Список заказов
+						li.section-menu__item
+							a.section-menu__link(href="#") Подписки
+						li.section-menu__item
+							a.section-menu__link(href="#") Акции и промокоды
+				.section-menu--mobile
+					button.icon.icon__arrow-down-circle--middle--grey.js-toggle-section-menu
+					ul
+						li.section-menu--mobile__current.js-toggle-section-menu Профиль
+						li.active
+							a(href="/wide/lk.html") Профиль
+						li
+							a(href="/wide/lk-orders.html") Список заказов
+						li
+							a(href="#") Подписки
+						li
+							a(href="/wide/lk-action.html") Акции и промокоды
+				form(action="")
+					section.content-section.content-section--overflow-visible
+						.lk-user-info
+							.lk-user-info__left
+								.greeting
+									span Алексей
+									| , добро пожаловать в личный кабинет.  Вы можете дополнить или изменить свои контактные данные, изменить пароль для входа в личный кабинет.
+								.form-lk
+									.row
+										.col-sm-6.form-lk__group
+											label Ваше имя
+											input.input-text(type="text" value="Алексей" placeholder="Имя")
+										.col-sm-6.form-lk__group
+											label Фамилия
+											input.input-text(type="text" value="Разыграев" placeholder="Фамилия")
+										.col-sm-6.form-lk__group
+											label Телефон
+											input.input-text(type="text" value="+7(909) 657-35-67" placeholder="Телефон")
+										.col-sm-6.form-lk__group
+											label E-mail
+											input.input-text(type="text" value="mumijo@yandex.ru" placeholder="E-mail")
+							.form-lk__bottom.form-lk__bottom--mobile
+								button.button.button-grey Сохранить
+								button.button.button-transparent Изменить пароль
+							.lk-user-info__right
+								.lk-slider-wrap
+									.lk-slider.js-slider-lk
+										img(src="img/lk-slider.jpg", alt="")
+										img(src="img/lk-slider.jpg", alt="")
+										img(src="img/lk-slider.jpg", alt="")
+									.slider-dots.slider-dots--dark.js-slider-lk-dots
+					section.content-section.content-section--grey.form-lk__bottom
+						button.button.button-grey Сохранить
+						button.button.button-transparent Изменить пароль
+				include templates/bottom-menu.jade
+			include templates/footer.jade
+	include templates/modal/add-to-basket.jade
+	include templates/modal/general.jade

@@ -1,0 +1,69 @@
+aside.aside(class=configurator? "aside aside--hide" : "aside")
+	.aside-top
+		.aside-logo.site-logo.text-center
+			button.js-menu-mobile.visible-xs
+				i.icon.icon__close--large
+			div
+				a(href="/sitemap.html")
+					img(src="img/logo.png", alt="")
+				.site-logo__title
+					span 1-я интернет-фабрика
+			button.visible-xs.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth--large
+		button.aside-search.visible-xs.js-modal(data-fancybox-href="#js-modal-search")
+			i.icon.icon__loop
+			| Поиск по сайту
+		.aside-auth.hidden-xs
+			button.js-modal-auth.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth
+				| Вход
+			button.js-modal(data-fancybox-href="#js-modal-reg") Регистрация
+		.aside-city.visible-xs
+			i.icon.icon__geo--red
+			span Москва
+	.aside-nav
+		nav
+			.left-menu-wrap
+				ul.left-menu
+					li.left-menu__item
+						a.left-menu__link(href="/step-1.html") КУХНИ
+					li.left-menu__item
+						a.left-menu__link(href="#") ГОСТИННЫЕ
+					li.left-menu__item
+						a.left-menu__link(href="#") ШКАФЫ
+					li.left-menu__item
+						a.left-menu__link(href="/product-detail.html") БЫТОВАЯ ТЕХНИКА
+			.left-menu-wrap.left-menu-wrap--bottom.visible-xs
+				ul.left-menu
+					li.left-menu__item
+						a.left-menu__link(href="/about.html") О компании
+					li.left-menu__item
+						a.left-menu__link(href="/news.html") Новости и акции
+					li.left-menu__item
+						a.left-menu__link(href="/service.html") Услуги
+					li.left-menu__item
+						a.left-menu__link(href="/blog.html") Блог
+					li.left-menu__item
+						a.left-menu__link(href="#") Оплата
+					li.left-menu__item
+						a.left-menu__link(href="#") Доставка
+					li.left-menu__item
+						a.left-menu__link(href="/contacts.html") Адреса
+	.aside-bottom
+		.aside-contacts.text-center.hidden-xs
+			.aside-contacts__phone 8 800 345 56 56
+			button.js-modal-callback.button.button-default Обратный звонок
+		.aside-social
+			.social
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__vk
+					i.light-theme.icon.icon__social__vk--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__fb
+					i.light-theme.icon.icon__social__fb--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__tw
+					i.light-theme.icon.icon__social__tw--red
+				a.social__item(href="#")
+					i.dark-theme.icon.icon__social__ok
+					i.light-theme.icon.icon__social__ok--red
